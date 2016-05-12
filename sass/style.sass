@@ -1,0 +1,1533 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+$color: #D8D8D8
+$colorD: rgb(146, 148, 150)
+$fColor: rgb(78,78,78)
+$album-text-color: #c3c3c3
+$darkColor: #212121
+$color-style: #F39154
+$fft: "MyriadProSemiBold", Roboto, sans-serif
+$ffr: "MyriadProRegular", Roboto, sans-serif
+$ffb: "MyriadProBold", Roboto, sans-serif
+$max-width: 1550px
+
+body
+    font-family: $ffr
+    font-weight: normal
+    font-size: 14px
+    letter-spacing: 0.5px
+    color: $fColor
+    //background: #FFFFFF
+    min-width: 320px
+
+.color-style
+    .music-container_center .breadcrumbs a, .music-container_center, .music-container_center .artist-list-tag h2, .buy-menu .buy-menu__link, .seeAll, .artistTabInfo-sidebar__ul li p, footer ul li h2, footer ul li a, .priceDropdown .btn .caret:after, .squareAlbumsWithPrice .buy-menu .buy-menu__link, .squareAlbumsWithPrice li p, .squareAlbums li h2
+        color: $color-style
+    .buy-menu, .squareAlbumsWithPrice .buy-menu
+        border-color: $color-style
+    .priceDropdown
+        &:after
+            background-color: $color-style
+    .lineList .lineList__column .lineList__column__block 
+        .lineList__link
+            color: $color-style
+            h3,p
+                color: $color-style
+    .squareAlbums
+        li
+            a
+                &:hover
+                    h2,p
+                        text-decoration: underline
+                        text-decoration-color: $color-style !important
+                        -moz-text-decoration-color: $color-style !important
+                        -o-text-decoration-color: $color-style !important
+                        -webkit-text-decoration-color: $color-style !important
+    footer
+        margin-top: 20px
+        border-color: $color-style
+
+      
+
+.container
+    width: 100%
+
+h1,h2,h3,h4,h5
+    font-weight: 500 
+    line-height: 1.1 
+    
+.ul-li
+    margin: 0
+    li
+        display: inline-block
+        text-decoration: none
+        a
+            text-decoration: none
+            &:hover
+                text-decoration: none
+
+.caret
+    display: inline-block
+    //position: absolute
+    top: 0
+    left: 0
+    color: #bbb
+    color: inherit
+    width: 17px
+    height: 17px
+    &:after
+        content: ""
+        color: #bbb
+        color: inherit
+        display: inline-block
+        margin-top: 5px
+        margin-left: -6px
+        border: solid currentColor
+        border-width: 0 .2em .2em 0
+        display: inline-block
+        padding: .20em
+        transform: rotate(-45deg)
+        -webkit-transform: rotate(-45deg)
+.caret-down
+    @extend .caret
+    //position: absolute
+    left: 1px
+    top: -1px
+    //right: -23px
+    right: auto
+    &:after
+        transform: rotate(45deg)
+        -webkit-transform: rotate(45deg)
+.caret-left
+    @extend .caret
+    left: auto
+    top: 0px
+    right: -23px
+    &:after
+        transform: rotate(135deg)
+        -webkit-transform: rotate(135deg)
+
+.dropdownButton
+    padding: 0
+    background: #fff
+    &:hover,.active,:active
+        background: none
+
+.dropdown-menu
+    border: 1px solid #d0d0d0
+    padding: 0
+    background-color: #f0f0f0
+    li
+        a
+            display: block
+            text-decoration: none
+            line-height: 1.2
+            padding: 0 0 0 5px
+            &:hover
+                background-color: #3896FA
+                color: #fff
+                text-decoration: none
+
+[class^="icon-"], [class*=" icon-"]
+    /* use !important to prevent issues with browser extensions that change fonts */
+    //font-family: 'icomoon' !important
+    font-family: 'icomoon'
+    speak: none
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.icon-app:before
+    content: "\e900"
+.icon-mel:before
+    content: "\e901"
+.icon-mov:before
+    content: "\e902"
+.icon-pod:before
+    content: "\e903"
+.icon-tvbv:before
+    content: "\e904"
+
+.textOverflow
+    white-space: nowrap /* Запрещаем перенос строк */
+    overflow: hidden /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis /* Добавляем многоточие */
+
+.grayBorderB
+    border-bottom: 1px solid #e5e5e5
+
+//main-menu
+.header__mainMenu
+    position: relative
+    //background: #fff
+    .leftMenu
+        .next-prev
+            display: inline-block
+            margin: 0 5px 0 0
+            line-height: 35px  
+            height: 35px
+            a
+                &:hover
+                    text-decoration: none
+                display: inline-block
+                line-height: 1.5
+                margin-top: 11px
+                margin-top: 0px
+                width: 24px
+                vertical-align: middle
+                height: 20px
+                position: relative
+                span
+                    position: absolute
+                    width: 24px
+                    height: 20px
+                    padding: 0 7px 0 5px
+                    line-height: 16px
+                    color: $fColor
+                    border: 1px solid $color
+                    border-radius: 4px
+                    top: 0px
+                    left: 0px
+                    font-size: 20px
+        .iconsMenu
+            display: inline-block
+            top: -1px
+            position: relative
+            a
+                font-size: 18px
+                vertical-align: middle
+                margin: 0 0px 0 0
+                padding: 5px
+                &.active
+                    text-decoration: none
+                    border: 1px solid $color
+                    border-radius: 4px
+                &:hover, :focus
+                    text-decoration: none
+            .dropdown
+                //background: url(../img/ico-hover.png) no-repeat
+                display: inline-block
+                .btn
+                    display: inline-block
+                    width: 30px
+                    height: 28px
+                    padding: 0
+                    font-size: 20px
+                    margin: 0
+                    background: none
+                    margin-bottom: 4px
+                    //background: url(../img/menu-ico.png) no-repeat// need image*30 to 30px
+                    //background-size: contain
+                .dropdown-menu
+                    min-width: 140px
+                    padding: 2px 0
+                    li
+                        margin: 0
+                        width: 100%
+                        a
+                            line-height: 1.5
+                            font-family: "icomoon", arial
+                            vertical-align: bottom
+                            padding: 0 10px
+                            color: $fColor
+                            &:hover
+                                color: #fff
+                            p
+                                font-family: $ffr
+                                display: inline-block
+                                margin: 0
+                                line-height: 2
+                                padding: 0
+                                vertical-align: top
+                                font-size: 14px
+.iconsMenu
+    a
+        &.active
+            background: #D1E3F7
+            color: #1F66B1
+
+.dark-style
+    .header__mainMenu
+        background: #212121
+        color: #fff
+    .lineToggle 
+        background-color: $fColor
+        h2
+            color: #FFF
+    .leftMenu
+        ul
+            li
+                &>a
+                    color: #fff
+                a.leftMenu__arrow
+                    background: #4D4D4D
+    background: $darkColor
+    .centerMenu
+        ul
+            li
+                a
+                    color: inherit
+                &.active, :hover
+                    background-color: rgba(0, 113, 255, 0.4)
+                    a
+                        color: #0DA0FF
+    .leftMenu
+        .next-prev 
+            a 
+                &.active
+                    span
+                        color: #ccc
+                span
+                    color: #fff
+                
+        .iconsMenu
+            a
+                color: #FFF
+                &.active
+                    text-decoration: none
+                    border: none
+                    border-radius: 4px
+                    background-color: rgba(0, 113, 255, 0.4)
+                    color: #0DA0FF
+            .dropdown .btn
+                color: #FFF
+    .music-container_center .nav-tabs li a
+        color: rgba(255,255,255,0.6)
+    .music-container_center .nav-tabs li.active a
+        color: rgba(255,255,255,1)
+    //.squareAlbums li h2, .squareAlbumsWithPrice li h2, .squareAlbums li p, .squareAlbumsWithPrice li p
+        color: #4e4e4e
+
+//.dark-style-dropdown
+    .priceDropdown .btn .caret:after
+        color: $color-style
+
+.centerMenu
+    text-align: center
+    position: relative
+    ul
+        @extend .ul-li
+        padding: 4px 0
+        li
+            line-height: 27px
+            text-align: center
+            a
+                color: $fColor
+                padding: 0 14.5px
+                display: block
+            &.active, :hover
+                background-color: #D3E3F8
+                border-radius: 4px
+                a
+                    color: #216CCC
+
+.lineToggle
+    h2
+        display: none
+#togMenu
+    display: none
+
+.Carousel
+    .owl-carousel
+        .item
+            img
+                display: block
+                height: 200px
+                background-size: cover
+
+//musik
+.music-container
+    max-width: $max-width
+    text-align: left
+    margin: 0 auto
+    padding: 0 15px
+
+.music-content
+    vertical-align: top
+    position: relative
+    .nav
+        border: none
+        display: block
+        li
+            text-align: center
+            display: inline-block
+            width: auto
+            &.active
+                a
+                    background-color: #6D6D72
+                    color: #fff
+            &:first-child
+                a
+                    border-top-left-radius: 5px
+                    margin: 0
+                    border-bottom-left-radius: 5px
+                    border-top-right-radius: 0px
+                    border-bottom-right-radius: 0px
+            a
+                display: inline-block
+                padding: 0 10px
+                border: 1px solid #d0d0d0
+                line-height: 18px
+                color: $fColor
+                margin: 0
+                font-size: 12px
+            &:last-child
+                margin-left: -1px
+                a
+                    border-top-left-radius: 0px
+                    border-bottom-left-radius: 0px
+                    border-top-right-radius: 5px
+                    border-bottom-right-radius: 5px
+
+.h-title
+    position: absolute
+    top: 5px
+    left: 0
+    font-size: 20px
+    font-family: $ffr
+
+.tab-content
+    .squareAlbums
+        margin-top: 14px
+
+
+.squareAlbums
+    @extend .ul-li
+    padding: 0
+    width: 100%
+    display: inline-block
+    height: 160px
+    //padding-left: 20px
+    .buy-menu
+        position: static
+        margin-top: 5px
+        .dropdown-menu
+            left: auto
+    >li
+        width: 125px
+        position: relative
+        vertical-align: top
+        margin: 0 0 10px 15px
+        &:first-child
+            margin-left: 0
+        img
+            width: 125px
+            height: 125px
+            display: block
+        a
+            &:hover
+                //text-decoration: underline
+                h2,p
+                    text-decoration: underline
+                    text-decoration-color: $color-style !important
+                    -moz-text-decoration-color: $color-style !important
+                    -o-text-decoration-color: $color-style !important
+                    -webkit-text-decoration-color: $color-style !important
+        h2
+            font-size: 12px
+            margin: 5px 0 0 0
+            font-family: $ffr
+            //color: #000
+            line-height: 1.35
+            padding: 0 12px 0 0
+            @extend .textOverflow
+        p
+            cursor: pointer
+            font-size: 11px
+            margin: 0
+            font-family: $ffr
+            color: #9C9CA3
+            line-height: 1.2
+            @extend .textOverflow
+        i
+            position: absolute
+            right: 0
+            top: 132px
+            width: 9px
+            display: block
+            height: 9px
+            background: url(../img/i.jpg) no-repeat
+
+
+.squareAlbumsWithPrice
+    @extend .squareAlbums
+    height: 190px
+    overflow: hidden
+    h2
+        padding: 0 5px 0 0
+    .buy-menu
+        border: 1px solid #c3c3c3
+        top: auto
+        bottom: 0px
+        left: 0px
+        //.buy-menu__link
+            color: $color-style
+        .dropdown-menu
+            right: -57px
+            li
+                width: 100px
+                display: block
+
+section
+    .flexBehavior
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-between
+        //height: auto
+        //max-height: 335px
+        overflow: hidden
+        &>li
+            margin: 0 0 15px 20px
+
+    .two-lines
+        height: auto
+        max-height: 335px
+        //white-space: normal
+        li
+            margin-left: 20px
+            &:first-child
+                margin-left: 20px
+
+.albums
+    li
+        h2
+            white-space: normal /* Разрешаем перенос строк */
+            overflow: visible /* Отменяем свойство */
+
+.littleSquareAlbums
+    position: relative
+    h2
+        font-size: 18px
+        margin: 0 0 10px 0
+    .lineList
+        text-align: left
+        padding: 0
+
+.lineList
+    padding: 0
+    .lineList__column
+        width: 250px
+        display: none
+        vertical-align: top
+        &:last-child
+            margin: 0
+        .lineList__column__block
+            position: relative
+            padding-right: 80px
+            margin: 0 0 5px 0
+            .lineList__link
+                display: block
+                font-size: 11px
+                color: #9E9EA5
+                margin: 0
+                padding: 0
+                @extend .textOverflow
+                h3
+                    display: block
+                    font-size: 12px
+                    color: $fColor
+                    @extend .textOverflow
+                    font-family: $ffr
+                    margin: 7px 0 3px 0
+                img
+                    width: 44px
+                    height: 44px
+                    position: relative
+                    border: 1px solid $colorD
+                    display: block
+                    float: left
+                    z-index: 10
+                    margin-right: 5px
+            &:hover
+                text-decoration: underline
+                img
+                    opacity: 0
+                &::after
+                    position: absolute
+                    content: ""
+                    top: 0
+                    left: 0
+                    width: 44px
+                    height: 44px
+                    background: url(../img/ico-hover.jpg) no-repeat
+                    border: 1px solid #d0d0d0
+
+.buy-menu
+    display: block
+    position: absolute
+    padding: 0
+    text-align: center
+    top: 12px
+    right: 0px
+    width: 70px
+    height: 21px
+    border-radius: 5px
+    border: 1px solid #e5e5e5
+    .buy-menu__link
+        display: inline-block
+        vertical-align: baseline
+        width: 70%
+        margin: 0
+        padding: 0
+        font-size: 12px
+        color: $fColor
+        &:hover
+            text-decoration: none
+
+.priceDropdown
+    width: 20%
+    box-sizing: border-box
+    vertical-align: bottom
+    //vertical-align: baseline
+    display: inline-block
+    margin: 0
+    padding: 0
+    &:after
+        position: absolute
+        content: " "
+        top: 0px
+        left: -3px
+        height: 20px
+        width: 1px
+        background-color: #e5e5e5
+    .btn
+        @extend .dropdownButton
+        display: block
+        position: relative
+        padding: 0
+        vertical-align: top
+        min-height: 100%
+        width: 100%
+        border: none
+        background: none
+        height: 20px
+
+.littleSquareAlbums
+    .lineList
+        .lineList__column
+            .caret
+                //display: inline-block
+                position: absolute
+
+    .dropdown-menu
+        @extend .dropdown-menu
+        z-index: 9999
+        position: absolute
+        min-width: 100px
+        //left: auto
+        //right: -2px
+        //top: 18px
+        //top: auto
+        //bottom: 22px
+        list-style-type: none
+        li
+            //position: relative
+            width: 100%
+            //height: auto
+            //text-align: left
+            //display: block
+            //margin: 0
+            //padding: 0
+            a
+                color: #404040
+                font-size: 12px
+                //text-decoration: none
+                &:hover
+                    color: #fff
+                    //text-decoration: none
+
+.btn
+    &:active,&:focus
+        outline: none !important
+
+.inlineCovers
+    height: 120px
+    overflow-x: scroll
+    overflow-y: hidden
+    white-space: nowrap
+    ul
+        @extend .ul-li
+        padding: 0
+        li
+            margin-right: 25px
+            a
+                width: 200px
+                height: 100px
+                border-radius: 8px
+                img
+                    display: block
+
+//SquareAlbums-wrapper
+.SquareAlbums-wrapper
+    position: relative
+    .SquareAlbums-wrapper__title
+        text-transform: capitalize
+        display: inline-block
+        font-size: 20px
+        font-family: $ffr
+        color: $fColor
+    .squareAlbums
+        margin-top: 10px
+    .seeAll
+        top: 0px
+
+.seeAll
+    position: absolute
+    right: 0
+    margin: 0
+    color: $fColor
+    //p
+        margin: 0
+    .caret
+        display: inline-block
+        position: relative
+        margin: 0
+        &:after
+            position: absolute
+            right: auto
+            margin: 0
+            left: 0
+            top: auto
+            bottom: 1px
+
+
+//aside
+aside
+    vertical-align: top
+    padding-left: 30px
+    a
+        display: block
+        color: $fColor
+    h2
+        text-transform: uppercase
+        font-size: 12px
+    ul
+        @extend .ul-li
+        padding: 0
+        border: none
+        box-shadow: none
+        li
+            display: block
+            
+            a
+                font-family: $ffr
+                color: $colorD
+                display: inline-block
+                line-height: 2
+                &:hover
+                    text-decoration: underline
+                    color: $colorD
+    .aside__navigation
+        .dropdown
+            button
+                @extend .dropdownButton
+                font-size: 24px
+            .caret-down
+                position: absolute
+                opacity: 1px solid red
+                left: 70px
+                top: 13px
+                bottom: auto
+                margin: -15px 0 0 5px
+                &:after
+                    top: -10px
+                    bottom: auto
+            font-size: 12px
+            border: none
+        li
+            &:nth-child(2)
+                .dropdown
+                    button
+                        font-size: 16px
+            .dropdown-menu
+                @extend .dropdown-menu
+                top: -10px
+                left: 0px
+                right: auto
+                li
+                    a
+                        padding: 0 10px
+                        line-height: 1.5
+                        &:hover
+                            color: #fff
+
+aside
+    font-size: 11px
+    .Ul1
+        margin-top: 5px
+        margin-bottom: 0px
+        display: block
+        text-align: left
+        li
+            display: inline-block
+            width: 49%
+            padding: 0
+            margin: 0
+            a
+                display: inline-block
+    .Ul2
+        margin-top: 10px
+        padding: 10px 0
+        border-top: 1px solid #e5e5e5
+        display: block
+        li
+            margin-bottom: 0px
+            font-size: 11px
+
+
+.aside__topList-wrapper
+    margin: 10px 0 0 0
+    padding: 0
+
+.aside__top__headLink
+    display: inline-block
+    &:hover
+        text-decoration: none
+        color: $fColor
+        .caret
+            display: inline-block
+    h2
+        margin: 10px 0 0 0
+        .caret
+            display: none
+            margin-left: 5px
+
+.aside__topList
+    margin: 10px 0 0 0
+    padding: 0 0 0 20px
+    .aside__topList__item
+        vertical-align: top
+        position: relative
+        display: block
+        margin: 0 0 5px 0
+        .aside__topList__link
+            @extend .textOverflow
+            line-height: 1.5
+            color: $colorD
+            h3
+                display: block
+                margin: 0
+                color: $fColor
+                @extend .textOverflow
+        &::before/* Добавляем желаемый символ перед элементом списка */ 
+            //content: "1."
+            position: absolute
+            left: -15px
+            top: 0px
+            text-align: right
+        .buy-menu
+            top: 5px
+            text-align: left
+            background-color: #fff
+            .buy-menu__link
+                text-align: center
+                text-decoration: none
+            .dropdown-menu
+                left: auto
+                right: -5px
+                li
+                    a
+                        text-decoration: none
+                        &:hover
+                            color: #fff
+                            //text-decoration: none
+        &:hover
+            padding-right: 75px
+            a
+                text-decoration: underline
+
+
+    .aside__topList__item
+        &:hover
+            .buy-menu__link
+                text-decoration: none
+        &:first-child
+            margin-bottom: 5px
+            .buy-menu
+                top: auto
+                left: auto
+                left: 70px
+                bottom: 10px
+            &:hover
+                padding-right: 0px
+            .aside__topList__link
+                @extend .textOverflow
+                img
+                    display: inline-block
+                    float: left
+                    margin-right: 5px
+                    width: 65px //!important
+                    height: 65px //!important
+                &:hover
+                    img
+                        opacity: 0
+                        display: block
+                        background: url(../img/ico-hover.jpg) no-repeat
+                        z-index: 9999
+                        cursor: pointer
+                    &::after
+                        position: absolute
+                        display: block
+                        content: ""
+                        top: 0
+                        left: 0
+                        width: 65px
+                        height: 65px
+                        background: url(../img/ico-hover-big.jpg) no-repeat
+                        border: 1px solid #d0d0d0
+
+.aside__topList
+    .aside__topList__item
+        .buy-menu
+            .btn
+                position: relative
+            .caret-down
+                position: absolute
+                top: 0px
+                left: 2px
+                &:after
+                    height: 7px
+
+
+.aside__topList
+    .aside__topList__item
+        &:nth-child(1)
+            &::before/* Добавляем желаемый символ перед элементом списка */ 
+                content: "1."
+        &:nth-child(2)
+            &::before
+                content: "2."
+        &:nth-child(3)
+            &::before
+                content: "3."
+        &:nth-child(4)
+            &::before 
+                content: "4."
+        &:nth-child(5)
+            &::before
+                content: "5."
+        &:nth-child(6)
+            &::before
+                content: "6."
+        &:nth-child(7)
+            &::before
+                content: "7."
+        &:nth-child(8)
+            &::before
+                content: "8."
+        &:nth-child(9)
+            &::before
+                content: "9."
+        &:nth-child(10)
+            &::before
+                content: "10."
+                left: -23px
+
+
+footer
+    display: block
+    position: relative
+    max-width: $max-width
+    border-top: 1px solid #eee
+    ul
+        margin: 0
+        padding: 0
+        vertical-align: top
+        li
+            display: block
+            h2
+                font-size: 12px
+                font-family: $fft
+                margin-bottom: 5px
+                color: $fColor
+            a
+                color: $fColor
+                font-size: 11px
+                &:hover
+                    color: $fColor
+
+
+a, a:hover, a:active, a:focus
+    outline: none
+
+
+/*        --- 2 page ----             */
+.artistPreview
+    display: block
+    text-align: center
+    margin: 0 auto
+    //outline: 1px solid red
+    img
+        display: inline-block
+        margin: 0 auto
+        max-width: 100%
+        background-size: cover
+        //outline: 1px solid red
+
+.col_000017
+    background: #000017
+
+.breadcrumbs
+    a
+        margin-right: 15px
+        position: relative
+        color: #000
+        &:after
+            content: ""
+            position: absolute
+            top: 30%
+            display: inline-block
+            width: 0
+            height: 0
+            vertical-align: baseline
+            border-top: 4px solid transparent
+            border-bottom: 4px solid transparent
+            border-left: 4px solid #000
+            margin: 0 7px
+
+.music-container_center
+    .breadcrumbs
+        position: absolute
+        left: 15px
+        top: 30px
+        a
+            color: $fColor
+            &:after
+                border-left: 4px solid $fColor
+    position: relative
+    .SquareAlbums-wrapper
+        .SquareAlbums-wrapper__title
+            font-size: 16px
+    .nav-tabs
+        display: inline-block
+        position: absolute
+        right: 30px
+        top: 200px
+        li
+            margin-right: 20px
+
+    .tab-content
+        .tab-pane
+            margin: 0
+            min-height: 450px
+            text-align: left
+            &>p
+                max-width: 1000px
+                margin: 20px auto 0 auto
+                text-align: justify
+                line-height: 1.4
+                padding: 0
+        article
+            margin-top: 20px
+        //.SquareAlbums-wrapper
+            margin-top: 20px
+            //height: 220px
+            //overflow-x: scroll
+            //overflow-y: hidden
+            //white-space: nowrap
+            .squareAlbums
+                height: auto
+                max-height: none
+                height: 185px
+                //overflow-x: scroll
+                overflow-y: hidden
+                overflow-x: hidden
+                white-space: nowrap
+                white-space: normal
+                
+        //.squareAlbums
+            height: auto
+            max-height: none
+            overflow: visible
+            //overflow: hidden
+            //height: 220px
+            //overflow-x: scroll
+            //overflow-y: hidden
+            //white-space: nowrap
+            display: block     /* display flex */
+            li
+                margin-top: 10px
+                margin-bottom: 10px
+                p
+                    color: $color-style
+
+        //.lineList .lineList__column .lineList__column__block 
+        .lineList__link
+            color: $fColor
+            h3,p
+                color: $fColor
+        .littleSquareAlbums .seeAll
+            top: -20px
+        //.listHead
+            display: inline-block
+            font-size: 16px
+            vertical-align: baseline
+            margin: 15px 10px 0 0
+            line-height: 1.5
+        .no-border
+            &:after
+                background: none
+            .btn
+                .caret-down
+                    left: auto
+                    right: -20px
+        .priceDropdown
+            display: inline-block
+            //vertical-align: baseline
+            line-height: 1.5
+            width: auto
+            height: auto
+            padding-right: 15px
+            button
+                line-height: 1.1
+                display: inline-block
+                .caret
+                    position: absolute
+
+    //.artist-list-tag
+        //margin: 10px auto 0 auto
+        //&>li
+            margin: 0 20px 0 0
+            padding-bottom: 30px
+        h2
+            //white-space: normal
+            padding: 0 5px 0 0
+        .buy-menu
+            //position: static
+            border: 1px solid $color-style
+            top: auto
+            bottom: 0px
+            left: 0px
+            .buy-menu__link
+                color: $color-style
+            .dropdown-menu
+                //height: auto
+                li
+                    width: 100px
+                    display: block
+
+.artistGalleryUl
+    padding: 0 
+    li
+        display: inline-block
+        margin: 0 0 10px 5px
+        img
+            display: block
+
+.artistTabInfo__artistbiography
+    display: inline-block
+    width: 75%
+    padding-right: 20px
+    vertical-align: top
+    h3
+        margin: 0 0 15px 0
+    p
+        margin: 10px 0 0 0
+.artistTabInfo-sidebar
+    width: 24%
+    display: inline-block
+    vertical-align: top
+.artistTabInfo-sidebar__ul
+    padding: 0
+    @extend .ul-li
+    li
+        display: inline-block
+        width: 49%
+        margin: 0 -5px 5px 0
+        //margin: 0
+        @extend .textOverflow
+        a
+            display: block
+            &:hover
+                //p
+                    text-decoration: underline
+                    text-decoration-color: $color-style /*!important*/
+                    -moz-text-decoration-color: $color-style /*!important*/
+                    -o-text-decoration-color: $color-style /*!important*/
+                    -webkit-text-decoration-color: $color-style /*!important*/
+            p
+                line-height: 1.8
+                @extend .textOverflow
+                font-size: 12px
+        p
+            margin: 0
+            padding-right: 10px
+            font-size: 13px
+            color: $fColor
+            @extend .textOverflow
+            //@extend .color-style
+            //&:nth-child(2)
+                margin-top: 4px
+            &:first-child
+                color: $fColor 
+        img
+            width: 43px
+            height: 43px
+            border: 2px solid #fff
+            float: left
+            margin-right: 5px
+            
+.music-container_center .artist-list-tag 
+    .buy-menu 
+        .dropdown-menu
+            //top: auto
+            //bottom: 23px
+            //right: -57px
+            //left: auto
+            li
+                margin: 0
+                a
+                    &:hover
+                        text-decoration: none
+                        color: #fff
+
+.buy-menu 
+    .dropdown-menu
+        top: auto
+        bottom: 23px
+        right: -4px
+        left: auto
+/* -------------      Artist page styles     -----------------------*/
+body.darkAlbum-style
+    background: #1E1E1E    /*change background*/
+    //background:    // any color
+    //position: relative
+    footer
+        margin-top: 200px
+    a
+        color: #FFF
+        h2
+            margin: 0
+        h3
+            margin: 10px 0 0 0
+    .buy-menu
+        .priceDropdown
+            .dropdown-menu
+                li
+                    a
+                        color: #000
+                    &:hover
+                        a
+                            color: #fff
+    .ArtistBackgroundImage
+        position: absolute
+        right: 0
+        top: 35px
+        z-index: -1
+    .header__mainMenu
+        //background: #fff
+    .music-container
+        position: relative
+    .tab-content 
+        //.squareAlbums
+            max-height: 200px
+    .breadcrumbs
+        display: block
+        position: absolute
+        top: 5px
+        left: 15px
+        a:after
+            border-left: 4px solid #FFF
+    .album, .art
+        display: inline-block
+        margin: 30px -1px 0 -1px
+        vertical-align: top
+        min-height: 600px
+        color: #000
+        h4, h3, h2, a, p, span, td, th, tr, .buy-menu > a
+            color: $album-text-color
+    .album
+        .buy-menu 
+            .dropdown-menu
+                bottom: -51px
+                right: 0
+        width: 220px
+        p
+            margin: 30px auto 20px auto
+            padding: 10px 0 0 0
+            font-size: 14px
+            border-top: 1px solid #383838
+        .buy-menu
+            position: relative
+            width: 90%
+            margin: 0 auto
+            height: auto
+            &>a
+                display: inline-block
+                width: 80%
+                margin: 0 -1px
+                font-size: 16px
+                padding: 2px 0
+                &:hover
+                    text-decoration: none
+            .priceDropdown
+                width: 20%
+                margin: 0 -1px
+                .btn
+                    height: 25px
+                &:after
+                    top: -1px
+                    left: -3px
+                    height: 27px
+        &>a
+            display: block
+            img
+                display: block
+                width: 220px
+                height: 220px
+    .art
+        width: calc(100% - 220px)
+        //margin-bottom: 200px
+        padding-left: 30px
+        h3
+            font-size: 18px
+        .review
+            border: 1px solid $album-text-color
+            border-radius: 4px
+            font-size: 12px
+            margin-top: 15px
+            display: inline-block
+            padding: 1px 8px
+            &:hover
+                text-decoration: none
+    .nav-tabs
+        margin: 130px 0 0 0
+        border-bottom: 1px solid #383838
+        li
+            margin: 0 10px 5px 0
+            padding: 5px 10px
+            &.active
+                background: #191919
+                border-radius: 7px
+            &:hover
+                a
+                    color: #e5e5e5
+            a
+                color: #BCBCBC
+    .tab-pane
+        h3
+            margin: 20px 0 5px 0
+        &:nth-child(3)
+            .squareAlbums
+                h2
+                    margin: 5px 0
+                    //white-space: normal
+                .buy-menu
+                    position: static
+                    .dropdown-menu
+                        max-width: 123px
+                        //left: -32px
+                        //right: auto
+                        li
+                            display: block
+                            margin: 0
+                            width: auto
+                            a
+                                display: block
+                                &:hover
+                                    text-decoration: none
+        //.squareAlbums
+            margin: 0 0 0 -20px
+    table
+        width: 100%
+        th
+            font-weight: normal
+            text-transform: uppercase
+            .caret
+                position: relative
+                left: 10px
+        tr
+            border-bottom: 1px solid #383838
+            &:hover
+                td:first-child
+                    span
+                        visibility: hidden
+                    background: url("../img/ico_play_white.svg") no-repeat
+                    background-position: 0 3px
+                    cursor: pointer
+            td:nth-child(3):hover
+                a
+                    text-decoration: none
+            td
+                &:nth-child(6)
+                    .popularityScale
+                        width: 100%
+                        display: block
+                        span
+                            display: inline-block
+                            width: 1px
+                            height: 18px 
+                            vertical-align: middle
+                            margin-right: 2px
+                            background: #383838
+                            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+                                background: #FFF
+            &:last-child
+                border-bottom: none
+        .no-play
+            &:hover
+                td:first-child
+                    background: none
+        th
+            &:nth-child(1)
+                width: 2%
+            &:nth-child(2)
+                width: 43%
+            &:nth-child(3)
+                width: 3.5%
+            &:nth-child(4)
+                width: 29.5%
+            &:nth-child(5)
+                width: 5%
+            &:nth-child(6)
+                width: 9%
+            &:nth-child(7)
+                width: 8%
+        .buy-menu
+            position: static
+            width: auto
+            margin: 3px 0
+            .caret-down
+                position: absolute
+                left: 4px
+            .priceDropdown
+                margin: 0 -1px
+                .dropdown-menu
+                    li
+                        a
+                            color: #000
+                        &:hover
+                            a
+                                color: #fff
+
+.not-active
+    border: none
+    &>a
+        pointer-events: none
+        cursor: default
+    .priceDropdown
+        &:after
+            display: none
+
+.art
+    h4
+        display: inline-block
+        margin: 10px 10px 0 0
+
+/* raiting stars */
+/*sprite with stars*/
+#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label 
+    background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat
+    background: url('../img/rsz_stars.png') no-repeat
+
+#reviewStars-input 
+    /*fix floating problems*/
+    overflow: hidden
+    vertical-align: bottom
+    display: inline-block
+    line-height: 1
+    text-align: left
+    /*zoom: 1*/
+    /*end of fix floating problems*/
+    position: relative
+
+#reviewStars-input input 
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0)
+    opacity: 0
+    width: 22px
+    height: 20.5px
+    position: absolute
+    background-size: cover
+    top: 0
+    z-index: 0
+
+#reviewStars-input input:checked ~ label 
+    background-position: 0 -21px
+    width: 22px
+    height: 20.5px
+
+#reviewStars-input label 
+    background-position: 0 0
+    width: 22px
+    height: 20.5px
+    float: right
+    cursor: pointer
+    margin-right: 10px
+    position: relative
+    z-index: 1
+
+#reviewStars-input label:hover, #reviewStars-input label:hover ~ label 
+    background-position: 0 -21px
+    width: 22px
+    height: 20.5px
+
+#reviewStars-input #star-0 
+    left: 0px
+    left: -75px
+#reviewStars-input #star-1 
+    left: 53px
+    left: -22px
+#reviewStars-input #star-2 
+    left: 106px
+    left: 31px
+#reviewStars-input #star-3 
+    left: 159px
+    left: 84px
+#reviewStars-input #star-4 
+    left: 212px
+    left: 137px
+#reviewStars-input #star-5 
+    left: 265px
+    left: 190px
+
+
+body.lightAlbum-style
+    @extend .darkAlbum-style
+    //background:    // any light color or nothing
+    background: none
+    a
+        color: #000
+    //color: $fColor
+    .album, .art
+        display: inline-block
+        margin: 30px -1px 0 -1px
+        vertical-align: top
+        color: #000
+        h4, h3, h2, a, p, span, td, th, tr, .buy-menu > a
+            color: $fColor
+    .squareAlbumsWithPrice
+        li
+            p
+                color: #9E9EA5
+    .breadcrumbs
+        a:after
+            border-left: 4px solid $fColor
+    .nav-tabs
+        border-bottom: 1px solid #e5e5e5
+        li
+            &.active
+                background: #e5e5e5
+
+/* simple style*/
+.UlTitle
+    margin-bottom: 0
+    display: inline-block
+    font-size: 16px
+    //vertical-align: baseline
+    margin: 15px 10px 0 0
+    line-height: 1.5

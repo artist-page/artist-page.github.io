@@ -1,0 +1,636 @@
+$color: #D8D8D8
+$colorD: rgb(146, 148, 150)
+$fColor: rgb(78,78,78)
+$fft: "MyriadProSemiBold", Roboto, sans-serif
+$ffr: "MyriadProRegular", Roboto, sans-serif
+$ffb: "MyriadProBold", Roboto, sans-serif
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+    .centerMenu
+        ul
+            text-align: left
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) 
+    
+    .leftMenu
+        display: none
+    .centerMenu
+        display: none
+    .lineToggle
+        height: 50px
+        height: 10vh
+        margin: 0
+        z-index: 1
+        border-bottom: 1px solid $fColor
+        background-color: #fff
+        text-align: center
+        h2
+            display: inline-block
+            font-size: 18px
+            line-height: 10vh
+            margin: 0
+            color: $fColor
+
+    #togMenu
+        position: absolute
+        top: 10vh
+        right: 0
+        height: 90vh
+        width: 100%
+        display: none
+        background: #fff
+        color: #999
+        margin: auto
+        text-align: left
+        z-index: 100
+        box-shadow: 0 1px 8px rgba(0,0,0,0.05)
+        opacity: 0
+        visibility: hidden
+        transition: opacity .4s
+        ul
+            display: block
+            padding: 0 0 0 10px
+            margin: 0
+            li
+                display: block
+                position: relative
+                height: 8vh
+                border-bottom: 1px solid #eee
+                &:last-child
+                    border: none
+                img
+                    width: 6vh
+                    height: 6vh
+                    line-height: 8vh
+                    display: inline-block
+                    margin: 0 10px 0 0
+                a
+                    display: inline-block
+                    line-height: 8vh
+                    color: $fColor
+                &.active,&:active
+                    a
+                        color: #2677C5
+                        text-decoration: none
+                    &::after
+                        content: " "
+                        position: absolute
+                        display: block
+                        width: 4vh
+                        height: 4vh
+                        background: url(../img/ico_check.svg) no-repeat
+                        background-size: contain
+                        top: 2vh
+                        right: 1vh
+
+    #togMenu:after
+        display: none
+
+    #toggleButton 
+        display: block
+        width: 30px
+        height: 28px
+        position: absolute
+        z-index: 999
+        top: 25px
+        right: 10px
+        margin: 0
+
+    #toggleButton span:after,
+    #toggleButton span:before 
+        content: " "
+        position: absolute
+        left: 0
+        top: -9px
+
+    #toggleButton span:after
+        top: 9px
+
+    #toggleButton span 
+        position: relative
+        display: block
+
+    #toggleButton span,
+    #toggleButton span:after,
+    #toggleButton span:before
+        width: 100%
+        height: 5px
+        background-color: #888
+        transition: all 0.3s
+        backface-visibility: hidden
+        border-radius: 2px
+
+    /* on activation */
+    #toggleButton.on span 
+        background-color: transparent
+
+    #toggleButton.on span:before 
+        transform: rotate(45deg) translate(5px, 5px)
+
+    #toggleButton.on span:after 
+        transform: rotate(-45deg) translate(7px, -8px)
+
+    #toggleButton.on + #togMenu
+        opacity: 1
+        visibility: visible
+        display: block
+
+
+/*==========  Mobile First Method  ==========*/
+@media only screen and (min-width: 320px)
+
+    .music-container_margin
+        padding: 0 10px
+        margin: 20px auto 0px auto 
+
+    .music-content
+        width: 100%
+        .seeAll
+            top: 3px
+            right: 0px
+            .caret
+                display: inline-block
+
+        .h-title
+            position: static
+            display: block
+            margin: 0
+        .nav
+            margin-top: 15px
+            li
+                &:first-child
+                    margin-left: 0px
+    
+    .squareAlbums
+        //height: 183px
+        //overflow-x: scroll
+        //white-space: nowrap
+        //li
+            margin: 0 15px 10px 0
+    .music-container_center
+        .squareAlbums
+            white-space: normal
+
+    .littleSquareAlbums
+        //margin-bottom: 20px
+        width: 100%
+        .seeAll
+            top: 5px
+        .lineList
+            padding: 0
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-wrap: wrap
+            flex-direction: row
+            justify-content: space-between
+            .lineList__column
+                //width: 95%
+                width: 100%
+                &:first-child
+                    display: inline-block
+                .lineList__column__block
+                    &:hover
+                        img
+                            //opacity: 10 if need to hide img
+
+
+    .inlineCovers
+        //margin-top: 20px
+        ul
+            li
+                margin-right: 10px
+
+    .SquareAlbums-wrapper
+        .SquareAlbums-wrapper__title
+            margin: 0
+        .squareAlbums
+            //white-space: nowrap
+            //overflow-y: scroll
+
+
+    aside
+        display: none
+
+    footer
+        margin: 0 auto
+        padding: 20px 15px 10px 15px
+        ul
+            display: block
+            height: 40px
+            overflow-x: auto
+            overflow-y: hidden
+            white-space: nowrap
+            width: 100%
+            margin-bottom: 5px
+            li
+                display: inline-block
+                margin: 0 5px 0 0
+                h2
+                    margin: 0
+
+
+@media only screen and (min-width: 480px)
+    .music-content
+        .h-title
+            position: absolute
+            line-height: 1
+            top: 0
+            display: inline-block
+            margin: 0
+
+        .nav
+            li
+                &:first-child
+                    margin-left: 130px 
+
+
+@media only screen and (min-width: 580px)
+    .littleSquareAlbums
+        .lineList
+            .lineList__column
+                width: 46%
+                //margin-right: 3%
+                &:first-child,&:nth-child(2)
+                    display: inline-block
+
+
+@media only screen and (min-width: 768px)
+    .littleSquareAlbums
+        .lineList
+            .lineList__column
+                width: 30%
+                &:first-child,&:nth-child(2),&:nth-child(3)
+                    display: inline-block
+
+    footer
+        margin: 20px auto 0 auto
+        ul
+            display: inline-block
+            width: 20%
+            height: auto
+            overflow-x: auto
+            overflow-y: auto
+            white-space: normal
+            li
+                display: block
+                &:first-child
+                    margin-bottom: 5px
+
+@media only screen and (min-width: 1000px)
+    
+    .aside__topList
+        .aside__topList__item
+            .buy-menu
+                display: none
+            &:hover
+                .buy-menu
+                    display: block
+
+    .Carousel
+        .owl-carousel
+            .item
+                img
+                    height: 260px
+
+    .music-container_margin
+        padding: 0 15px
+        margin: 35px auto 0 auto
+
+    .music-content
+        width: 75%
+        display: inline-block
+        vertical-align: top
+        margin-top: 10px
+        .nav
+            margin-top: 0
+
+    .littleSquareAlbums
+        margin-top: 25px
+
+    //aside
+    aside
+        width: 24%
+        display: inline-block
+        
+    .inlineCovers
+        margin-top: 30px
+
+    .SquareAlbums-wrapper
+        //.SquareAlbums-wrapper__title
+            margin: 0 0 0 20px
+        //.squareAlbums        /*  здесь косяк  */
+            //height: 160px
+            //white-space: normal
+            white-space: nowrap
+            overflow-y: hidden
+            //overflow-y: scroll
+            overflow-x: hidden
+            //overflow-x: scroll
+        //ul
+            li
+                margin: 0 20px 10px 0
+    .music-content
+        .tab-pane
+            margin-left: -20px
+    
+    //.squareAlbums
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-between
+        height: auto
+        max-height: 335px
+        overflow: hidden
+        li
+            margin: 0 0 15px 20px
+    .noScrollForFlex
+        //flex-wrap: wrap
+        //flex-direction: row
+    .aside__topList
+        .aside__topList__item
+            .buy-menu
+                display: none
+            &:hover
+                .buy-menu
+                    display: block
+
+    footer
+        padding: 20px 15px 10px 15px
+        ul
+            display: inline-block
+            width: 190px
+
+@media only screen and (min-width: 1200px)
+    .music-content
+        width: 80%
+
+    aside
+        width: 19%
+
+@media only screen and (min-width: 1300px)
+    .music-content
+        width: 80%
+
+    .littleSquareAlbums
+        .lineList
+            .lineList__column
+                width: 23%
+                //margin-right: 1.5%
+                &:first-child,&:nth-child(2),&:nth-child(3),&:nth-child(4)
+                    display: inline-block
+
+@media only screen
+    .SquareAlbums-wrapper
+        margin-top: 10px
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+    .aside__topList
+        .aside__topList__item
+            .priceDropdown
+                display: block
+            &:hover
+                .priceDropdown
+                    display: block
+            padding-right: 75px
+            &:first-child
+                padding: 0 0 0 0
+
+    .priceDropdown 
+        .dropdown-menu
+            left: auto
+            right: 0px
+            
+
+/* Smartphones (landscape) ----------- */
+//@media only screen and (min-width : 321px) 
+    .aside__topList
+        .aside__topList__item
+            .priceDropdown
+                display: block
+            &:hover
+                .priceDropdown
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+    .aside__topList
+        .aside__topList__item
+            .priceDropdown
+                display: block
+            &:hover
+                .priceDropdown
+                    display: block
+            padding-right: 75px
+            &:first-child
+                padding: 0 0 0 0
+    
+    .priceDropdown 
+        .dropdown-menu
+            left: auto
+            right: 0px
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) 
+    .aside__topList
+        .aside__topList__item
+            .priceDropdown
+                display: block
+            &:hover
+                .priceDropdown
+                    display: block
+            padding-right: 75px
+            &:first-child
+                padding: 0 0 0 0
+    
+    .priceDropdown 
+        .dropdown-menu
+            left: auto
+            right: 0px
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) 
+    .aside__topList
+        .aside__topList__item
+            .priceDropdown
+                display: block
+            &:hover
+                .priceDropdown
+                    display: block
+            padding-right: 75px
+            &:first-child
+                padding: 0 0 0 0
+    
+    .priceDropdown 
+        .dropdown-menu
+            left: auto
+            right: 0px
+
+/* The New iPad (iPad 3) ----------- */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) 
+    .aside__topList
+        .aside__topList__item
+            .priceDropdown
+                display: inline-block
+            &:hover
+                .priceDropdown
+                    display: inline-block
+            padding-right: 75px
+            &:first-child
+                padding: 0 0 0 0
+
+    .priceDropdown 
+        .dropdown-menu
+            left: auto
+            right: 0px
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) 
+    .aside__topList
+        .aside__topList__item
+            .priceDropdown
+                display: inline-block
+            &:hover
+                .priceDropdown
+                    display: inline-block
+            padding-right: 75px
+            &:first-child
+                padding: 0 0 0 0
+    
+    .priceDropdown 
+        .dropdown-menu
+            left: auto
+            right: 0px
+            
+
+@media only screen and (max-width : 1500px)
+    body.album-style
+        table
+            th
+                &:nth-child(2)
+                    width: 42%
+                &:nth-child(4)
+                    width: 29%
+                &:nth-child(7)
+                    width: 9%
+
+@media only screen and (max-width : 1300px)
+    body.album-style
+        table
+            th
+                &:nth-child(1)
+                    width: 3%
+                &:nth-child(2)
+                    width: 30%
+                &:nth-child(4)
+                    width: 25%
+                &:nth-child(6)
+                    width: 11%
+                &:nth-child(7)
+                    width: 11%
+ 
+
+@media only screen and (max-width : 1200px)
+    .artistTabInfo__artistbiography
+        display: block
+        width: 100%
+        margin: 20px auto 0 auto
+    .artistTabInfo-sidebar
+        width: 100%
+        margin: 20px auto 0 auto
+        display: block
+    
+
+@media only screen and (max-width : 1000px)
+    //.SquareAlbums-wrapper 
+        .squareAlbums
+            white-space: nowrap
+            overflow-x: scroll
+            overflow-y: hidden
+            height: 190px
+    body.album-style
+        table
+            th
+                &:nth-child(2)
+                    width: 35%
+                &:nth-child(6)
+                    width: 13%
+                &:nth-child(7)
+                    width: 22%
+    //.squareAlbums
+        white-space: nowrap
+        overflow-x: scroll
+        overflow-y: hidden
+        min-height: 180px
+    body.album-style 
+        .tab-content 
+            .squareAlbums
+                max-height: none
+                min-height: 210px
+        .tab-pane 
+            .squareAlbums
+                margin: 0 0 10px 0
+            .littleSquareAlbums
+                margin-top: 20px
+    
+    section
+        //.flexBehavior
+        .squareAlbums, .squareAlbumsWithPrice
+            display: inline-block
+            white-space: nowrap
+            //flex-wrap: wrap
+            //flex-direction: row
+            //justify-content: space-between
+            height: 190px
+            //height: 205px
+            overflow-y: hidden
+            overflow-x: scroll
+            li
+                display: inline-block
+        .two-lines
+            //white-space: normal
+            //height: auto
+            //overflow: hidden
+            //max-height: 335px
+            li:first-child
+                margin-left: 0
+        .squareAlbumsWithPrice
+            height: 215px
+            
+
+
+@media only screen and (max-width : 900px)
+    body.album-style
+        table
+            font-size: 12px
+                
+@media only screen and (max-width : 768px)
+    .music-container_center
+        .nav-tabs
+            top: 150px
+        .artist-list-tag > li
+            margin: 0 16px 0 0
+        .breadcrumbs
+            top: 100px
+        .tab-content .tab-pane > p,h3 
+            margin-top: 40px
+        aside
+            padding-left: 0
+
+@media only screen and (max-width : 480px)
+    .music-container_center
+        .nav-tabs
+            top: 80px
+            right: 0px
+        .artistTabInfo-sidebar__ul li p 
+            padding-right: 20px
