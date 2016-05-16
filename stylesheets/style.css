@@ -1963,19 +1963,24 @@ body.lightAlbum-style .nav-tabs li.active {
   line-height: 1.45;
 }
 
-/* line 1573, ../sass/style.sass */
-body section div .show-more {
-  color: blue !important;
-  color: #fff;
+/* line 1570, ../sass/style.sass */
+.showText {
+  display: none;
+  color: cyan;
   text-decoration: underline;
 }
 
-/* line 1580, ../sass/style.sass */
+/* line 1574, ../sass/style.sass */
+.showingText {
+  display: inline;
+}
+
+/* line 1579, ../sass/style.sass */
 .onlyPrice .buy-menu__link {
   display: inline-block;
   width: 100%;
 }
-/* line 1583, ../sass/style.sass */
+/* line 1582, ../sass/style.sass */
 .onlyPrice .priceDropdown {
   display: none;
 }

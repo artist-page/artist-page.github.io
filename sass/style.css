@@ -1633,18 +1633,22 @@ body.lightAlbum-style {
   margin: 0 10px 0 0;
   line-height: 1.45; }
 
-/* line 1573, M:/Sites/9 itunes-istore/sass/style.sass */
-body section div .show-more {
-  color: blue !important;
-  color: #fff;
+/* line 1570, M:/Sites/9 itunes-istore/sass/style.sass */
+.showText {
+  display: none;
+  color: cyan;
   text-decoration: underline; }
 
-/* line 1580, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1574, M:/Sites/9 itunes-istore/sass/style.sass */
+.showingText {
+  display: inline; }
+
+/* line 1579, M:/Sites/9 itunes-istore/sass/style.sass */
 .onlyPrice .buy-menu__link {
   display: inline-block;
   width: 100%; }
 
-/* line 1583, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1582, M:/Sites/9 itunes-istore/sass/style.sass */
 .onlyPrice .priceDropdown {
   display: none; }
 
