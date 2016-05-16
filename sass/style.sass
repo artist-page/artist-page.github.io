@@ -166,6 +166,10 @@ h1,h2,h3,h4,h5
 .grayBorderB
     border-bottom: 1px solid #e5e5e5
 
+.show-more
+    //display: none
+.tooltip
+    //display: inline
 //main-menu
 .header__mainMenu
     position: relative
@@ -201,8 +205,7 @@ h1,h2,h3,h4,h5
                     font-size: 20px
         .iconsMenu
             display: inline-block
-            top: -1px
-            position: relative
+            margin-top: 1.5px
             a
                 font-size: 18px
                 vertical-align: middle
@@ -278,7 +281,7 @@ h1,h2,h3,h4,h5
                 a
                     color: inherit
                 &.active, :hover
-                    background-color: rgba(0, 113, 255, 0.4)
+                    background-color: rgba(0, 113, 255, 0.5)
                     a
                         color: #0DA0FF
     .leftMenu
@@ -413,7 +416,7 @@ h1,h2,h3,h4,h5
         margin-top: 5px
         .dropdown-menu
             left: auto
-    >li
+    &>li
         width: 125px
         position: relative
         vertical-align: top
@@ -429,10 +432,10 @@ h1,h2,h3,h4,h5
                 //text-decoration: underline
                 h2,p
                     text-decoration: underline
-                    text-decoration-color: $color-style !important
-                    -moz-text-decoration-color: $color-style !important
-                    -o-text-decoration-color: $color-style !important
-                    -webkit-text-decoration-color: $color-style !important
+                    text-decoration-color: $color-style
+                    -moz-text-decoration-color: $color-style
+                    -o-text-decoration-color: $color-style
+                    -webkit-text-decoration-color: $color-style 
         h2
             font-size: 12px
             margin: 5px 0 0 0
@@ -511,6 +514,7 @@ section
 
 .littleSquareAlbums
     position: relative
+    margin-top: 15px
     h2
         font-size: 18px
         margin: 0 0 10px 0
@@ -660,6 +664,7 @@ section
     overflow-x: scroll
     overflow-y: hidden
     white-space: nowrap
+    margin-top: 20px
     ul
         @extend .ul-li
         padding: 0
@@ -675,6 +680,7 @@ section
 //SquareAlbums-wrapper
 .SquareAlbums-wrapper
     position: relative
+    margin-top: 10px
     .SquareAlbums-wrapper__title
         text-transform: capitalize
         display: inline-block
@@ -682,7 +688,7 @@ section
         font-family: $ffr
         color: $fColor
     .squareAlbums
-        margin-top: 10px
+        margin-top: 15px
     .seeAll
         top: 0px
 
@@ -1079,25 +1085,26 @@ a, a:hover, a:active, a:focus
             vertical-align: baseline
             margin: 15px 10px 0 0
             line-height: 1.5
-        .no-border
+        .toSort
+            line-height: 1.5
             &:after
                 background: none
             .btn
                 .caret-down
                     left: auto
                     right: -20px
-        .priceDropdown
+    .priceDropdown
+        display: inline-block
+        //vertical-align: baseline
+        //line-height: 1.4
+        width: auto
+        height: auto
+        padding-right: 15px
+        button
+            line-height: 1.1
             display: inline-block
-            //vertical-align: baseline
-            line-height: 1.5
-            width: auto
-            height: auto
-            padding-right: 15px
-            button
-                line-height: 1.1
-                display: inline-block
-                .caret
-                    position: absolute
+            .caret
+                position: absolute
 
     //.artist-list-tag
         //margin: 10px auto 0 auto
@@ -1207,12 +1214,29 @@ body.darkAlbum-style
     background: #1E1E1E    /*change background*/
     //background:    // any color
     //position: relative
+    .header__mainMenu
+        .centerMenu
+            ul 
+                li 
+                    &.active, :hover
+                        background-color: rgba(11, 134, 243, 0.25)
+                        a
+                            color: #0DA0FF
+                    a
+                        color: #fff
+        .iconsMenu
+            a
+                &.active, :hover
+                    background-color: rgba(11, 134, 243, 0.25)
+                    color: #0DA0FF
+                    border: none
     footer
         margin-top: 200px
     a
         color: #FFF
         h2
             margin: 0
+            text-transform: uppercase
         h3
             margin: 10px 0 0 0
     .buy-menu
@@ -1224,11 +1248,6 @@ body.darkAlbum-style
                     &:hover
                         a
                             color: #fff
-    .ArtistBackgroundImage
-        position: absolute
-        right: 0
-        top: 35px
-        z-index: -1
     .header__mainMenu
         //background: #fff
     .music-container
@@ -1284,16 +1303,33 @@ body.darkAlbum-style
                     top: -1px
                     left: -3px
                     height: 27px
+        .albumLinksContainer
+            a
+                h3,h2, .caret
+                    display: none
         &>a
-            display: block
             img
                 display: block
                 width: 220px
                 height: 220px
+                margin-bottom: 20px
+        //br
+            display: none
     .art
         width: calc(100% - 220px)
         //margin-bottom: 200px
         padding-left: 30px
+        .art__content
+            &>a
+                &:hover
+                    text-decoration: underline
+                h2,h3
+                    display: inline-block
+                
+                .caret
+                    line-height: 1.5
+                    margin: 0 0 0 8px
+                    vertical-align: baseline
         h3
             font-size: 18px
         .review
@@ -1364,19 +1400,18 @@ body.darkAlbum-style
                 a
                     text-decoration: none
             td
-                &:nth-child(6)
-                    .popularityScale
-                        width: 100%
-                        display: block
-                        span
-                            display: inline-block
-                            width: 1px
-                            height: 18px 
-                            vertical-align: middle
-                            margin-right: 2px
-                            background: #383838
-                            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
-                                background: #FFF
+                .popularityScale
+                    width: 100%
+                    display: inline-block
+                    span
+                        display: inline-block
+                        width: 1px
+                        height: 18px 
+                        vertical-align: middle
+                        margin: 0 2px 0 0
+                        background: #383838
+                        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+                            background: #FFF
             &:last-child
                 border-bottom: none
         .no-play
@@ -1385,22 +1420,21 @@ body.darkAlbum-style
                     background: none
         th
             &:nth-child(1)
-                width: 2%
+                width: 3%
             &:nth-child(2)
-                width: 43%
+                width: 32%
             &:nth-child(3)
-                width: 3.5%
+                width: 33%
             &:nth-child(4)
-                width: 29.5%
+                width: 10%
             &:nth-child(5)
-                width: 5%
+                width: 15%
             &:nth-child(6)
                 width: 9%
-            &:nth-child(7)
-                width: 8%
         .buy-menu
             position: static
             width: auto
+            width: 100px
             margin: 3px 0
             .caret-down
                 position: absolute
@@ -1415,6 +1449,12 @@ body.darkAlbum-style
                             a
                                 color: #fff
 
+.ArtistBackgroundImage
+    position: absolute
+    right: 0
+    top: 35px
+    z-index: -1
+
 .not-active
     border: none
     &>a
@@ -1423,6 +1463,7 @@ body.darkAlbum-style
     .priceDropdown
         &:after
             display: none
+
 
 .art
     h4
@@ -1477,22 +1518,16 @@ body.darkAlbum-style
     height: 20.5px
 
 #reviewStars-input #star-0 
-    left: 0px
     left: -75px
 #reviewStars-input #star-1 
-    left: 53px
     left: -22px
 #reviewStars-input #star-2 
-    left: 106px
     left: 31px
 #reviewStars-input #star-3 
-    left: 159px
     left: 84px
 #reviewStars-input #star-4 
-    left: 212px
     left: 137px
 #reviewStars-input #star-5 
-    left: 265px
     left: 190px
 
 
@@ -1529,5 +1564,22 @@ body.lightAlbum-style
     display: inline-block
     font-size: 16px
     //vertical-align: baseline
-    margin: 15px 10px 0 0
-    line-height: 1.5
+    margin: 0 10px 0 0
+    line-height: 1.45
+
+body
+    section
+        div
+            .show-more
+                color: blue !important
+                color: #fff
+                text-decoration: underline
+
+.onlyPrice
+    //position: static
+    .buy-menu__link
+        display: inline-block
+        width: 100%
+    .priceDropdown
+        display: none
+        

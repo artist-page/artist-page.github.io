@@ -26,6 +26,23 @@ $("#togMenu li").click(function(e) {
   $(this).addClass('active');
 })
 
+//$('.buy-menu').addClass('onlyPrice');
+
+
+function showTooltip()
+{
+var myDiv = document.getElementById('tooltip');
+var myLink = document.getElementById('link');
+if(myDiv.style.display == 'none'){
+myDiv.style.display = 'block';
+myLink.style.display = 'none';
+} else {
+myDiv.style.display = 'none';
+}
+return false;
+}
+
+
 
 
 /* ========================================================================

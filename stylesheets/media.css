@@ -178,54 +178,59 @@
 }
 /*==========  Mobile First Method  ========== */
 @media only screen and (min-width: 320px) {
-  /* line 146, ../sass/media.sass */
+  /* line 148, ../sass/media.sass */
+  section .squareAlbums li a {
+    text-decoration-color: inherit;
+  }
+
+  /* line 150, ../sass/media.sass */
   .music-container_margin {
     padding: 0 10px;
     margin: 20px auto 0px auto;
   }
 
-  /* line 150, ../sass/media.sass */
+  /* line 154, ../sass/media.sass */
   .music-content {
     width: 100%;
   }
-  /* line 152, ../sass/media.sass */
+  /* line 156, ../sass/media.sass */
   .music-content .seeAll {
     top: 3px;
     right: 0px;
   }
-  /* line 155, ../sass/media.sass */
+  /* line 159, ../sass/media.sass */
   .music-content .seeAll .caret {
     display: inline-block;
   }
-  /* line 158, ../sass/media.sass */
+  /* line 162, ../sass/media.sass */
   .music-content .h-title {
     position: static;
     display: block;
     margin: 0;
   }
-  /* line 162, ../sass/media.sass */
+  /* line 166, ../sass/media.sass */
   .music-content .nav {
     margin-top: 15px;
   }
-  /* line 165, ../sass/media.sass */
+  /* line 169, ../sass/media.sass */
   .music-content .nav li:first-child {
     margin-left: 0px;
   }
 
-  /* line 175, ../sass/media.sass */
+  /* line 179, ../sass/media.sass */
   .music-container_center .squareAlbums {
     white-space: normal;
   }
 
-  /* line 178, ../sass/media.sass */
+  /* line 182, ../sass/media.sass */
   .littleSquareAlbums {
     width: 100%;
   }
-  /* line 181, ../sass/media.sass */
+  /* line 185, ../sass/media.sass */
   .littleSquareAlbums .seeAll {
     top: 5px;
   }
-  /* line 183, ../sass/media.sass */
+  /* line 187, ../sass/media.sass */
   .littleSquareAlbums .lineList {
     padding: 0;
     display: -webkit-flex;
@@ -237,57 +242,53 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  /* line 193, ../sass/media.sass */
+  /* line 197, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column {
     width: 100%;
   }
-  /* line 196, ../sass/media.sass */
+  /* line 200, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column:first-child {
     display: inline-block;
   }
 
-  /* line 207, ../sass/media.sass */
+  /* line 211, ../sass/media.sass */
   .inlineCovers ul li {
     margin-right: 10px;
   }
 
-  /* line 211, ../sass/media.sass */
+  /* line 215, ../sass/media.sass */
   .SquareAlbums-wrapper .SquareAlbums-wrapper__title {
     margin: 0;
   }
 
-  /* line 218, ../sass/media.sass */
+  /* line 222, ../sass/media.sass */
   aside {
     display: none;
   }
 
-  /* line 221, ../sass/media.sass */
+  /* line 225, ../sass/media.sass */
   footer {
     margin: 0 auto;
     padding: 20px 15px 10px 15px;
-  }
-  /* line 224, ../sass/media.sass */
-  footer ul {
-    display: block;
-    height: 40px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow-x: scroll;
     white-space: nowrap;
-    width: 100%;
-    margin-bottom: 5px;
   }
-  /* line 232, ../sass/media.sass */
-  footer ul li {
+  /* line 230, ../sass/media.sass */
+  footer ul {
     display: inline-block;
+    margin: 0 15px 5px 0;
+  }
+  /* line 239, ../sass/media.sass */
+  footer ul li {
     margin: 0 5px 0 0;
   }
-  /* line 235, ../sass/media.sass */
+  /* line 242, ../sass/media.sass */
   footer ul li h2 {
     margin: 0;
   }
 }
 @media only screen and (min-width: 480px) {
-  /* line 241, ../sass/media.sass */
+  /* line 248, ../sass/media.sass */
   .music-content .h-title {
     position: absolute;
     line-height: 1;
@@ -295,36 +296,36 @@
     display: inline-block;
     margin: 0;
   }
-  /* line 250, ../sass/media.sass */
+  /* line 257, ../sass/media.sass */
   .music-content .nav li:first-child {
     margin-left: 130px;
   }
 }
 @media only screen and (min-width: 580px) {
-  /* line 257, ../sass/media.sass */
+  /* line 264, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column {
     width: 46%;
   }
-  /* line 260, ../sass/media.sass */
+  /* line 267, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column:first-child, .littleSquareAlbums .lineList .lineList__column:nth-child(2) {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 267, ../sass/media.sass */
+  /* line 274, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column {
     width: 30%;
   }
-  /* line 269, ../sass/media.sass */
+  /* line 276, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column:first-child, .littleSquareAlbums .lineList .lineList__column:nth-child(2), .littleSquareAlbums .lineList .lineList__column:nth-child(3) {
     display: inline-block;
   }
 
-  /* line 272, ../sass/media.sass */
+  /* line 279, ../sass/media.sass */
   footer {
     margin: 20px auto 0 auto;
   }
-  /* line 274, ../sass/media.sass */
+  /* line 281, ../sass/media.sass */
   footer ul {
     display: inline-block;
     width: 20%;
@@ -333,140 +334,129 @@
     overflow-y: auto;
     white-space: normal;
   }
-  /* line 281, ../sass/media.sass */
+  /* line 288, ../sass/media.sass */
   footer ul li {
     display: block;
   }
-  /* line 283, ../sass/media.sass */
+  /* line 290, ../sass/media.sass */
   footer ul li:first-child {
     margin-bottom: 5px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  /* line 290, ../sass/media.sass */
+  /* line 297, ../sass/media.sass */
   .aside__topList .aside__topList__item .buy-menu {
     display: none;
   }
-  /* line 293, ../sass/media.sass */
+  /* line 300, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .buy-menu {
     display: block;
   }
 
-  /* line 299, ../sass/media.sass */
+  /* line 306, ../sass/media.sass */
   .Carousel .owl-carousel .item img {
     height: 260px;
   }
 
-  /* line 302, ../sass/media.sass */
+  /* line 309, ../sass/media.sass */
   .music-container_margin {
     padding: 0 15px;
     margin: 35px auto 0 auto;
   }
 
-  /* line 306, ../sass/media.sass */
+  /* line 313, ../sass/media.sass */
   .music-content {
     width: 75%;
     display: inline-block;
     vertical-align: top;
     margin-top: 10px;
   }
-  /* line 311, ../sass/media.sass */
+  /* line 318, ../sass/media.sass */
   .music-content .nav {
     margin-top: 0;
   }
 
-  /* line 314, ../sass/media.sass */
-  .littleSquareAlbums {
-    margin-top: 25px;
-  }
-
-  /* line 318, ../sass/media.sass */
+  /* line 325, ../sass/media.sass */
   aside {
     width: 24%;
     display: inline-block;
   }
 
-  /* line 322, ../sass/media.sass */
-  .inlineCovers {
-    margin-top: 30px;
-  }
-
-  /* line 340, ../sass/media.sass */
+  /* line 347, ../sass/media.sass */
   .music-content .tab-pane {
     margin-left: -20px;
   }
 
-  /* line 362, ../sass/media.sass */
+  /* line 369, ../sass/media.sass */
   .aside__topList .aside__topList__item .buy-menu {
     display: none;
   }
-  /* line 365, ../sass/media.sass */
+  /* line 372, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .buy-menu {
     display: block;
   }
 
-  /* line 368, ../sass/media.sass */
+  /* line 374, ../sass/media.sass */
+  body.darkAlbum-style .album br, body.lightAlbum-style .album br {
+    display: none;
+  }
+
+  /* line 377, ../sass/media.sass */
   footer {
     padding: 20px 15px 10px 15px;
   }
-  /* line 370, ../sass/media.sass */
+  /* line 379, ../sass/media.sass */
   footer ul {
     display: inline-block;
     width: 190px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 375, ../sass/media.sass */
-  .music-content {
-    width: 80%;
-  }
-
-  /* line 378, ../sass/media.sass */
-  aside {
-    width: 19%;
-  }
-}
-@media only screen and (min-width: 1300px) {
-  /* line 382, ../sass/media.sass */
+  /* line 384, ../sass/media.sass */
   .music-content {
     width: 80%;
   }
 
   /* line 387, ../sass/media.sass */
+  aside {
+    width: 19%;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  /* line 391, ../sass/media.sass */
+  .music-content {
+    width: 80%;
+  }
+
+  /* line 396, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column {
     width: 23%;
   }
-  /* line 390, ../sass/media.sass */
+  /* line 399, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column:first-child, .littleSquareAlbums .lineList .lineList__column:nth-child(2), .littleSquareAlbums .lineList .lineList__column:nth-child(3), .littleSquareAlbums .lineList .lineList__column:nth-child(4) {
     display: inline-block;
   }
 }
-@media only screen {
-  /* line 394, ../sass/media.sass */
-  .SquareAlbums-wrapper {
-    margin-top: 10px;
-  }
-}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 400, ../sass/media.sass */
+  /* line 405, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 401, ../sass/media.sass */
+  /* line 406, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: block;
   }
-  /* line 404, ../sass/media.sass */
+  /* line 409, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: block;
   }
-  /* line 407, ../sass/media.sass */
+  /* line 412, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 411, ../sass/media.sass */
+  /* line 416, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -475,24 +465,24 @@
 /* Smartphones (landscape) ----------- */
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 428, ../sass/media.sass */
+  /* line 433, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 429, ../sass/media.sass */
+  /* line 434, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: block;
   }
-  /* line 432, ../sass/media.sass */
+  /* line 437, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: block;
   }
-  /* line 435, ../sass/media.sass */
+  /* line 440, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 439, ../sass/media.sass */
+  /* line 444, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -500,24 +490,24 @@
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 446, ../sass/media.sass */
+  /* line 451, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 447, ../sass/media.sass */
+  /* line 452, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: block;
   }
-  /* line 450, ../sass/media.sass */
+  /* line 455, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: block;
   }
-  /* line 453, ../sass/media.sass */
+  /* line 458, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 457, ../sass/media.sass */
+  /* line 462, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -525,24 +515,24 @@
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* line 464, ../sass/media.sass */
+  /* line 469, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 465, ../sass/media.sass */
+  /* line 470, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: block;
   }
-  /* line 468, ../sass/media.sass */
+  /* line 473, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: block;
   }
-  /* line 471, ../sass/media.sass */
+  /* line 476, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 475, ../sass/media.sass */
+  /* line 480, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -550,24 +540,24 @@
 }
 /* The New iPad (iPad 3) ----------- */
 @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 482, ../sass/media.sass */
+  /* line 487, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 483, ../sass/media.sass */
+  /* line 488, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: inline-block;
   }
-  /* line 486, ../sass/media.sass */
+  /* line 491, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: inline-block;
   }
-  /* line 489, ../sass/media.sass */
+  /* line 494, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 493, ../sass/media.sass */
+  /* line 498, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -575,74 +565,38 @@
 }
 /* iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 500, ../sass/media.sass */
+  /* line 505, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 501, ../sass/media.sass */
+  /* line 506, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: inline-block;
   }
-  /* line 504, ../sass/media.sass */
+  /* line 509, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: inline-block;
   }
-  /* line 507, ../sass/media.sass */
+  /* line 512, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 511, ../sass/media.sass */
+  /* line 516, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
   }
 }
-@media only screen and (max-width: 1500px) {
-  /* line 520, ../sass/media.sass */
-  body.album-style table th:nth-child(2) {
-    width: 42%;
-  }
-  /* line 522, ../sass/media.sass */
-  body.album-style table th:nth-child(4) {
-    width: 29%;
-  }
-  /* line 524, ../sass/media.sass */
-  body.album-style table th:nth-child(7) {
-    width: 9%;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  /* line 531, ../sass/media.sass */
-  body.album-style table th:nth-child(1) {
-    width: 3%;
-  }
-  /* line 533, ../sass/media.sass */
-  body.album-style table th:nth-child(2) {
-    width: 30%;
-  }
-  /* line 535, ../sass/media.sass */
-  body.album-style table th:nth-child(4) {
-    width: 25%;
-  }
-  /* line 537, ../sass/media.sass */
-  body.album-style table th:nth-child(6) {
-    width: 11%;
-  }
-  /* line 539, ../sass/media.sass */
-  body.album-style table th:nth-child(7) {
-    width: 11%;
-  }
-}
 @media only screen and (max-width: 1200px) {
-  /* line 544, ../sass/media.sass */
+  /* line 549, ../sass/media.sass */
   .artistTabInfo__artistbiography {
     display: block;
     width: 100%;
     margin: 20px auto 0 auto;
   }
 
-  /* line 548, ../sass/media.sass */
+  /* line 553, ../sass/media.sass */
   .artistTabInfo-sidebar {
     width: 100%;
     margin: 20px auto 0 auto;
@@ -650,90 +604,354 @@
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 564, ../sass/media.sass */
-  body.album-style table th:nth-child(2) {
-    width: 35%;
+  /* line 574, ../sass/media.sass */
+  .art #Songs > h3, .art #Songs p {
+    display: none;
   }
-  /* line 566, ../sass/media.sass */
-  body.album-style table th:nth-child(6) {
-    width: 13%;
+  /* line 576, ../sass/media.sass */
+  .art table {
+    margin-top: 10px;
   }
-  /* line 568, ../sass/media.sass */
-  body.album-style table th:nth-child(7) {
-    width: 22%;
+  /* line 579, ../sass/media.sass */
+  .art table tr:first-child {
+    display: none;
+  }
+  /* line 581, ../sass/media.sass */
+  .art table tr td {
+    padding: 5px 0;
+  }
+  /* line 583, ../sass/media.sass */
+  .art table tr td:nth-child(3), .art table tr td:nth-child(5) {
+    display: none;
+  }
+  /* line 585, ../sass/media.sass */
+  .art table tr td:nth-child(2) {
+    width: 68%;
+    padding-right: 5px;
+  }
+  /* line 588, ../sass/media.sass */
+  .art table tr td:nth-child(3) {
+    width: 10%;
+  }
+  /* line 590, ../sass/media.sass */
+  .art table tr td:nth-child(4) {
+    width: 20%;
+  }
+  /* line 592, ../sass/media.sass */
+  .art table tr td:last-child {
+    text-align: right;
   }
 
-  /* line 577, ../sass/media.sass */
+  /* line 594, ../sass/media.sass */
+  body.darkAlbum-style table .buy-menu, body.lightAlbum-style table .buy-menu {
+    height: auto;
+    padding: 5px 5px;
+    width: auto;
+    min-width: 90px;
+  }
+  /* line 599, ../sass/media.sass */
+  body.darkAlbum-style table .buy-menu a, body.lightAlbum-style table .buy-menu a {
+    width: auto;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  /* line 603, ../sass/media.sass */
+  body .music-container .album .buy-menu {
+    height: auto;
+    padding: 2px 0;
+  }
+
+  /* line 606, ../sass/media.sass */
+  body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu, .buy-menu {
+    display: inline-block;
+    height: auto;
+    padding: 5px 10px;
+    width: auto;
+    min-width: 80px;
+  }
+  /* line 612, ../sass/media.sass */
+  body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu a, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu a, .buy-menu a {
+    width: auto;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  /* line 617, ../sass/media.sass */
+  .lineList .buy-menu {
+    top: 7px;
+  }
+
+  /* line 620, ../sass/media.sass */
+  .lineList .lineList__column .lineList__column__block {
+    padding-right: 85px;
+  }
+
+  /* line 629, ../sass/media.sass */
+  .littleSquareAlbums .lineList {
+    display: block;
+    width: 100%;
+    height: 165px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  /* line 636, ../sass/media.sass */
+  .littleSquareAlbums .lineList .lineList__column {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    width: 270px;
+  }
+  /* line 641, ../sass/media.sass */
+  .littleSquareAlbums .lineList .lineList__column:last-child {
+    margin-right: 10px;
+  }
+
+  /* line 644, ../sass/media.sass */
+  .music-container_center .toSort {
+    display: none;
+  }
+
+  /* line 646, ../sass/media.sass */
+  .show-more {
+    display: inline-block;
+  }
+
+  /* line 648, ../sass/media.sass */
+  .tooltip {
+    display: none;
+  }
+
+  /* line 652, ../sass/media.sass */
   body.album-style .tab-content .squareAlbums {
     max-height: none;
     min-height: 210px;
   }
-  /* line 581, ../sass/media.sass */
+  /* line 656, ../sass/media.sass */
   body.album-style .tab-pane .squareAlbums {
     margin: 0 0 10px 0;
   }
-  /* line 583, ../sass/media.sass */
+  /* line 658, ../sass/media.sass */
   body.album-style .tab-pane .littleSquareAlbums {
     margin-top: 20px;
   }
 
-  /* line 588, ../sass/media.sass */
+  /* line 663, ../sass/media.sass */
   section .squareAlbums, section .squareAlbumsWithPrice {
     display: inline-block;
     white-space: nowrap;
-    height: 190px;
+    height: 180px;
     overflow-y: hidden;
     overflow-x: scroll;
   }
-  /* line 598, ../sass/media.sass */
+  /* line 673, ../sass/media.sass */
   section .squareAlbums li, section .squareAlbumsWithPrice li {
     display: inline-block;
   }
-  /* line 605, ../sass/media.sass */
+  /* line 680, ../sass/media.sass */
   section .two-lines li:first-child {
     margin-left: 0;
   }
-  /* line 607, ../sass/media.sass */
+  /* line 682, ../sass/media.sass */
   section .squareAlbumsWithPrice {
     height: 215px;
   }
-}
-@media only screen and (max-width: 900px) {
-  /* line 614, ../sass/media.sass */
-  body.album-style table {
-    font-size: 12px;
+
+  /* line 686, ../sass/media.sass */
+  body .ArtistBackgroundImage {
+    top: 10vh;
+  }
+  /* line 689, ../sass/media.sass */
+  body .music-container .breadcrumbs {
+    top: -25px;
+  }
+  /* line 691, ../sass/media.sass */
+  body .music-container .album {
+    position: relative;
+    width: 100%;
+    display: block;
+    min-height: 0;
+  }
+  /* line 696, ../sass/media.sass */
+  body .music-container .album > a {
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 700, ../sass/media.sass */
+  body .music-container .album > a img {
+    width: 140px;
+    height: 140px;
+    margin: 0;
+  }
+  /* line 704, ../sass/media.sass */
+  body .music-container .album .albumLinksContainer {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  /* line 708, ../sass/media.sass */
+  body .music-container .album .albumLinksContainer a h3, body .music-container .album .albumLinksContainer a h2 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0;
+  }
+  /* line 712, ../sass/media.sass */
+  body .music-container .album .albumLinksContainer a .caret {
+    display: inline-block;
+    line-height: inherit;
+    margin: 6px 0 0 7px;
+  }
+  /* line 716, ../sass/media.sass */
+  body .music-container .album .buy-menu {
+    display: inline-block;
+    position: absolute;
+    width: 120px;
+    top: auto;
+    left: auto;
+    bottom: 20px;
+    right: 10px;
+  }
+  /* line 725, ../sass/media.sass */
+  body .music-container .album p {
+    display: inline-block;
+    margin: 20px 0 5px 0;
+    border: none;
+    padding: 0;
+  }
+  /* line 730, ../sass/media.sass */
+  body .music-container .art {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  /* line 735, ../sass/media.sass */
+  body .music-container .art .art__content > a, body .music-container .art .art__content br {
+    display: none;
+  }
+  /* line 737, ../sass/media.sass */
+  body .music-container .art .nav {
+    display: block;
+    width: 280px;
+    margin: 15px auto 10px auto;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  /* line 745, ../sass/media.sass */
+  body .music-container .art .nav li {
+    margin: 0;
+    width: 33%;
+    padding: 0;
+  }
+  /* line 749, ../sass/media.sass */
+  body .music-container .art .nav li a {
+    padding: 5px;
+  }
+
+  /* line 751, ../sass/media.sass */
+  body.darkAlbum-style .nav-tabs li.active, body.lightAlbum-style .nav-tabs li.active {
+    border-style: none;
+    border-radius: 0px;
+  }
+
+  /* line 754, ../sass/media.sass */
+  body.darkAlbum-style footer, body.lightAlbum-style footer {
+    margin-top: 50px;
+  }
+
+  /* line 759, ../sass/media.sass */
+  body .music-container .album .albumLinksContainer a, body .music-container .album .albumLinksContainer h2 {
+    font-size: 15px;
+  }
+  /* line 761, ../sass/media.sass */
+  body .music-container .album .albumLinksContainer p {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 619, ../sass/media.sass */
+  /* line 768, ../sass/media.sass */
   .music-container_center .nav-tabs {
     top: 150px;
   }
-  /* line 621, ../sass/media.sass */
+  /* line 770, ../sass/media.sass */
   .music-container_center .artist-list-tag > li {
     margin: 0 16px 0 0;
   }
-  /* line 623, ../sass/media.sass */
+  /* line 772, ../sass/media.sass */
   .music-container_center .breadcrumbs {
     top: 100px;
   }
-  /* line 625, ../sass/media.sass */
+  /* line 774, ../sass/media.sass */
   .music-container_center .tab-content .tab-pane > p, .music-container_center h3 {
     margin-top: 40px;
   }
-  /* line 627, ../sass/media.sass */
+  /* line 776, ../sass/media.sass */
   .music-container_center aside {
     padding-left: 0;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 632, ../sass/media.sass */
+  /* line 781, ../sass/media.sass */
   .music-container_center .nav-tabs {
     top: 80px;
     right: 0px;
   }
-  /* line 635, ../sass/media.sass */
+  /* line 784, ../sass/media.sass */
   .music-container_center .artistTabInfo-sidebar__ul li p {
     padding-right: 20px;
+  }
+
+  /* line 786, ../sass/media.sass */
+  body .music-container .album > a img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* line 789, ../sass/media.sass */
+  body .music-container .album .buy-menu {
+    right: 0px;
+    bottom: -30px;
+  }
+
+  /* line 792, ../sass/media.sass */
+  body .music-container .album .albumLinksContainer a h3, body .music-container .album .albumLinksContainer a h2 {
+    margin: 0;
+  }
+
+  /* line 794, ../sass/media.sass */
+  body .music-container .album .albumLinksContainer a .caret {
+    margin-top: 1px;
+  }
+
+  /* line 796, ../sass/media.sass */
+  body .music-container .album p {
+    margin-top: 0;
+  }
+
+  /* line 798, ../sass/media.sass */
+  body .music-container .breadcrumbs {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  /* line 802, ../sass/media.sass */
+  .breadcrumbs {
+    display: none;
+  }
+
+  /* line 805, ../sass/media.sass */
+  .buy-menu .buy-menu__link {
+    display: inline-block;
+    width: 100%;
+  }
+  /* line 808, ../sass/media.sass */
+  .buy-menu .priceDropdown {
+    display: none;
+  }
+}
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 3 / 2) and (min-device-pixel-ratio: 1.5) {
+  /* line 824, ../sass/media.sass */
+  .header__mainMenu .leftMenu .iconsMenu {
+    margin-top: 3px;
   }
 }
