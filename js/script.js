@@ -495,7 +495,7 @@ $('.showText').click( function() {
 // Menu toggle button
 // ====================
 var theToggle = document.getElementById('toggleButton');
-
+var theBody = document.getElementById('toggleButton');
 // hasClass
 function hasClass(elem, className) {
 	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
@@ -529,7 +529,11 @@ function toggleClass(elem, className) {
     }
 }
 
+
 theToggle.onclick = function() {
    toggleClass(this, 'on');
+    if ( $('body').hasClass("hiddenStyles") ) {
+        $('body').removeClass('hiddenStyles');
+    } else {$('body').addClass('hiddenStyles'); };
    return false;
 }

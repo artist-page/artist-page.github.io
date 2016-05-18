@@ -22,24 +22,26 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         display: none
     .lineToggle
         height: 50px
-        height: 10vh
+        //height: 10vh
         margin: 0
         z-index: 1
-        border-bottom: 1px solid $fColor
         background-color: #fff
         text-align: center
         h2
             display: inline-block
             font-size: 18px
-            line-height: 10vh
+            //line-height: 10vh
+            line-height: 52px
             margin: 0
             color: $fColor
 
     #togMenu
-        position: absolute
-        top: 10vh
+        //position: absolute
+        //top: 10vh
+        top: 50px
         right: 0
-        height: 90vh
+        //height: 90vh
+        height: auto
         width: 100%
         display: none
         background: #fff
@@ -53,24 +55,31 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         transition: opacity .4s
         ul
             display: block
-            padding: 0 0 0 10px
+            padding: 0px
             margin: 0
             li
                 display: block
                 position: relative
-                height: 8vh
+                padding: 5px 0 0 10px
+                //height: 8vh
+                height: 50px
                 border-bottom: 1px solid #eee
-                &:last-child
+                //&:last-child
                     border: none
+                &:first-child
+                    border-top: 1px solid #eee
                 img
                     width: 6vh
-                    height: 6vh
-                    line-height: 8vh
+                    width: 40px
+                    //height: 6vh
+                    height: 40px
+                    //line-height: 8vh
+                    line-height: 50px
                     display: inline-block
                     margin: 0 10px 0 0
                 a
                     display: inline-block
-                    line-height: 8vh
+                    //line-height: 8vh
                     color: $fColor
                 &.active,&:active
                     a
@@ -80,24 +89,26 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                         content: " "
                         position: absolute
                         display: block
-                        width: 4vh
-                        height: 4vh
+                        //width: 4vh
+                        width: 20px
+                        //height: 4vh
+                        height: 20px
                         background: url(../img/ico_check.svg) no-repeat
                         background-size: contain
-                        top: 2vh
-                        right: 1vh
+                        top: 15px
+                        right: 2vh
 
     #togMenu:after
         display: none
 
     #toggleButton 
         display: block
-        width: 30px
+        width: 25px
         height: 28px
         position: absolute
         z-index: 999
-        top: 25px
-        right: 10px
+        top: 26px
+        right: 15px
         margin: 0
 
     #toggleButton span:after,
@@ -105,10 +116,10 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         content: " "
         position: absolute
         left: 0
-        top: -9px
+        top: -5px
 
     #toggleButton span:after
-        top: 9px
+        top: 5px
 
     #toggleButton span 
         position: relative
@@ -118,7 +129,8 @@ $ffb: "MyriadProBold", Roboto, sans-serif
     #toggleButton span:after,
     #toggleButton span:before
         width: 100%
-        height: 5px
+        height: 2px
+        line-height: 49px
         background-color: #888
         transition: all 0.3s
         backface-visibility: hidden
@@ -129,15 +141,17 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         background-color: transparent
 
     #toggleButton.on span:before 
-        transform: rotate(45deg) translate(5px, 5px)
+        transform: rotate(45deg) translate(2px, 2px)
 
     #toggleButton.on span:after 
         transform: rotate(-45deg) translate(7px, -8px)
+        transform: rotate(-45deg) translate(5px, -5px)
 
     #toggleButton.on + #togMenu
         opacity: 1
         visibility: visible
         display: block
+    
 
 
 /*==========  Mobile First Method  ==========*/
@@ -154,7 +168,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
     .music-content
         width: 100%
         .seeAll
-            top: 3px
+            top: 0px
             right: 0px
             .caret
                 display: inline-block
@@ -183,7 +197,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         //margin-bottom: 20px
         width: 100%
         .seeAll
-            top: 5px
+            top: -2px
         .lineList
             padding: 0
             display: -webkit-flex
@@ -230,6 +244,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         ul
             display: inline-block
             width: 50%
+            min-width: 200px
             //overflow-x: scroll
             //overflow-y: hidden
             //white-space: nowrap
@@ -374,6 +389,30 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                     display: block
     body.darkAlbum-style .album br, body.lightAlbum-style .album br
         display: none
+        
+    .resultForSearch
+        padding-bottom: 5px
+        //outline: 1px solid red
+        border-bottom: 1px solid $fColor
+    .searchStyles
+        .tab-pane
+            display: block
+            outline: 1px solid red
+            text-align: center
+        .nav-tabs
+            display: inline-block
+            display: none
+            margin: 0 auto
+            margin-left: 50%
+            transform: translateX(-50%)
+            border: 1px solid #1F66B1
+            border-radius: 5px
+            text-align: center
+            li
+                //outline: 1px solid red
+                a
+                    padding: 5px
+            
 
     footer
         padding: 20px 15px 10px 15px
@@ -570,6 +609,11 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         overflow-x: scroll
         overflow-y: hidden
         min-height: 180px
+    body.hiddenStyles
+        background: #fff
+        footer, .music-container, .Carousel
+            display: none
+
     .art
         #Songs
             &>h3, p
@@ -594,7 +638,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                         text-align: right
     body.darkAlbum-style table .buy-menu, body.lightAlbum-style table .buy-menu
         height: auto
-        padding: 5px 5px
+        padding: 3px 5px
         width: auto
         min-width: 90px
         a
@@ -607,7 +651,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
     body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu, .buy-menu
         display: inline-block
         height: auto
-        padding: 5px 10px
+        padding: 3px 10px
         width: auto
         min-width: 80px
         a
@@ -616,7 +660,9 @@ $ffb: "MyriadProBold", Roboto, sans-serif
             white-space: nowrap
     .lineList
         .buy-menu
-            top: 7px
+            top: 8px
+            a
+                font-size: 16px
     .lineList .lineList__column
         .lineList__column__block
             padding-right: 85px
@@ -681,11 +727,12 @@ $ffb: "MyriadProBold", Roboto, sans-serif
             li:first-child
                 margin-left: 0
         .squareAlbumsWithPrice
-            height: 215px
+            height: 220px
     
     body
         .ArtistBackgroundImage
-            top: 10vh
+            //top: 10vh
+            top: 50px
         .music-container
             .breadcrumbs
                 top: -25px
@@ -717,11 +764,12 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                 .buy-menu
                     display: inline-block
                     position: absolute
+                    position: static
                     width: 120px
-                    top: auto
-                    left: auto
-                    bottom: 20px
-                    right: 10px
+                    //top: auto
+                    //left: auto
+                    //bottom: -30px
+                    //right: auto
                     //vertical-align: baseline
                 p
                     display: inline-block
@@ -745,7 +793,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                     overflow: hidden
                     li
                         margin: 0
-                        width: 33%
+                        width: 33.3%
                         padding: 0
                         a
                             padding: 5px
@@ -761,6 +809,27 @@ $ffb: "MyriadProBold", Roboto, sans-serif
             font-size: 15px
         p
             font-size: 13px
+    footer
+        ul
+            li
+                line-height: 2.5
+                &:nth-child(2)
+                    margin-top: 10px
+    .buy-menu
+        color: #1F66B1
+        border: 1px solid #1F66B1
+        .buy-menu__link
+            color: #1F66B1
+    .color-style
+        .buy-menu
+            .buy-menu__link
+                color: #1F66B1
+    // search page styles
+    
+    //.searchStyles
+        .tab-pane
+            display: block
+            outline: 1px solid red
     
 
  
@@ -788,7 +857,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         width: 100px
         height: 100px
     body .music-container .album .buy-menu 
-        right: 0px
+        right: auto
         bottom: -30px
     body .music-container .album .albumLinksContainer a h3, body .music-container .album .albumLinksContainer a h2
         margin: 0
@@ -800,7 +869,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         display: none
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px)
-    .breadcrumbs
+    .breadcrumbs, body.darkAlbum-style .breadcrumbs, body.lightAlbum-style .breadcrumbs
         display: none
     .buy-menu
         .buy-menu__link

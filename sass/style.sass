@@ -163,8 +163,6 @@ h1,h2,h3,h4,h5
     overflow: hidden /* Обрезаем все, что не помещается в область */
     text-overflow: ellipsis /* Добавляем многоточие */
 
-.grayBorderB
-    border-bottom: 1px solid #e5e5e5
 
 .show-more
     //display: none
@@ -985,7 +983,7 @@ a, a:hover, a:active, a:focus
         background-size: cover
         //outline: 1px solid red
 
-.col_000017
+.body_color
     background: #000017
 
 .breadcrumbs
@@ -1291,7 +1289,7 @@ body.darkAlbum-style
                 width: 80%
                 margin: 0 -1px
                 font-size: 16px
-                padding: 2px 0
+                padding: 2px 0 0 0
                 &:hover
                     text-decoration: none
             .priceDropdown
@@ -1558,9 +1556,18 @@ body.lightAlbum-style
             &.active
                 background: #e5e5e5
 
+.arrowDown
+    display: inline-block
+    font-size: 22px
+    line-height: 1
+    -moz-transform: rotate(90deg)
+    -ms-transform: rotate(90deg)
+    -webkit-transform: rotate(90deg)
+    -o-transform: rotate(90deg)
+    transform: rotate(90deg)
+
 /* simple style*/
 .UlTitle
-    margin-bottom: 0
     display: inline-block
     font-size: 16px
     //vertical-align: baseline

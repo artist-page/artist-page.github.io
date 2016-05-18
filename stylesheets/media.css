@@ -21,28 +21,25 @@
   /* line 23, ../sass/media.sass */
   .lineToggle {
     height: 50px;
-    height: 10vh;
     margin: 0;
     z-index: 1;
-    border-bottom: 1px solid #4e4e4e;
     background-color: #fff;
     text-align: center;
   }
-  /* line 31, ../sass/media.sass */
+  /* line 30, ../sass/media.sass */
   .lineToggle h2 {
     display: inline-block;
     font-size: 18px;
-    line-height: 10vh;
+    line-height: 52px;
     margin: 0;
     color: #4e4e4e;
   }
 
   /* line 38, ../sass/media.sass */
   #togMenu {
-    position: absolute;
-    top: 10vh;
+    top: 50px;
     right: 0;
-    height: 90vh;
+    height: auto;
     width: 100%;
     display: none;
     background: #fff;
@@ -55,98 +52,100 @@
     visibility: hidden;
     transition: opacity 0.4s;
   }
-  /* line 54, ../sass/media.sass */
+  /* line 56, ../sass/media.sass */
   #togMenu ul {
     display: block;
-    padding: 0 0 0 10px;
+    padding: 0px;
     margin: 0;
   }
-  /* line 58, ../sass/media.sass */
+  /* line 60, ../sass/media.sass */
   #togMenu ul li {
     display: block;
     position: relative;
-    height: 8vh;
+    padding: 5px 0 0 10px;
+    height: 50px;
     border-bottom: 1px solid #eee;
   }
-  /* line 63, ../sass/media.sass */
-  #togMenu ul li:last-child {
-    border: none;
+  /* line 69, ../sass/media.sass */
+  #togMenu ul li:first-child {
+    border-top: 1px solid #eee;
   }
-  /* line 65, ../sass/media.sass */
+  /* line 71, ../sass/media.sass */
   #togMenu ul li img {
     width: 6vh;
-    height: 6vh;
-    line-height: 8vh;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
     display: inline-block;
     margin: 0 10px 0 0;
   }
-  /* line 71, ../sass/media.sass */
+  /* line 80, ../sass/media.sass */
   #togMenu ul li a {
     display: inline-block;
-    line-height: 8vh;
     color: #4e4e4e;
   }
-  /* line 76, ../sass/media.sass */
+  /* line 85, ../sass/media.sass */
   #togMenu ul li.active a, #togMenu ul li:active a {
     color: #2677C5;
     text-decoration: none;
   }
-  /* line 79, ../sass/media.sass */
+  /* line 88, ../sass/media.sass */
   #togMenu ul li.active::after, #togMenu ul li:active::after {
     content: " ";
     position: absolute;
     display: block;
-    width: 4vh;
-    height: 4vh;
+    width: 20px;
+    height: 20px;
     background: url(../img/ico_check.svg) no-repeat;
     background-size: contain;
-    top: 2vh;
-    right: 1vh;
+    top: 15px;
+    right: 2vh;
   }
 
-  /* line 90, ../sass/media.sass */
+  /* line 101, ../sass/media.sass */
   #togMenu:after {
     display: none;
   }
 
-  /* line 93, ../sass/media.sass */
+  /* line 104, ../sass/media.sass */
   #toggleButton {
     display: block;
-    width: 30px;
+    width: 25px;
     height: 28px;
     position: absolute;
     z-index: 999;
-    top: 25px;
-    right: 10px;
+    top: 26px;
+    right: 15px;
     margin: 0;
   }
 
-  /* line 103, ../sass/media.sass */
+  /* line 114, ../sass/media.sass */
   #toggleButton span:after,
   #toggleButton span:before {
     content: " ";
     position: absolute;
     left: 0;
-    top: -9px;
+    top: -5px;
   }
 
-  /* line 110, ../sass/media.sass */
+  /* line 121, ../sass/media.sass */
   #toggleButton span:after {
-    top: 9px;
+    top: 5px;
   }
 
-  /* line 113, ../sass/media.sass */
+  /* line 124, ../sass/media.sass */
   #toggleButton span {
     position: relative;
     display: block;
   }
 
-  /* line 117, ../sass/media.sass */
+  /* line 128, ../sass/media.sass */
   #toggleButton span,
   #toggleButton span:after,
   #toggleButton span:before {
     width: 100%;
-    height: 5px;
+    height: 2px;
+    line-height: 49px;
     background-color: #888;
     transition: all 0.3s;
     backface-visibility: hidden;
@@ -154,22 +153,23 @@
   }
 
   /* on activation */
-  /* line 128, ../sass/media.sass */
+  /* line 140, ../sass/media.sass */
   #toggleButton.on span {
     background-color: transparent;
   }
 
-  /* line 131, ../sass/media.sass */
+  /* line 143, ../sass/media.sass */
   #toggleButton.on span:before {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(2px, 2px);
   }
 
-  /* line 134, ../sass/media.sass */
+  /* line 146, ../sass/media.sass */
   #toggleButton.on span:after {
     transform: rotate(-45deg) translate(7px, -8px);
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 
-  /* line 137, ../sass/media.sass */
+  /* line 150, ../sass/media.sass */
   #toggleButton.on + #togMenu {
     opacity: 1;
     visibility: visible;
@@ -178,59 +178,59 @@
 }
 /*==========  Mobile First Method  ========== */
 @media only screen and (min-width: 320px) {
-  /* line 148, ../sass/media.sass */
+  /* line 162, ../sass/media.sass */
   section .squareAlbums li a {
     text-decoration-color: inherit;
   }
 
-  /* line 150, ../sass/media.sass */
+  /* line 164, ../sass/media.sass */
   .music-container_margin {
     padding: 0 10px;
     margin: 20px auto 0px auto;
   }
 
-  /* line 154, ../sass/media.sass */
+  /* line 168, ../sass/media.sass */
   .music-content {
     width: 100%;
   }
-  /* line 156, ../sass/media.sass */
+  /* line 170, ../sass/media.sass */
   .music-content .seeAll {
-    top: 3px;
+    top: 0px;
     right: 0px;
   }
-  /* line 159, ../sass/media.sass */
+  /* line 173, ../sass/media.sass */
   .music-content .seeAll .caret {
     display: inline-block;
   }
-  /* line 162, ../sass/media.sass */
+  /* line 176, ../sass/media.sass */
   .music-content .h-title {
     position: static;
     display: block;
     margin: 0;
   }
-  /* line 166, ../sass/media.sass */
+  /* line 180, ../sass/media.sass */
   .music-content .nav {
     margin-top: 15px;
   }
-  /* line 169, ../sass/media.sass */
+  /* line 183, ../sass/media.sass */
   .music-content .nav li:first-child {
     margin-left: 0px;
   }
 
-  /* line 179, ../sass/media.sass */
+  /* line 193, ../sass/media.sass */
   .music-container_center .squareAlbums {
     white-space: normal;
   }
 
-  /* line 182, ../sass/media.sass */
+  /* line 196, ../sass/media.sass */
   .littleSquareAlbums {
     width: 100%;
   }
-  /* line 185, ../sass/media.sass */
+  /* line 199, ../sass/media.sass */
   .littleSquareAlbums .seeAll {
-    top: 5px;
+    top: -2px;
   }
-  /* line 187, ../sass/media.sass */
+  /* line 201, ../sass/media.sass */
   .littleSquareAlbums .lineList {
     padding: 0;
     display: -webkit-flex;
@@ -242,54 +242,55 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  /* line 197, ../sass/media.sass */
+  /* line 211, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column {
     width: 100%;
   }
-  /* line 200, ../sass/media.sass */
+  /* line 214, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column:first-child {
     display: inline-block;
   }
 
-  /* line 211, ../sass/media.sass */
+  /* line 225, ../sass/media.sass */
   .inlineCovers ul li {
     margin-right: 10px;
   }
 
-  /* line 215, ../sass/media.sass */
+  /* line 229, ../sass/media.sass */
   .SquareAlbums-wrapper .SquareAlbums-wrapper__title {
     margin: 0;
   }
 
-  /* line 222, ../sass/media.sass */
+  /* line 236, ../sass/media.sass */
   aside {
     display: none;
   }
 
-  /* line 225, ../sass/media.sass */
+  /* line 239, ../sass/media.sass */
   footer {
     margin: 0 auto;
     padding: 20px 15px 10px 15px;
     overflow-x: scroll;
     white-space: nowrap;
   }
-  /* line 230, ../sass/media.sass */
+  /* line 244, ../sass/media.sass */
   footer ul {
     display: inline-block;
     width: 50%;
+    min-width: 200px;
     margin: 0 15px 5px 0;
   }
-  /* line 240, ../sass/media.sass */
+  /* line 255, ../sass/media.sass */
   footer ul li {
     margin: 0 5px 0 0;
   }
-  /* line 243, ../sass/media.sass */
+  /* line 258, ../sass/media.sass */
   footer ul li h2 {
     margin: 0;
   }
 }
 @media only screen and (min-width: 480px) {
-  /* line 249, ../sass/media.sass */
+  /* line 264, ../sass/media.sass */
   .music-content .h-title {
     position: absolute;
     line-height: 1;
@@ -297,36 +298,36 @@
     display: inline-block;
     margin: 0;
   }
-  /* line 258, ../sass/media.sass */
+  /* line 273, ../sass/media.sass */
   .music-content .nav li:first-child {
     margin-left: 130px;
   }
 }
 @media only screen and (min-width: 580px) {
-  /* line 265, ../sass/media.sass */
+  /* line 280, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column {
     width: 46%;
   }
-  /* line 268, ../sass/media.sass */
+  /* line 283, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column:first-child, .littleSquareAlbums .lineList .lineList__column:nth-child(2) {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 275, ../sass/media.sass */
+  /* line 290, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column {
     width: 30%;
   }
-  /* line 277, ../sass/media.sass */
+  /* line 292, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column:first-child, .littleSquareAlbums .lineList .lineList__column:nth-child(2), .littleSquareAlbums .lineList .lineList__column:nth-child(3) {
     display: inline-block;
   }
 
-  /* line 280, ../sass/media.sass */
+  /* line 295, ../sass/media.sass */
   footer {
     margin: 20px auto 0 auto;
   }
-  /* line 282, ../sass/media.sass */
+  /* line 297, ../sass/media.sass */
   footer ul {
     display: inline-block;
     width: 20%;
@@ -335,129 +336,157 @@
     overflow-y: auto;
     white-space: normal;
   }
-  /* line 289, ../sass/media.sass */
+  /* line 304, ../sass/media.sass */
   footer ul li {
     display: block;
   }
-  /* line 291, ../sass/media.sass */
+  /* line 306, ../sass/media.sass */
   footer ul li:first-child {
     margin-bottom: 5px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  /* line 298, ../sass/media.sass */
+  /* line 313, ../sass/media.sass */
   .aside__topList .aside__topList__item .buy-menu {
     display: none;
   }
-  /* line 301, ../sass/media.sass */
+  /* line 316, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .buy-menu {
     display: block;
   }
 
-  /* line 307, ../sass/media.sass */
+  /* line 322, ../sass/media.sass */
   .Carousel .owl-carousel .item img {
     height: 260px;
   }
 
-  /* line 310, ../sass/media.sass */
+  /* line 325, ../sass/media.sass */
   .music-container_margin {
     padding: 0 15px;
     margin: 35px auto 0 auto;
   }
 
-  /* line 314, ../sass/media.sass */
+  /* line 329, ../sass/media.sass */
   .music-content {
     width: 75%;
     display: inline-block;
     vertical-align: top;
     margin-top: 10px;
   }
-  /* line 319, ../sass/media.sass */
+  /* line 334, ../sass/media.sass */
   .music-content .nav {
     margin-top: 0;
   }
 
-  /* line 326, ../sass/media.sass */
+  /* line 341, ../sass/media.sass */
   aside {
     width: 24%;
     display: inline-block;
   }
 
-  /* line 348, ../sass/media.sass */
+  /* line 363, ../sass/media.sass */
   .music-content .tab-pane {
     margin-left: -20px;
   }
 
-  /* line 370, ../sass/media.sass */
+  /* line 385, ../sass/media.sass */
   .aside__topList .aside__topList__item .buy-menu {
     display: none;
   }
-  /* line 373, ../sass/media.sass */
+  /* line 388, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .buy-menu {
     display: block;
   }
 
-  /* line 375, ../sass/media.sass */
+  /* line 390, ../sass/media.sass */
   body.darkAlbum-style .album br, body.lightAlbum-style .album br {
     display: none;
   }
 
-  /* line 378, ../sass/media.sass */
+  /* line 393, ../sass/media.sass */
+  .resultForSearch {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #4e4e4e;
+  }
+
+  /* line 398, ../sass/media.sass */
+  .searchStyles .tab-pane {
+    display: block;
+    outline: 1px solid red;
+    text-align: center;
+  }
+  /* line 402, ../sass/media.sass */
+  .searchStyles .nav-tabs {
+    display: inline-block;
+    display: none;
+    margin: 0 auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #1F66B1;
+    border-radius: 5px;
+    text-align: center;
+  }
+  /* line 413, ../sass/media.sass */
+  .searchStyles .nav-tabs li a {
+    padding: 5px;
+  }
+
+  /* line 417, ../sass/media.sass */
   footer {
     padding: 20px 15px 10px 15px;
   }
-  /* line 380, ../sass/media.sass */
+  /* line 419, ../sass/media.sass */
   footer ul {
     display: inline-block;
     width: 190px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 385, ../sass/media.sass */
+  /* line 424, ../sass/media.sass */
   .music-content {
     width: 80%;
   }
 
-  /* line 388, ../sass/media.sass */
+  /* line 427, ../sass/media.sass */
   aside {
     width: 19%;
   }
 }
 @media only screen and (min-width: 1300px) {
-  /* line 392, ../sass/media.sass */
+  /* line 431, ../sass/media.sass */
   .music-content {
     width: 80%;
   }
 
-  /* line 397, ../sass/media.sass */
+  /* line 436, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column {
     width: 23%;
   }
-  /* line 400, ../sass/media.sass */
+  /* line 439, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column:first-child, .littleSquareAlbums .lineList .lineList__column:nth-child(2), .littleSquareAlbums .lineList .lineList__column:nth-child(3), .littleSquareAlbums .lineList .lineList__column:nth-child(4) {
     display: inline-block;
   }
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 406, ../sass/media.sass */
+  /* line 445, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 407, ../sass/media.sass */
+  /* line 446, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: block;
   }
-  /* line 410, ../sass/media.sass */
+  /* line 449, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: block;
   }
-  /* line 413, ../sass/media.sass */
+  /* line 452, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 417, ../sass/media.sass */
+  /* line 456, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -466,24 +495,24 @@
 /* Smartphones (landscape) ----------- */
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 434, ../sass/media.sass */
+  /* line 473, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 435, ../sass/media.sass */
+  /* line 474, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: block;
   }
-  /* line 438, ../sass/media.sass */
+  /* line 477, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: block;
   }
-  /* line 441, ../sass/media.sass */
+  /* line 480, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 445, ../sass/media.sass */
+  /* line 484, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -491,24 +520,24 @@
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 452, ../sass/media.sass */
+  /* line 491, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 453, ../sass/media.sass */
+  /* line 492, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: block;
   }
-  /* line 456, ../sass/media.sass */
+  /* line 495, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: block;
   }
-  /* line 459, ../sass/media.sass */
+  /* line 498, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 463, ../sass/media.sass */
+  /* line 502, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -516,24 +545,24 @@
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* line 470, ../sass/media.sass */
+  /* line 509, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 471, ../sass/media.sass */
+  /* line 510, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: block;
   }
-  /* line 474, ../sass/media.sass */
+  /* line 513, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: block;
   }
-  /* line 477, ../sass/media.sass */
+  /* line 516, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 481, ../sass/media.sass */
+  /* line 520, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -541,24 +570,24 @@
 }
 /* The New iPad (iPad 3) ----------- */
 @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 488, ../sass/media.sass */
+  /* line 527, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 489, ../sass/media.sass */
+  /* line 528, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: inline-block;
   }
-  /* line 492, ../sass/media.sass */
+  /* line 531, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: inline-block;
   }
-  /* line 495, ../sass/media.sass */
+  /* line 534, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 499, ../sass/media.sass */
+  /* line 538, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
@@ -566,38 +595,38 @@
 }
 /* iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 506, ../sass/media.sass */
+  /* line 545, ../sass/media.sass */
   .aside__topList .aside__topList__item {
     padding-right: 75px;
   }
-  /* line 507, ../sass/media.sass */
+  /* line 546, ../sass/media.sass */
   .aside__topList .aside__topList__item .priceDropdown {
     display: inline-block;
   }
-  /* line 510, ../sass/media.sass */
+  /* line 549, ../sass/media.sass */
   .aside__topList .aside__topList__item:hover .priceDropdown {
     display: inline-block;
   }
-  /* line 513, ../sass/media.sass */
+  /* line 552, ../sass/media.sass */
   .aside__topList .aside__topList__item:first-child {
     padding: 0 0 0 0;
   }
 
-  /* line 517, ../sass/media.sass */
+  /* line 556, ../sass/media.sass */
   .priceDropdown .dropdown-menu {
     left: auto;
     right: 0px;
   }
 }
 @media only screen and (max-width: 1200px) {
-  /* line 550, ../sass/media.sass */
+  /* line 589, ../sass/media.sass */
   .artistTabInfo__artistbiography {
     display: block;
     width: 100%;
     margin: 20px auto 0 auto;
   }
 
-  /* line 554, ../sass/media.sass */
+  /* line 593, ../sass/media.sass */
   .artistTabInfo-sidebar {
     width: 100%;
     margin: 20px auto 0 auto;
@@ -605,90 +634,103 @@
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 575, ../sass/media.sass */
+  /* line 612, ../sass/media.sass */
+  body.hiddenStyles {
+    background: #fff;
+  }
+  /* line 614, ../sass/media.sass */
+  body.hiddenStyles footer, body.hiddenStyles .music-container, body.hiddenStyles .Carousel {
+    display: none;
+  }
+
+  /* line 619, ../sass/media.sass */
   .art #Songs > h3, .art #Songs p {
     display: none;
   }
-  /* line 577, ../sass/media.sass */
+  /* line 621, ../sass/media.sass */
   .art table {
     margin-top: 10px;
   }
-  /* line 580, ../sass/media.sass */
+  /* line 624, ../sass/media.sass */
   .art table tr:first-child {
     display: none;
   }
-  /* line 582, ../sass/media.sass */
+  /* line 626, ../sass/media.sass */
   .art table tr td {
     padding: 5px 0;
   }
-  /* line 584, ../sass/media.sass */
+  /* line 628, ../sass/media.sass */
   .art table tr td:nth-child(3), .art table tr td:nth-child(5) {
     display: none;
   }
-  /* line 586, ../sass/media.sass */
+  /* line 630, ../sass/media.sass */
   .art table tr td:nth-child(2) {
     width: 68%;
     padding-right: 5px;
   }
-  /* line 589, ../sass/media.sass */
+  /* line 633, ../sass/media.sass */
   .art table tr td:nth-child(3) {
     width: 10%;
   }
-  /* line 591, ../sass/media.sass */
+  /* line 635, ../sass/media.sass */
   .art table tr td:nth-child(4) {
     width: 20%;
   }
-  /* line 593, ../sass/media.sass */
+  /* line 637, ../sass/media.sass */
   .art table tr td:last-child {
     text-align: right;
   }
 
-  /* line 595, ../sass/media.sass */
+  /* line 639, ../sass/media.sass */
   body.darkAlbum-style table .buy-menu, body.lightAlbum-style table .buy-menu {
     height: auto;
-    padding: 5px 5px;
+    padding: 3px 5px;
     width: auto;
     min-width: 90px;
   }
-  /* line 600, ../sass/media.sass */
+  /* line 644, ../sass/media.sass */
   body.darkAlbum-style table .buy-menu a, body.lightAlbum-style table .buy-menu a {
     width: auto;
     font-size: 16px;
     white-space: nowrap;
   }
 
-  /* line 604, ../sass/media.sass */
+  /* line 648, ../sass/media.sass */
   body .music-container .album .buy-menu {
     height: auto;
     padding: 2px 0;
   }
 
-  /* line 607, ../sass/media.sass */
+  /* line 651, ../sass/media.sass */
   body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu, .buy-menu {
     display: inline-block;
     height: auto;
-    padding: 5px 10px;
+    padding: 3px 10px;
     width: auto;
     min-width: 80px;
   }
-  /* line 613, ../sass/media.sass */
+  /* line 657, ../sass/media.sass */
   body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu a, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu a, .buy-menu a {
     width: auto;
     font-size: 16px;
     white-space: nowrap;
   }
 
-  /* line 618, ../sass/media.sass */
+  /* line 662, ../sass/media.sass */
   .lineList .buy-menu {
-    top: 7px;
+    top: 8px;
+  }
+  /* line 664, ../sass/media.sass */
+  .lineList .buy-menu a {
+    font-size: 16px;
   }
 
-  /* line 621, ../sass/media.sass */
+  /* line 667, ../sass/media.sass */
   .lineList .lineList__column .lineList__column__block {
     padding-right: 85px;
   }
 
-  /* line 630, ../sass/media.sass */
+  /* line 676, ../sass/media.sass */
   .littleSquareAlbums .lineList {
     display: block;
     width: 100%;
@@ -697,47 +739,47 @@
     overflow-y: hidden;
     white-space: nowrap;
   }
-  /* line 637, ../sass/media.sass */
+  /* line 683, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column {
     display: inline-block;
     margin: 0 15px 0 0;
     width: 270px;
   }
-  /* line 642, ../sass/media.sass */
+  /* line 688, ../sass/media.sass */
   .littleSquareAlbums .lineList .lineList__column:last-child {
     margin-right: 10px;
   }
 
-  /* line 645, ../sass/media.sass */
+  /* line 691, ../sass/media.sass */
   .music-container_center .toSort {
     display: none;
   }
 
-  /* line 647, ../sass/media.sass */
+  /* line 693, ../sass/media.sass */
   .showText {
     display: inline-block;
   }
 
-  /* line 649, ../sass/media.sass */
+  /* line 695, ../sass/media.sass */
   .showingText {
     display: none;
   }
 
-  /* line 653, ../sass/media.sass */
+  /* line 699, ../sass/media.sass */
   body.album-style .tab-content .squareAlbums {
     max-height: none;
     min-height: 210px;
   }
-  /* line 657, ../sass/media.sass */
+  /* line 703, ../sass/media.sass */
   body.album-style .tab-pane .squareAlbums {
     margin: 0 0 10px 0;
   }
-  /* line 659, ../sass/media.sass */
+  /* line 705, ../sass/media.sass */
   body.album-style .tab-pane .littleSquareAlbums {
     margin-top: 20px;
   }
 
-  /* line 664, ../sass/media.sass */
+  /* line 710, ../sass/media.sass */
   section .squareAlbums, section .squareAlbumsWithPrice {
     display: inline-block;
     white-space: nowrap;
@@ -745,90 +787,87 @@
     overflow-y: hidden;
     overflow-x: scroll;
   }
-  /* line 674, ../sass/media.sass */
+  /* line 720, ../sass/media.sass */
   section .squareAlbums li, section .squareAlbumsWithPrice li {
     display: inline-block;
   }
-  /* line 681, ../sass/media.sass */
+  /* line 727, ../sass/media.sass */
   section .two-lines li:first-child {
     margin-left: 0;
   }
-  /* line 683, ../sass/media.sass */
+  /* line 729, ../sass/media.sass */
   section .squareAlbumsWithPrice {
-    height: 215px;
+    height: 220px;
   }
 
-  /* line 687, ../sass/media.sass */
+  /* line 733, ../sass/media.sass */
   body .ArtistBackgroundImage {
-    top: 10vh;
+    top: 50px;
   }
-  /* line 690, ../sass/media.sass */
+  /* line 737, ../sass/media.sass */
   body .music-container .breadcrumbs {
     top: -25px;
   }
-  /* line 692, ../sass/media.sass */
+  /* line 739, ../sass/media.sass */
   body .music-container .album {
     position: relative;
     width: 100%;
     display: block;
     min-height: 0;
   }
-  /* line 697, ../sass/media.sass */
+  /* line 744, ../sass/media.sass */
   body .music-container .album > a {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 701, ../sass/media.sass */
+  /* line 748, ../sass/media.sass */
   body .music-container .album > a img {
     width: 140px;
     height: 140px;
     margin: 0;
   }
-  /* line 705, ../sass/media.sass */
+  /* line 752, ../sass/media.sass */
   body .music-container .album .albumLinksContainer {
     display: inline-block;
     margin-left: 5px;
   }
-  /* line 709, ../sass/media.sass */
+  /* line 756, ../sass/media.sass */
   body .music-container .album .albumLinksContainer a h3, body .music-container .album .albumLinksContainer a h2 {
     display: inline-block;
     vertical-align: top;
     margin: 5px 0;
   }
-  /* line 713, ../sass/media.sass */
+  /* line 760, ../sass/media.sass */
   body .music-container .album .albumLinksContainer a .caret {
     display: inline-block;
     line-height: inherit;
     margin: 6px 0 0 7px;
   }
-  /* line 717, ../sass/media.sass */
+  /* line 764, ../sass/media.sass */
   body .music-container .album .buy-menu {
     display: inline-block;
     position: absolute;
+    position: static;
     width: 120px;
-    top: auto;
-    left: auto;
-    bottom: 20px;
-    right: 10px;
   }
-  /* line 726, ../sass/media.sass */
+  /* line 774, ../sass/media.sass */
   body .music-container .album p {
     display: inline-block;
     margin: 20px 0 5px 0;
     border: none;
     padding: 0;
   }
-  /* line 731, ../sass/media.sass */
+  /* line 779, ../sass/media.sass */
   body .music-container .art {
     display: block;
     width: 100%;
     padding: 0;
   }
-  /* line 736, ../sass/media.sass */
+  /* line 784, ../sass/media.sass */
   body .music-container .art .art__content > a, body .music-container .art .art__content br {
     display: none;
   }
-  /* line 738, ../sass/media.sass */
+  /* line 786, ../sass/media.sass */
   body .music-container .art .nav {
     display: block;
     width: 280px;
@@ -838,120 +877,144 @@
     border-radius: 5px;
     overflow: hidden;
   }
-  /* line 746, ../sass/media.sass */
+  /* line 794, ../sass/media.sass */
   body .music-container .art .nav li {
     margin: 0;
-    width: 33%;
+    width: 33.3%;
     padding: 0;
   }
-  /* line 750, ../sass/media.sass */
+  /* line 798, ../sass/media.sass */
   body .music-container .art .nav li a {
     padding: 5px;
   }
 
-  /* line 752, ../sass/media.sass */
+  /* line 800, ../sass/media.sass */
   body.darkAlbum-style .nav-tabs li.active, body.lightAlbum-style .nav-tabs li.active {
     border-style: none;
     border-radius: 0px;
   }
 
-  /* line 755, ../sass/media.sass */
+  /* line 803, ../sass/media.sass */
   body.darkAlbum-style footer, body.lightAlbum-style footer {
     margin-top: 50px;
   }
 
-  /* line 760, ../sass/media.sass */
+  /* line 808, ../sass/media.sass */
   body .music-container .album .albumLinksContainer a, body .music-container .album .albumLinksContainer h2 {
     font-size: 15px;
   }
-  /* line 762, ../sass/media.sass */
+  /* line 810, ../sass/media.sass */
   body .music-container .album .albumLinksContainer p {
     font-size: 13px;
   }
+
+  /* line 814, ../sass/media.sass */
+  footer ul li {
+    line-height: 2.5;
+  }
+  /* line 816, ../sass/media.sass */
+  footer ul li:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  /* line 818, ../sass/media.sass */
+  .buy-menu {
+    color: #1F66B1;
+    border: 1px solid #1F66B1;
+  }
+  /* line 821, ../sass/media.sass */
+  .buy-menu .buy-menu__link {
+    color: #1F66B1;
+  }
+
+  /* line 825, ../sass/media.sass */
+  .color-style .buy-menu .buy-menu__link {
+    color: #1F66B1;
+  }
 }
 @media only screen and (max-width: 768px) {
-  /* line 769, ../sass/media.sass */
+  /* line 838, ../sass/media.sass */
   .music-container_center .nav-tabs {
     top: 150px;
   }
-  /* line 771, ../sass/media.sass */
+  /* line 840, ../sass/media.sass */
   .music-container_center .artist-list-tag > li {
     margin: 0 16px 0 0;
   }
-  /* line 773, ../sass/media.sass */
+  /* line 842, ../sass/media.sass */
   .music-container_center .breadcrumbs {
     top: 100px;
   }
-  /* line 775, ../sass/media.sass */
+  /* line 844, ../sass/media.sass */
   .music-container_center .tab-content .tab-pane > p, .music-container_center h3 {
     margin-top: 40px;
   }
-  /* line 777, ../sass/media.sass */
+  /* line 846, ../sass/media.sass */
   .music-container_center aside {
     padding-left: 0;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 782, ../sass/media.sass */
+  /* line 851, ../sass/media.sass */
   .music-container_center .nav-tabs {
     top: 80px;
     right: 0px;
   }
-  /* line 785, ../sass/media.sass */
+  /* line 854, ../sass/media.sass */
   .music-container_center .artistTabInfo-sidebar__ul li p {
     padding-right: 20px;
   }
 
-  /* line 787, ../sass/media.sass */
+  /* line 856, ../sass/media.sass */
   body .music-container .album > a img {
     width: 100px;
     height: 100px;
   }
 
-  /* line 790, ../sass/media.sass */
+  /* line 859, ../sass/media.sass */
   body .music-container .album .buy-menu {
-    right: 0px;
+    right: auto;
     bottom: -30px;
   }
 
-  /* line 793, ../sass/media.sass */
+  /* line 862, ../sass/media.sass */
   body .music-container .album .albumLinksContainer a h3, body .music-container .album .albumLinksContainer a h2 {
     margin: 0;
   }
 
-  /* line 795, ../sass/media.sass */
+  /* line 864, ../sass/media.sass */
   body .music-container .album .albumLinksContainer a .caret {
     margin-top: 1px;
   }
 
-  /* line 797, ../sass/media.sass */
+  /* line 866, ../sass/media.sass */
   body .music-container .album p {
     margin-top: 0;
   }
 
-  /* line 799, ../sass/media.sass */
+  /* line 868, ../sass/media.sass */
   body .music-container .breadcrumbs {
     display: none;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  /* line 803, ../sass/media.sass */
-  .breadcrumbs {
+  /* line 872, ../sass/media.sass */
+  .breadcrumbs, body.darkAlbum-style .breadcrumbs, body.lightAlbum-style .breadcrumbs {
     display: none;
   }
 
-  /* line 806, ../sass/media.sass */
+  /* line 875, ../sass/media.sass */
   .buy-menu .buy-menu__link {
     display: inline-block;
     width: 100%;
   }
-  /* line 809, ../sass/media.sass */
+  /* line 878, ../sass/media.sass */
   .buy-menu .priceDropdown {
     display: none;
   }
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 3 / 2) and (min-device-pixel-ratio: 1.5) {
-  /* line 825, ../sass/media.sass */
+  /* line 894, ../sass/media.sass */
   .header__mainMenu .leftMenu .iconsMenu {
     margin-top: 3px;
   }
