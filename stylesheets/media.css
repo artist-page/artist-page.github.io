@@ -1077,17 +1077,6 @@
     padding: 5px 0px;
   }
 }
-@media only screen and (min-device-width: 1500px) and (max-device-width: 2048px) {
-  /* line 861, ../sass/media.sass */
-  aside {
-    display: none;
-  }
-
-  /* line 863, ../sass/media.sass */
-  .music-content {
-    width: 100%;
-  }
-}
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 3 / 2) and (min-device-pixel-ratio: 1.5) {
   /* line 869, ../sass/media.sass */
   .header__mainMenu .leftMenu .iconsMenu {

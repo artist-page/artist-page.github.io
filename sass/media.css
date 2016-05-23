@@ -809,14 +809,6 @@
     .searchStyles .nav-tabs li a {
       padding: 5px 0px; } }
 
-@media only screen and (min-device-width: 1500px) and (max-device-width: 2048px) {
-  /* line 861, M:/Sites/9 itunes-istore/sass/media.sass */
-  aside {
-    display: none; }
-  /* line 863, M:/Sites/9 itunes-istore/sass/media.sass */
-  .music-content {
-    width: 100%; } }
-
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 3/2) and (min-device-pixel-ratio: 1.5) {
   /* line 869, M:/Sites/9 itunes-istore/sass/media.sass */
   .header__mainMenu .leftMenu .iconsMenu {

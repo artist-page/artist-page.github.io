@@ -584,3 +584,19 @@ $(document).ready(function() {
         return false;
     });
 });*/
+
+$(function() {
+   $('squareAlbumsWithPrice li ').bind('click',function(event){
+      var $anchor = $(this);
+      /*
+      Если вы хотите использовать один из эффектов замедляющих анимацию:
+      $('html, body').stop().animate({
+      scrollLeft: $($anchor.attr('href')).offset().left
+      }, 1500,'easeInOutExpo');
+      */
+      $('html, body').stop().animate({
+         scrollLeft: $($anchor.attr('href')).offset().left
+      }, 1000);
+      event.preventDefault();
+   });
+}); 

@@ -570,6 +570,7 @@ section
     position: absolute
     padding:  0
     text-align: center
+    font-size: 0px
     top: 12px
     right: 0px
     width: 70px
@@ -582,14 +583,16 @@ section
         line-height: 21px
         vertical-align: bottom
         text-align: center
-        //width: 80%
-        width: 47px
-        margin: 0 0 0 -1px
+        font-size: 14px
+        width: 50px
+        margin: 0
         padding: 0
         font-size: 12px
         color: $fColor
         &:hover
             text-decoration: none
+    .priceDropdown
+        font-size: 14px
 
 .priceDropdown
     width: 17px
@@ -1232,12 +1235,12 @@ body.darkAlbum-style
                     a
                         color: #fff
         .iconsMenu
-            a
+            &>a
                 &.active, &:hover
                     background-color: rgba(11, 134, 243, 0.25)
-                    //color: #0DA0FF
-                    color: #fff
+                    color: #0DA0FF
                     border: none
+                    border-radius: 5px
     footer
         margin-top: 200px
     a
@@ -1721,3 +1724,4 @@ body.lightAlbum-style
 .not-active
     pointer-events: none
     cursor: default
+    

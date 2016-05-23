@@ -5,197 +5,192 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
 
-    <title>Istore</title>
-    
+    <title>Istore/pop/Prince</title>
     <link href="stylesheets/normalize.min.css" type="text/css" rel="stylesheet">
     <link href="stylesheets/bootsrtapgrid.min.css" type="text/css" rel="stylesheet">
     <link href="stylesheets/fonts.css" type="text/css" rel="stylesheet">
-
-    <link href="stylesheets/owl.carousel.min.css" type="text/css" rel="stylesheet">
-    <link href="stylesheets/owl.theme.default.css" type="text/css" rel="stylesheet">
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
     <link href="stylesheets/media.css" type="text/css" rel="stylesheet">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	
-<!--     jQuery must be install before owl-carousel  and dont forget about   $(document).ready(function(){});  -->
-    <script>
-        $(document).ready(function(){
-      $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:5,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:false,
-        responsive:{
-            0:{
-                items:1,
-                stagePadding: 0,
-                nav:false
-            },
-            600:{
-                items:1,
-                stagePadding: 70,
-                nav:false
-            },
-            800:{
-                items:1,
-                stagePadding: 100,
-                nav:false
-            },
-            900:{
-                items:2,
-                stagePadding: 50,
-                nav:true
-            },
-            1600:{
-                items:3,
-                stagePadding: 50,
-                nav:true
-            }
-        }
-});
-});
-    </script>
-    
-    <script>
+	<script>
         $('#myTabs a').click(function (e) {
             e.preventDefault()
         $(this).tab('show')
         })
     </script>
-
-
 </head>
 
-<body class="darkAlbum-style">
+<body class="body_color dark-style-dropdown dark-style color-style">
+    <header>
+   
+        <div class="container header__mainMenu dark-color">
+      
+       <div class="row">
+           
+            <div class="col-md-3 col-lg-3 leftMenu">
+               <!--
+                <nav class="next-prev">
+                   <a href="#" class="active"><span>&lt;</span></a>
+                   <a href="#"><span>&gt;</span></a>
+                </nav>-->
+                
+                <nav class="iconsMenu">
+                    <a href="#" class="icon-mel active"></a>
+                    <a href="#" class="icon-mov"></a>
+                    <a href="#" class="icon-tvbv"></a>
 
-<header>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">&bull;&bull;&bull;
+                        </button>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="drop-m">
+                            <li>
+                                <a href="#" class="icon-pod">
+                                    <p>Podcasts</p>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="icon-pod">
+                                    <p>Podcasts</p>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="icon-pod">
+                                    <p>Podcasts</p>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                </nav>
+                
+            </div>
+           
+            <div class="col-md-9 col-lg-6 centerMenu">
+               
+                <ul class="click-active">
+                   
+                    <li><a href="#">My Music</a></li>
+                    <li><a href="#">Playlists</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li class="active"><a href="#">iTunes Store</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class="lineToggle">
+                <h2>Genres</h2>
+            </div>
+               
+                <a href="#menu" id="toggleButton"><span></span></a>
 
-    <div class="container header__mainMenu dark-color">
+            
+            <div id="togMenu">
+                <ul>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
+                    <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
 
-    <div class="row">
-
-        <div class="col-md-3 col-lg-3 leftMenu">
-
-            <nav class="iconsMenu">
-                <a href="#" class="icon-mel active"></a>
-                <a href="#" class="icon-mov"></a>
-                <a href="#" class="icon-tvbv"></a>
-
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">&bull;&bull;&bull;
-                    </button>
-
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-                        <li>
-                            <a href="#" class="icon-pod">
-                                <p>Podcasts</p>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="icon-pod">
-                                <p>Podcasts</p>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="icon-pod">
-                                <p>Podcasts</p>
-                            </a>
-                        </li>
-                    </ul>
-                    </div>
-            </nav>
-
-        </div>
-
-        <div class="col-md-9 col-lg-6 centerMenu">
-
-            <ul class="click-active">
-
-                <li><a href="#">My Music</a></li>
-                <li><a href="#">Playlists</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li class="active"><a href="#">iTunes Store</a></li>
-
-            </ul>
-
-        </div>
-
-        <div class="lineToggle">
-            <h2>Genres</h2>
-        </div>
-
-            <a href="#menu" id="toggleButton"><span></span></a>
-
-
-        <div id="togMenu">
-            <ul>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-                <li><img src="img/ico_toggle/ico-toggle_1.JPG" alt=""><a href="#">All Genres</a></li>
-
-            </ul>
-        </div>
-
-    </div>
-
-</div>
-
-</header>
-
-<img src="img/bg_artist/bg_artist_Drake.JPG" alt="artist background" class="ArtistBackgroundImage">
-
-<section class="music-container">
-    <div class="breadcrumbs">
-        <a href="#">Music</a>
-        <a class="active" href="#">R&amp;B/Soul</a>
-        <a href="#">Prince</a>
+                </ul>
+            </div>
+            
     </div>
     
-    <div class="album">
-        <a href="#" class="album__image">
-            <img src="img/artist/Drake.JPG" alt="Prince">
-        </a>
-        <div class="albumLinksContainer">
-            <a href="#"><h2>ART OF OFFICIAL AGE</h2></a><br>
-            <a href="#"><h3>Drake</h3><span class="caret"></span></a><br>
-            <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing<br> elit. Nesciunt, suscipit?</p>
-            <a href="#"><i></i></a><br>
+    </div>
+
+    </header>
+
+<section class="music-container music-container_center "> 
+    <div class="breadcrumbs">
+            <a href="#">Music</a>
+            <a class="active" href="#">R&amp;B/Soul</a>
+            <a href="#">Prince</a>
+    </div>
+    
+    <div class="artistPreview">
+       <img src="img/bg_artist/bg_artist_Prince.JPG" alt=" ">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#artistTabMusic" aria-controls="artistTabMusic" role="tab" data-toggle="tab">Music</a></li><li role="presentation"><a href="#artistTabInfo" aria-controls="artistTabInfo" role="tab" data-toggle="tab">Artist Info</a></li><li role="presentation" class="col_255-255-255-06"><a href="#artistTabGallery" aria-controls="artistTabGallery" role="tab" data-toggle="tab">Gallery</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+    <div role="tabpanel" class="tab-pane active artist" id="artistTabMusic">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, repudiandae dolores alias asperiores voluptatum quos aliquid provident, eos voluptate magnam laudantium! A, porro repellendus?<span class="showText">..more</span><span class="showingText"> Saepe ex at sed itaque quis ad sint, nesciunt natus et dolorem illo vel, eaque commodi explicabo culpa cupiditate sit, ipsam id fugiat perferendis esse. Laboriosam consequatur voluptatem quod, inventore voluptatum perspiciatis incidunt expedita asperiores fuga esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit beatae, harum ullam quaerat fugiat, aliquid blanditiis sed error corporis nihil! repellendus?Saepe ex at sed itaque quis ad sint, nesciunt natus et dolorem illo vel, eaque commodi explicabo culpa cupiditate sit, ipsam id fugiat perferendis esse. Laboriosam consequatur voluptatem quod, inventore voluptatum perspiciatis incidunt expedita asperiores fuga esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit beatae, harum ullam quaerat fugiat, aliquid blanditiis sed error corporis nihil!</span>
+    </p>
+
+    <div class="SquareAlbums-wrapper">
+        <h2 class="UlTitle">Collections</h2>
+        <div class="dropdown priceDropdown toSort">
+            <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Featured<span class="arrowDown">&rsaquo;</span></button>
+            <ul class="dropdown-menu" aria-labelledby="drop-m">
+                <li><a href="#">Musik</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">App Store</a></li>
+            </ul>
+        </div>
+        <a href="#" class="seeAll">See All <b class="bigger">&rsaquo;</b></a>
+        <ul class="squareAlbumsWithPrice artist-list-tag albums">
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
             <div class="buy-menu">
-                <a href="#" class="buy-menu__link">$99.99 Buy</a>
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                        <li><a href="#">App Store</a></li>
+                        <li><a href="#">App Store</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
                 <div class="dropdown priceDropdown">
                     <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
                     </button>
@@ -206,50 +201,15 @@
                     </ul>
                 </div>
             </div>
-            
-        </div>
-    </div>
-    
-    <div class="art">
-        <div class="art__content clearfix">
-            <a href="#"><h2>ART OF OFFICIAL AGE</h2></a><br>
-            <a href="#"><h3>Drake</h3><span class="caret"></span></a><br>
-            
-            
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs clearfix" role="tablist">
-    <li role="presentation" class="active"><a href="#Songs" aria-controls="Songs" role="tab" data-toggle="tab">Songs</a></li><li role="presentation"><a href="#RatingsAndReviews" aria-controls="RatingsAndReviews" role="tab" data-toggle="tab">Reviews</a></li><li role="presentation" class="col_255-255-255-06"><a href="#Related" aria-controls="Related" role="tab" data-toggle="tab">Related</a></li>
-      </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content clearfix">
-
-    <div role="tabpanel" class="tab-pane active artist" id="Songs">
-    <h3>Editors notes</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, repudiandae dolores alias asperiores voluptatum quos aliquid provident, eos voluptate magnam laudantium! A, porro repellendus? Saepe ex at sed itaque quis ad sint, nesciunt natus et dolorem illo vel, eaque commodi explicabo culpa cupiditate sit, ipsam id fugiat perferendis esse. Laboriosam consequatur voluptatem quod, inventore voluptatum perspiciatis incidunt expedita asperiores fuga esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit beatae, harum ullam quaerat fugiat, aliquid blanditiis sed error corporis nihil!</p>
-
-   <table class="albumsTable">
-        <tr>
-            <th><a href="#" class="arrowDown">&rsaquo;</a></th>
-            <th>NAME</th><!-- links ??? -->
-            <th>Artist</th>
-            <th>time</th>
-            <th>popularity</th>
-            <th>price</th>
-        </tr>
-        <tr class="table__row">
-            <td><span>1.</span></td>
-            <td>Eum. ewffa dsaasfs sss</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td>
-                <div class="popularityScale">
-                    <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                </div>
-            </td>
-            <td>
-                <div class="buy-menu not-active">
-                <a href="#" class="buy-menu__link ">Album Only</a>
+            <i></i>
+        </li>
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
                 <div class="dropdown priceDropdown">
                     <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
                     </button>
@@ -259,473 +219,219 @@
                         <li><a href="#">App Store</a></li>
                     </ul>
                 </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td><span>2.</span></td>
-            <td>Culpa.</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td></td>
-            <td>
-                <div class="buy-menu">
-                <a href="#" class="buy-menu__link">$0.99</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td><span>3.</span></td>
-            <td>Labore.</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td></td>
-            <td>
-               <div class="buy-menu not-active">
-                <a href="#" class="buy-menu__link ">Album Only</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td><span>4.</span></td>
-            <td>Est.</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td></td>
-            <td>
-               <div class="buy-menu not-active">
-                <a href="#" class="buy-menu__link ">Album Only</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td><span>5.</span></td>
-            <td>Consectetur!</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td></td>
-            <td>
-               <div class="buy-menu not-active">
-                <a href="#" class="buy-menu__link ">Album Only</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td><span>6.</span></td>
-            <td>Eum.</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td></td>
-            <td>
-                <div class="buy-menu not-active">
-                <a href="#" class="buy-menu__link ">Album Only</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td><span>7.</span></td>
-            <td>Culpa.</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td></td>
-            <td>
-                <div class="buy-menu">
-                <a href="#" class="buy-menu__link">$0.99</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td><span>8.</span></td>
-            <td>Labore.</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td></td>
-            <td>
-               <div class="buy-menu not-active">
-                <a href="#" class="buy-menu__link ">Album Only</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td><span>9.</span></td>
-            <td>Est.</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td></td>
-            <td>
-               <div class="buy-menu not-active">
-                <a href="#" class="buy-menu__link ">Album Only</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td><span>10.</span></td>
-            <td>Consectetur!</td>
-            <td><a href="#">Drake</a></td>
-            <td>5:28</td>
-            <td></td>
-            <td>
-               <div class="buy-menu not-active">
-                <a href="#" class="buy-menu__link ">Album Only</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="no-play">
-            <td></td>
-            <td>Digital Booklet - Views</td>
-            <td><a href="#">Drake</a></td>
-            <td></td>
-            <td></td>
-            <td>
-                <div class="buy-menu not-active">
-                <a href="#" class="buy-menu__link ">Album Only</a>
-                <div class="dropdown priceDropdown">
-                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="drop-m">
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Films</a></li>
-                        <li><a href="#">App Store</a></li>
-                    </ul>
-                </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="no-play">
-            <td></td>
-            <td>Preview All</td>
-            <td colspan="4">TOTAL: 21 ITEMS</td>
-        </tr>
-        
-        
-    </table>
-    
+            </div>
+            <i></i>
+        </li>
+    </ul>
     </div>
 
-    <div role="tabpanel" class="tab-pane" id="RatingsAndReviews">
-    
-        <h3>Customer Ratings</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolores animi repellendus, quod cumque, officiis modi beatae. Lorem ipsum dolor sit amet, consectetur  </p>
-        <h4>Click to Rate</h4>
-
-        <!--[if lte IE 7]><style>#reviewStars-input{display:none}</style><![endif]-->
-
-        <div id="reviewStars-input">
-            <input id="star-4" type="radio" name="reviewStars"/>
-            <label title="It's great." for="star-4"></label>
-
-            <input id="star-3" type="radio" name="reviewStars"/>
-            <label title="It's good." for="star-3"></label>
-
-            <input id="star-2" type="radio" name="reviewStars"/>
-            <label title="It's OK." for="star-2"></label>
-
-            <input id="star-1" type="radio" name="reviewStars"/>
-            <label title="I don't like it." for="star-1"></label>
-
-            <input id="star-0" type="radio" name="reviewStars"/>
-            <label title="I hate it." for="star-0"></label>
+    <div class="SquareAlbums-wrapper">
+        <h2 class="UlTitle">Classic albums</h2>
+        <div class="dropdown priceDropdown toSort">
+            <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Featured<span class="arrowDown">&rsaquo;</span></button>
+            <ul class="dropdown-menu" aria-labelledby="drop-m">
+                <li><a href="#">Musik</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">App Store</a></li>
+            </ul>
         </div>
-
-        <h3>Customer Ratings</h3>
-        <a href="#" class="review">Write a Review</a>
+        <a href="#" class="seeAll">See All <b class="bigger">&rsaquo;</b></a>
+        <ul class="squareAlbumsWithPrice albums">
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
         
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
+        
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
+        
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
+        
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
+        
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
+        
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
+        
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
+        
+        <li>
+           <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
+            <img src="img/album_01.jpg" alt="">
+            <h2>The Very Best Of Prince (2011)</h2>
+            </a>
+            <div class="buy-menu">
+                <a href="#" class="buy-menu__link">$99.99</a>
+                <div class="dropdown priceDropdown">
+                    <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="drop-m">
+                        <li><a href="#">Musik</a></li>
+                        <li><a href="#">Films</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i></i>
+        </li>
+    </ul>
     </div>
 
-    <div role="tabpanel" class="tab-pane" id="Related">
-       
-        <div class="SquareAlbums-wrapper">
-            <a href="#" class="seeAll">See All <b class="bigger">&rsaquo;</b></a>
-            <h2 class="UlTitle">Classic albums</h2>
-            <ul class="squareAlbumsWithPrice flexBehavior -artist-list-tag albums">
-           
-            <li>
-                <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99b.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-
-            <li>
-                <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-
-            <li>
-               <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-
-            <li>
-               <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-
-            <li>
-               <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-
-            <li>
-               <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-
-            <li>
-               <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-
-            <li>
-               <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-
-            <li>
-               <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-            
-            <li>
-               <a href="#" data-toggle="tooltip" title="The Very Best Of Prince (2011)">
-                <img src="img/album_01.jpg" alt="">
-                <h2>The Very Best Of Prince (2011)</h2>
-                </a>
-                <div class="buy-menu">
-                    <a href="#" class="buy-menu__link">$99.99</a>
-                    <div class="dropdown priceDropdown">
-                        <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="arrowDown">&rsaquo;</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="drop-m">
-                            <li><a href="#">Musik</a></li>
-                            <li><a href="#">Films</a></li>
-                            <li><a href="#">App Store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i></i>
-            </li>
-        </ul>
+    <div class="SquareAlbums-wrapper">
+        <h2 class="UlTitle">Songs</h2>
+        <div class="dropdown priceDropdown toSort">
+            <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Featured<span class="arrowDown">&rsaquo;</span></button>
+            <ul class="dropdown-menu" aria-labelledby="drop-m">
+                <li><a href="#">Musik</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">App Store</a></li>
+            </ul>
         </div>
-        
-        <div class="SquareAlbums-wrapper">
-            <a href="#" class="seeAll">See All <b class="bigger">&rsaquo;</b></a>
-            <h2 class="UlTitle">Hot Tracks</h2>
-            <div class="littleSquareAlbums">
+        <a href="#" class="seeAll">See All <b class="bigger">&rsaquo;</b></a>
+        <div class="littleSquareAlbums">
+
             <div class="lineList"> 
                 <!-- max 4 pieces lineList__column -->
                 <div class="lineList__column">
@@ -1047,12 +753,20 @@
             </div>
                 
             </div>
-        </div>  
-        
-        <div class="SquareAlbums-wrapper">
-            <a href="#" class="seeAll">See All <b class="bigger">&rsaquo;</b></a>
-            <h2 class="UlTitle">Pre-Orders</h2>
-            <ul class="squareAlbumsWithPrice flexBehavior">
+    </div>
+
+    <div class="SquareAlbums-wrapper">
+        <h2 class="UlTitle">Songs</h2>
+        <div class="dropdown priceDropdown toSort">
+            <button class="btn dropdown-toggle drop-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Featured<span class="arrowDown">&rsaquo;</span></button>
+            <ul class="dropdown-menu" aria-labelledby="drop-m">
+                <li><a href="#">Musik</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">App Store</a></li>
+            </ul>
+        </div>
+        <a href="#" class="seeAll">See All <b class="bigger">&rsaquo;</b></a>
+        <ul class="squareAlbumsWithPrice flexBehavior">
 
         <li>
             <a href="#" data-toggle="tooltip" title="UNTITLED UNMASTERED - Kendrick Lamar">
@@ -1523,18 +1237,230 @@
         </li>
 
     </ul>
-        </div>
-        
     </div>
 
     </div>
-        
-        </div>
-        
-    </div>
-        
 
-    
+    <div role="tabpanel" class="tab-pane" id="artistTabInfo">
+        <div class="artistTabInfo__artistbiography">
+        <h3>Biography</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolores animi repellendus, quod cumque, officiis modi beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, provident itaque. Ipsam facere qui corrupti quod dolore, nesciunt enim <span class="showText">..more</span><span class="showingText"> laudantium maxime voluptate eos mollitia libero neque provident nostrum eius inventore iste natus magni maiores. Ipsa fuga quo vero repellendus totam incidunt eum asperiores, maiores, nesciunt est quod. Unde laborum sequi, sint consequatur saepe expedita iure necessitatibus ducimus perferendis incidunt dolores natus, nisi minus explicabo minima beatae molestiae tenetur cum reiciendis dolorem in. <br> Culpa praesentium iure, deleniti quisquam. Repellendus illum rem deserunt consequatur cupiditate architecto non veritatis provident, error, quidem quisquam quos distinctio culpa tempore delectus beatae sint. Aperiam suscipit quam veniam debitis, nostrum illo totam. Ab distinctio provident commodi, fuga sapiente. <br> Quaerat mollitia, harum perferendis. Nesciunt cum, voluptates, commodi delectus consequatur impedit harum officia tempora. Porro vel reiciendis, assumenda tenetur consequuntur, cumque ipsa voluptatibus maxime quas ab perspiciatis velit aspernatur molestiae non, necessitatibus similique. Dolorum culpa deserunt excepturi libero nam repudiandae distinctio itaque! Ad at praesentium, autem repudiandae saepe sint expedita nostrum labore optio, ipsum quaerat et magni, beatae. Cumque, voluptatibus iste rem voluptate dignissimos corporis, nemo provident, amet eius adipisci nisi! Animi molestias eius, a ex saepe pariatur laudantium illo enim aliquam, nemo aliquid in accusantium consectetur totam inventore.
+</span></p>
+    </div>
+       
+        <aside class="artistTabInfo-sidebar">
+           <ul class="artistTabInfo-sidebar__ul">
+               <li>
+                   <p>Genre:</p>
+                   <p>RnB/Soul</p>
+               </li>
+               <li>
+                   <p>Origin</p>
+                   <p>Mineapolis m</p>
+               </li>
+               <li>
+                   <p>Years </p>
+                   <p>1970, 1975</p>
+               </li>
+               <li>
+                   <p>Birth date</p>
+                   <p>1958</p>
+               </li>
+           </ul>
+
+           <h2>Influencers</h2>
+           <ul class="artistTabInfo-sidebar__ul">
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="img/artist__info__img/1.JPG" alt="">
+                       <p>George Clinton George Clinton</p>
+                       <p>RnB/Soul</p>
+                   </a>
+               </li>
+           </ul>
+
+           <h2>Influencers</h2>
+           <ul class="artistTabInfo-sidebar__ul">
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="img/artist__info__img/1.JPG" alt="">
+                   <p>George Clinton George Clinton</p>
+                   <p>RnB/Soul</p>
+               </a>
+           </li>
+       </ul>
+       </aside>
+   
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="artistTabGallery">
+            <h3>Prince</h3>
+            <ul class="artistGalleryUl">
+                <li><img src="img/artist_galery/1.JPG" alt=""></li>
+                <li><img src="img/artist_galery/1.JPG" alt=""></li>
+                <li><img src="img/artist_galery/1.JPG" alt=""></li>
+                <li><img src="img/artist_galery/1.JPG" alt=""></li>
+                <li><img src="img/artist_galery/1.JPG" alt=""></li>
+            </ul>
+
+            </div>
+            
+    </div>
+    </div>
 </section>
 
 <footer>
