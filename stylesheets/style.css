@@ -1460,52 +1460,52 @@ body.darkAlbum-style .header__mainMenu .centerMenu ul li a, body.lightAlbum-styl
   color: #fff;
 }
 /* line 1236, ../sass/style.sass */
-body.darkAlbum-style .header__mainMenu .iconsMenu a.active, body.lightAlbum-style .header__mainMenu .iconsMenu a.active, body.darkAlbum-style .header__mainMenu .iconsMenu a :hover, body.lightAlbum-style .header__mainMenu .iconsMenu a :hover {
+body.darkAlbum-style .header__mainMenu .iconsMenu a.active, body.lightAlbum-style .header__mainMenu .iconsMenu a.active, body.darkAlbum-style .header__mainMenu .iconsMenu a:hover, body.lightAlbum-style .header__mainMenu .iconsMenu a:hover {
   background-color: rgba(11, 134, 243, 0.25);
-  color: #0DA0FF;
+  color: #fff;
   border: none;
 }
-/* line 1240, ../sass/style.sass */
+/* line 1241, ../sass/style.sass */
 body.darkAlbum-style footer, body.lightAlbum-style footer {
   margin-top: 200px;
 }
-/* line 1242, ../sass/style.sass */
+/* line 1243, ../sass/style.sass */
 body.darkAlbum-style a, body.lightAlbum-style a {
   color: #FFF;
 }
-/* line 1244, ../sass/style.sass */
+/* line 1245, ../sass/style.sass */
 body.darkAlbum-style a h2, body.lightAlbum-style a h2 {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 1247, ../sass/style.sass */
+/* line 1248, ../sass/style.sass */
 body.darkAlbum-style a h3, body.lightAlbum-style a h3 {
   margin: 10px 0 0 0;
 }
-/* line 1253, ../sass/style.sass */
+/* line 1254, ../sass/style.sass */
 body.darkAlbum-style .buy-menu .priceDropdown .dropdown-menu li a, body.lightAlbum-style .buy-menu .priceDropdown .dropdown-menu li a {
   color: #000;
 }
-/* line 1256, ../sass/style.sass */
+/* line 1257, ../sass/style.sass */
 body.darkAlbum-style .buy-menu .priceDropdown .dropdown-menu li:hover a, body.lightAlbum-style .buy-menu .priceDropdown .dropdown-menu li:hover a {
   color: #fff;
 }
-/* line 1260, ../sass/style.sass */
+/* line 1261, ../sass/style.sass */
 body.darkAlbum-style .music-container, body.lightAlbum-style .music-container {
   position: relative;
 }
-/* line 1265, ../sass/style.sass */
+/* line 1266, ../sass/style.sass */
 body.darkAlbum-style .breadcrumbs, body.lightAlbum-style .breadcrumbs {
   display: block;
   position: absolute;
   top: 5px;
   left: 15px;
 }
-/* line 1270, ../sass/style.sass */
+/* line 1271, ../sass/style.sass */
 body.darkAlbum-style .breadcrumbs a:after, body.lightAlbum-style .breadcrumbs a:after {
   border-left: 4px solid #FFF;
 }
-/* line 1272, ../sass/style.sass */
+/* line 1273, ../sass/style.sass */
 body.darkAlbum-style .album, body.lightAlbum-style .album, body.darkAlbum-style .art, body.lightAlbum-style .art {
   display: inline-block;
   margin: 30px -1px 0 -1px;
@@ -1513,34 +1513,34 @@ body.darkAlbum-style .album, body.lightAlbum-style .album, body.darkAlbum-style 
   min-height: 600px;
   color: #000;
 }
-/* line 1278, ../sass/style.sass */
+/* line 1279, ../sass/style.sass */
 body.darkAlbum-style .album h4, body.lightAlbum-style .album h4, body.darkAlbum-style .album h3, body.lightAlbum-style .album h3, body.darkAlbum-style .album h2, body.lightAlbum-style .album h2, body.darkAlbum-style .album a, body.lightAlbum-style .album a, body.darkAlbum-style .album p, body.lightAlbum-style .album p, body.darkAlbum-style .album span, body.lightAlbum-style .album span, body.darkAlbum-style .album td, body.lightAlbum-style .album td, body.darkAlbum-style .album th, body.lightAlbum-style .album th, body.darkAlbum-style .album tr, body.lightAlbum-style .album tr, body.darkAlbum-style .album .buy-menu > a, body.lightAlbum-style .album .buy-menu > a, body.darkAlbum-style .art h4, body.lightAlbum-style .art h4, body.darkAlbum-style .art h3, body.lightAlbum-style .art h3, body.darkAlbum-style .art h2, body.lightAlbum-style .art h2, body.darkAlbum-style .art a, body.lightAlbum-style .art a, body.darkAlbum-style .art p, body.lightAlbum-style .art p, body.darkAlbum-style .art span, body.lightAlbum-style .art span, body.darkAlbum-style .art td, body.lightAlbum-style .art td, body.darkAlbum-style .art th, body.lightAlbum-style .art th, body.darkAlbum-style .art tr, body.lightAlbum-style .art tr, body.darkAlbum-style .art .buy-menu > a, body.lightAlbum-style .art .buy-menu > a {
   color: #c3c3c3;
 }
-/* line 1280, ../sass/style.sass */
+/* line 1281, ../sass/style.sass */
 body.darkAlbum-style .album, body.lightAlbum-style .album {
   width: 220px;
 }
-/* line 1282, ../sass/style.sass */
+/* line 1283, ../sass/style.sass */
 body.darkAlbum-style .album .buy-menu .dropdown-menu, body.lightAlbum-style .album .buy-menu .dropdown-menu {
   bottom: -51px;
   right: 0;
 }
-/* line 1286, ../sass/style.sass */
+/* line 1287, ../sass/style.sass */
 body.darkAlbum-style .album p, body.lightAlbum-style .album p {
   margin: 30px auto 20px auto;
   padding: 10px 0 0 0;
   font-size: 14px;
   border-top: 1px solid #383838;
 }
-/* line 1291, ../sass/style.sass */
+/* line 1292, ../sass/style.sass */
 body.darkAlbum-style .album .buy-menu, body.lightAlbum-style .album .buy-menu {
   position: relative;
   width: 90%;
   margin: 0 auto;
   height: auto;
 }
-/* line 1296, ../sass/style.sass */
+/* line 1297, ../sass/style.sass */
 body.darkAlbum-style .album .buy-menu > a, body.lightAlbum-style .album .buy-menu > a {
   display: inline-block;
   width: 80%;
@@ -1548,54 +1548,54 @@ body.darkAlbum-style .album .buy-menu > a, body.lightAlbum-style .album .buy-men
   font-size: 16px;
   padding: 2px 0 0 0;
 }
-/* line 1302, ../sass/style.sass */
+/* line 1303, ../sass/style.sass */
 body.darkAlbum-style .album .buy-menu > a:hover, body.lightAlbum-style .album .buy-menu > a:hover {
   text-decoration: none;
 }
-/* line 1304, ../sass/style.sass */
+/* line 1305, ../sass/style.sass */
 body.darkAlbum-style .album .buy-menu .priceDropdown, body.lightAlbum-style .album .buy-menu .priceDropdown {
   width: 20%;
   margin: 0 -1px;
 }
-/* line 1307, ../sass/style.sass */
+/* line 1308, ../sass/style.sass */
 body.darkAlbum-style .album .buy-menu .priceDropdown .btn, body.lightAlbum-style .album .buy-menu .priceDropdown .btn {
   height: 25px;
 }
-/* line 1315, ../sass/style.sass */
+/* line 1316, ../sass/style.sass */
 body.darkAlbum-style .album .albumLinksContainer a h3, body.lightAlbum-style .album .albumLinksContainer a h3, body.darkAlbum-style .album .albumLinksContainer a h2, body.lightAlbum-style .album .albumLinksContainer a h2, body.darkAlbum-style .album .albumLinksContainer a .caret, body.lightAlbum-style .album .albumLinksContainer a .caret, body.darkAlbum-style .album .albumLinksContainer a .caret-left, body.lightAlbum-style .album .albumLinksContainer a .caret-left {
   display: none;
 }
-/* line 1318, ../sass/style.sass */
+/* line 1319, ../sass/style.sass */
 body.darkAlbum-style .album > a img, body.lightAlbum-style .album > a img {
   display: block;
   width: 220px;
   height: 220px;
   margin-bottom: 20px;
 }
-/* line 1325, ../sass/style.sass */
+/* line 1326, ../sass/style.sass */
 body.darkAlbum-style .art, body.lightAlbum-style .art {
   width: calc(100% - 220px);
   padding-left: 30px;
 }
-/* line 1331, ../sass/style.sass */
+/* line 1332, ../sass/style.sass */
 body.darkAlbum-style .art .art__content > a:hover, body.lightAlbum-style .art .art__content > a:hover {
   text-decoration: underline;
 }
-/* line 1333, ../sass/style.sass */
+/* line 1334, ../sass/style.sass */
 body.darkAlbum-style .art .art__content > a h2, body.lightAlbum-style .art .art__content > a h2, body.darkAlbum-style .art .art__content > a h3, body.lightAlbum-style .art .art__content > a h3 {
   display: inline-block;
 }
-/* line 1336, ../sass/style.sass */
+/* line 1337, ../sass/style.sass */
 body.darkAlbum-style .art .art__content > a .caret, body.lightAlbum-style .art .art__content > a .caret, body.darkAlbum-style .art .art__content > a .caret-left, body.lightAlbum-style .art .art__content > a .caret-left {
   line-height: 1.5;
   margin: 0 0 0 8px;
   vertical-align: baseline;
 }
-/* line 1340, ../sass/style.sass */
+/* line 1341, ../sass/style.sass */
 body.darkAlbum-style .art h3, body.lightAlbum-style .art h3 {
   font-size: 18px;
 }
-/* line 1342, ../sass/style.sass */
+/* line 1343, ../sass/style.sass */
 body.darkAlbum-style .art .review, body.lightAlbum-style .art .review {
   border: 1px solid #c3c3c3;
   border-radius: 4px;
@@ -1604,98 +1604,98 @@ body.darkAlbum-style .art .review, body.lightAlbum-style .art .review {
   display: inline-block;
   padding: 1px 8px;
 }
-/* line 1349, ../sass/style.sass */
+/* line 1350, ../sass/style.sass */
 body.darkAlbum-style .art .review:hover, body.lightAlbum-style .art .review:hover {
   text-decoration: none;
 }
-/* line 1351, ../sass/style.sass */
+/* line 1352, ../sass/style.sass */
 body.darkAlbum-style .nav-tabs, body.lightAlbum-style .nav-tabs {
   margin: 130px 0 0 0;
   border-bottom: 1px solid #383838;
 }
-/* line 1354, ../sass/style.sass */
+/* line 1355, ../sass/style.sass */
 body.darkAlbum-style .nav-tabs li, body.lightAlbum-style .nav-tabs li {
   margin: 0 10px 5px 0;
   padding: 5px 10px;
 }
-/* line 1357, ../sass/style.sass */
+/* line 1358, ../sass/style.sass */
 body.darkAlbum-style .nav-tabs li.active, body.lightAlbum-style .nav-tabs li.active {
   background: #191919;
   border-radius: 7px;
 }
-/* line 1361, ../sass/style.sass */
+/* line 1362, ../sass/style.sass */
 body.darkAlbum-style .nav-tabs li:hover a, body.lightAlbum-style .nav-tabs li:hover a {
   color: #e5e5e5;
 }
-/* line 1363, ../sass/style.sass */
+/* line 1364, ../sass/style.sass */
 body.darkAlbum-style .nav-tabs li a, body.lightAlbum-style .nav-tabs li a {
   color: #BCBCBC;
 }
-/* line 1366, ../sass/style.sass */
+/* line 1367, ../sass/style.sass */
 body.darkAlbum-style .tab-pane h3, body.lightAlbum-style .tab-pane h3 {
   margin: 20px 0 5px 0;
 }
-/* line 1370, ../sass/style.sass */
+/* line 1371, ../sass/style.sass */
 body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums h2, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums h2, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice h2, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice h2 {
   margin: 5px 0;
 }
-/* line 1374, ../sass/style.sass */
+/* line 1375, ../sass/style.sass */
 body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu {
   max-width: 123px;
 }
-/* line 1378, ../sass/style.sass */
+/* line 1379, ../sass/style.sass */
 body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li {
   display: block;
   margin: 0;
   width: auto;
 }
-/* line 1382, ../sass/style.sass */
+/* line 1383, ../sass/style.sass */
 body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a {
   display: block;
 }
-/* line 1384, ../sass/style.sass */
+/* line 1385, ../sass/style.sass */
 body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a:hover, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a:hover, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a:hover, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a:hover {
   text-decoration: none;
 }
 
-/* line 1388, ../sass/style.sass */
+/* line 1389, ../sass/style.sass */
 .albumsTable, .searchTable {
   width: 100%;
 }
-/* line 1390, ../sass/style.sass */
+/* line 1391, ../sass/style.sass */
 .albumsTable th, .searchTable th {
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 1393, ../sass/style.sass */
+/* line 1394, ../sass/style.sass */
 .albumsTable th .caret, .searchTable th .caret, .albumsTable th .caret-left, .searchTable th .caret-left {
   position: relative;
   left: 10px;
 }
-/* line 1396, ../sass/style.sass */
+/* line 1397, ../sass/style.sass */
 .albumsTable tr, .searchTable tr {
   border-bottom: 1px solid #383838;
 }
-/* line 1399, ../sass/style.sass */
+/* line 1400, ../sass/style.sass */
 .albumsTable tr:hover td:first-child, .searchTable tr:hover td:first-child {
   background: url("../img/ico_play_white.svg") no-repeat;
   background-position: 0 3px;
   cursor: pointer;
 }
-/* line 1400, ../sass/style.sass */
+/* line 1401, ../sass/style.sass */
 .albumsTable tr:hover td:first-child span, .searchTable tr:hover td:first-child span {
   visibility: hidden;
 }
-/* line 1406, ../sass/style.sass */
+/* line 1407, ../sass/style.sass */
 .albumsTable tr td:nth-child(3):hover a, .searchTable tr td:nth-child(3):hover a {
   text-decoration: none;
 }
-/* line 1409, ../sass/style.sass */
+/* line 1410, ../sass/style.sass */
 .albumsTable tr td .popularityScale, .searchTable tr td .popularityScale {
   width: 100%;
   display: inline-block;
 }
-/* line 1412, ../sass/style.sass */
+/* line 1413, ../sass/style.sass */
 .albumsTable tr td .popularityScale span, .searchTable tr td .popularityScale span {
   display: inline-block;
   width: 1px;
@@ -1704,43 +1704,43 @@ body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-me
   margin: 0 2px 0 0;
   background: #383838;
 }
-/* line 1419, ../sass/style.sass */
+/* line 1420, ../sass/style.sass */
 .albumsTable tr td .popularityScale span.on, .searchTable tr td .popularityScale span.on {
   background: #FFF;
 }
-/* line 1421, ../sass/style.sass */
+/* line 1422, ../sass/style.sass */
 .albumsTable tr:last-child, .searchTable tr:last-child {
   border-bottom: none;
 }
-/* line 1425, ../sass/style.sass */
+/* line 1426, ../sass/style.sass */
 .albumsTable .no-play:hover td:first-child, .searchTable .no-play:hover td:first-child {
   background: none;
 }
-/* line 1428, ../sass/style.sass */
+/* line 1429, ../sass/style.sass */
 .albumsTable th:nth-child(1), .searchTable th:nth-child(1) {
   width: 3%;
 }
-/* line 1430, ../sass/style.sass */
+/* line 1431, ../sass/style.sass */
 .albumsTable th:nth-child(2), .searchTable th:nth-child(2) {
   width: 32%;
 }
-/* line 1432, ../sass/style.sass */
+/* line 1433, ../sass/style.sass */
 .albumsTable th:nth-child(3), .searchTable th:nth-child(3) {
   width: 33%;
 }
-/* line 1434, ../sass/style.sass */
+/* line 1435, ../sass/style.sass */
 .albumsTable th:nth-child(4), .searchTable th:nth-child(4) {
   width: 10%;
 }
-/* line 1436, ../sass/style.sass */
+/* line 1437, ../sass/style.sass */
 .albumsTable th:nth-child(5), .searchTable th:nth-child(5) {
   width: 15%;
 }
-/* line 1438, ../sass/style.sass */
+/* line 1439, ../sass/style.sass */
 .albumsTable th:nth-child(6), .searchTable th:nth-child(6) {
   width: 9%;
 }
-/* line 1440, ../sass/style.sass */
+/* line 1441, ../sass/style.sass */
 .albumsTable .buy-menu, .searchTable .buy-menu {
   position: static;
   text-align: center;
@@ -1748,7 +1748,7 @@ body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-me
   width: 100px;
   margin: 3px 0;
 }
-/* line 1446, ../sass/style.sass */
+/* line 1447, ../sass/style.sass */
 .albumsTable .buy-menu .buy-menu__link, .searchTable .buy-menu .buy-menu__link {
   margin: 0 -1px;
   display: inline-block;
@@ -1756,45 +1756,45 @@ body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-me
   line-height: 20px;
   vertical-align: baseline;
 }
-/* line 1452, ../sass/style.sass */
+/* line 1453, ../sass/style.sass */
 .albumsTable .buy-menu .arrowDown, .searchTable .buy-menu .arrowDown {
   width: 23px;
 }
-/* line 1454, ../sass/style.sass */
+/* line 1455, ../sass/style.sass */
 .albumsTable .buy-menu .btn, .searchTable .buy-menu .btn {
   width: 17%;
 }
-/* line 1456, ../sass/style.sass */
+/* line 1457, ../sass/style.sass */
 .albumsTable .buy-menu .priceDropdown, .searchTable .buy-menu .priceDropdown {
   margin: 0;
   position: relative;
 }
-/* line 1461, ../sass/style.sass */
+/* line 1462, ../sass/style.sass */
 .albumsTable .buy-menu .priceDropdown .dropdown-menu li a, .searchTable .buy-menu .priceDropdown .dropdown-menu li a {
   color: #000;
 }
-/* line 1464, ../sass/style.sass */
+/* line 1465, ../sass/style.sass */
 .albumsTable .buy-menu .priceDropdown .dropdown-menu li:hover a, .searchTable .buy-menu .priceDropdown .dropdown-menu li:hover a {
   color: #fff;
 }
-/* line 1466, ../sass/style.sass */
+/* line 1467, ../sass/style.sass */
 .albumsTable .not-active, .searchTable .not-active {
   text-align: center;
 }
-/* line 1468, ../sass/style.sass */
+/* line 1469, ../sass/style.sass */
 .albumsTable .not-active .buy-menu__link, .searchTable .not-active .buy-menu__link {
   width: 100%;
 }
 
-/* line 1470, ../sass/style.sass */
+/* line 1471, ../sass/style.sass */
 .searchTable {
   margin-top: 10px;
 }
-/* line 1474, ../sass/style.sass */
+/* line 1475, ../sass/style.sass */
 .searchTable .buy-menu .buy-menu__link {
   vertical-align: top;
 }
-/* line 1476, ../sass/style.sass */
+/* line 1477, ../sass/style.sass */
 .searchTable .searchTable__img {
   width: 22px;
   height: 15px;
@@ -1802,83 +1802,83 @@ body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-me
   margin-right: 5px;
   display: inline-block;
 }
-/* line 1485, ../sass/style.sass */
+/* line 1486, ../sass/style.sass */
 .searchTable th:nth-child(1) {
   width: 2%;
 }
-/* line 1487, ../sass/style.sass */
+/* line 1488, ../sass/style.sass */
 .searchTable th:nth-child(2) {
   width: 28%;
 }
-/* line 1489, ../sass/style.sass */
+/* line 1490, ../sass/style.sass */
 .searchTable th:nth-child(3) {
   width: 28%;
 }
-/* line 1491, ../sass/style.sass */
+/* line 1492, ../sass/style.sass */
 .searchTable th:nth-child(4) {
   width: 18%;
 }
-/* line 1493, ../sass/style.sass */
+/* line 1494, ../sass/style.sass */
 .searchTable th:nth-child(5) {
   width: 5%;
 }
-/* line 1497, ../sass/style.sass */
+/* line 1498, ../sass/style.sass */
 .searchTable th:nth-child(6) {
   width: 9%;
 }
-/* line 1499, ../sass/style.sass */
+/* line 1500, ../sass/style.sass */
 .searchTable th:nth-child(7) {
   width: 6%;
 }
-/* line 1503, ../sass/style.sass */
+/* line 1504, ../sass/style.sass */
 .searchTable tr:nth-child(2) td {
   padding-top: 7px;
 }
-/* line 1506, ../sass/style.sass */
+/* line 1507, ../sass/style.sass */
 .searchTable tr td:nth-child(7) {
   text-align: right;
 }
-/* line 1508, ../sass/style.sass */
+/* line 1509, ../sass/style.sass */
 .searchTable tr td:nth-child(7) .buy-menu {
   display: inline-block;
   text-align: center;
 }
-/* line 1513, ../sass/style.sass */
+/* line 1514, ../sass/style.sass */
 .searchTable tr td:nth-child(3):hover a {
   text-decoration: underline;
 }
-/* line 1516, ../sass/style.sass */
+/* line 1517, ../sass/style.sass */
 .searchTable tr:hover td:first-child {
   background: url("../img/ico_play.svg") no-repeat;
   background-position: 0 3px;
 }
 
-/* line 1521, ../sass/style.sass */
+/* line 1522, ../sass/style.sass */
 .containerOfTypes table tr {
   border: none;
   line-height: 1.5;
 }
-/* line 1524, ../sass/style.sass */
+/* line 1525, ../sass/style.sass */
 .containerOfTypes table tr:first-child {
   line-height: 1.4;
   margin-bottom: 5px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 1530, ../sass/style.sass */
+/* line 1531, ../sass/style.sass */
 .containerOfTypes table tr td .popularityScale {
   line-height: 1.3;
 }
-/* line 1532, ../sass/style.sass */
+/* line 1533, ../sass/style.sass */
 .containerOfTypes table tr td .popularityScale span {
   background: #c3c3c3;
 }
-/* line 1534, ../sass/style.sass */
+/* line 1535, ../sass/style.sass */
 .containerOfTypes table tr td .popularityScale span.on {
   background: #4e4e4e;
 }
 
-/* line 1536, ../sass/style.sass */
+/* line 1537, ../sass/style.sass */
 .ArtistBackgroundImage {
   position: absolute;
   right: 0;
@@ -1886,35 +1886,35 @@ body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-me
   z-index: -1;
 }
 
-/* line 1541, ../sass/style.sass */
+/* line 1542, ../sass/style.sass */
 .searchFooter {
   margin-top: 150px;
 }
 
-/* line 1544, ../sass/style.sass */
+/* line 1545, ../sass/style.sass */
 .not-active {
   border: none;
 }
-/* line 1546, ../sass/style.sass */
+/* line 1547, ../sass/style.sass */
 .not-active .priceDropdown {
   border: none;
 }
-/* line 1548, ../sass/style.sass */
+/* line 1549, ../sass/style.sass */
 .not-active .buy-menu__link {
   width: 100%;
   margin: 0;
 }
-/* line 1551, ../sass/style.sass */
+/* line 1552, ../sass/style.sass */
 .not-active > a {
   pointer-events: none;
   cursor: default;
 }
-/* line 1554, ../sass/style.sass */
+/* line 1555, ../sass/style.sass */
 .not-active .priceDropdown {
   display: none;
 }
 
-/* line 1559, ../sass/style.sass */
+/* line 1560, ../sass/style.sass */
 .art h4 {
   display: inline-block;
   margin: 10px 10px 0 0;
@@ -1922,13 +1922,13 @@ body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-me
 
 /* raiting stars */
 /*sprite with stars */
-/* line 1565, ../sass/style.sass */
+/* line 1566, ../sass/style.sass */
 #reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
   background: url("http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png") no-repeat;
   background: url("../img/rsz_stars.png") no-repeat;
 }
 
-/* line 1569, ../sass/style.sass */
+/* line 1570, ../sass/style.sass */
 #reviewStars-input {
   /*fix floating problems */
   overflow: hidden;
@@ -1941,7 +1941,7 @@ body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-me
   position: relative;
 }
 
-/* line 1580, ../sass/style.sass */
+/* line 1581, ../sass/style.sass */
 #reviewStars-input input {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -1953,14 +1953,14 @@ body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-me
   z-index: 0;
 }
 
-/* line 1590, ../sass/style.sass */
+/* line 1591, ../sass/style.sass */
 #reviewStars-input input:checked ~ label {
   background-position: 0 -21px;
   width: 22px;
   height: 20.5px;
 }
 
-/* line 1595, ../sass/style.sass */
+/* line 1596, ../sass/style.sass */
 #reviewStars-input label {
   background-position: 0 0;
   width: 22px;
@@ -1972,81 +1972,81 @@ body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-me
   z-index: 1;
 }
 
-/* line 1605, ../sass/style.sass */
+/* line 1606, ../sass/style.sass */
 #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
   background-position: 0 -21px;
   width: 22px;
   height: 20.5px;
 }
 
-/* line 1610, ../sass/style.sass */
+/* line 1611, ../sass/style.sass */
 #reviewStars-input #star-0 {
   left: -75px;
 }
 
-/* line 1612, ../sass/style.sass */
+/* line 1613, ../sass/style.sass */
 #reviewStars-input #star-1 {
   left: -22px;
 }
 
-/* line 1614, ../sass/style.sass */
+/* line 1615, ../sass/style.sass */
 #reviewStars-input #star-2 {
   left: 31px;
 }
 
-/* line 1616, ../sass/style.sass */
+/* line 1617, ../sass/style.sass */
 #reviewStars-input #star-3 {
   left: 84px;
 }
 
-/* line 1618, ../sass/style.sass */
+/* line 1619, ../sass/style.sass */
 #reviewStars-input #star-4 {
   left: 137px;
 }
 
-/* line 1620, ../sass/style.sass */
+/* line 1621, ../sass/style.sass */
 #reviewStars-input #star-5 {
   left: 190px;
 }
 
-/* line 1624, ../sass/style.sass */
+/* line 1625, ../sass/style.sass */
 body.lightAlbum-style {
   background: none;
 }
-/* line 1628, ../sass/style.sass */
+/* line 1629, ../sass/style.sass */
 body.lightAlbum-style a {
   color: #000;
 }
-/* line 1631, ../sass/style.sass */
+/* line 1632, ../sass/style.sass */
 body.lightAlbum-style .album, body.lightAlbum-style .art {
   display: inline-block;
   margin: 30px -1px 0 -1px;
   vertical-align: top;
   color: #000;
 }
-/* line 1636, ../sass/style.sass */
+/* line 1637, ../sass/style.sass */
 body.lightAlbum-style .album h4, body.lightAlbum-style .album h3, body.lightAlbum-style .album h2, body.lightAlbum-style .album a, body.lightAlbum-style .album p, body.lightAlbum-style .album span, body.lightAlbum-style .album td, body.lightAlbum-style .album th, body.lightAlbum-style .album tr, body.lightAlbum-style .album .buy-menu > a, body.lightAlbum-style .art h4, body.lightAlbum-style .art h3, body.lightAlbum-style .art h2, body.lightAlbum-style .art a, body.lightAlbum-style .art p, body.lightAlbum-style .art span, body.lightAlbum-style .art td, body.lightAlbum-style .art th, body.lightAlbum-style .art tr, body.lightAlbum-style .art .buy-menu > a {
   color: #4e4e4e;
 }
-/* line 1640, ../sass/style.sass */
+/* line 1641, ../sass/style.sass */
 body.lightAlbum-style .squareAlbumsWithPrice li p {
   color: #9E9EA5;
 }
-/* line 1643, ../sass/style.sass */
+/* line 1644, ../sass/style.sass */
 body.lightAlbum-style .breadcrumbs a:after {
   border-left: 4px solid #4e4e4e;
 }
-/* line 1645, ../sass/style.sass */
+/* line 1646, ../sass/style.sass */
 body.lightAlbum-style .nav-tabs {
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 1648, ../sass/style.sass */
+/* line 1649, ../sass/style.sass */
 body.lightAlbum-style .nav-tabs li.active {
   background: #e5e5e5;
 }
 
 /* simple style */
-/* line 1653, ../sass/style.sass */
+/* line 1654, ../sass/style.sass */
 .UlTitle {
   display: inline-block;
   font-size: 16px;
@@ -2054,29 +2054,29 @@ body.lightAlbum-style .nav-tabs li.active {
   line-height: 1.45;
 }
 
-/* line 1660, ../sass/style.sass */
+/* line 1661, ../sass/style.sass */
 .showText {
   display: none;
   color: cyan;
   text-decoration: underline;
 }
 
-/* line 1664, ../sass/style.sass */
+/* line 1665, ../sass/style.sass */
 .showingText {
   display: inline;
 }
 
-/* line 1669, ../sass/style.sass */
+/* line 1670, ../sass/style.sass */
 .onlyPrice .buy-menu__link {
   display: inline-block;
   width: 100%;
 }
-/* line 1672, ../sass/style.sass */
+/* line 1673, ../sass/style.sass */
 .onlyPrice .priceDropdown {
   display: none;
 }
 
-/* line 1676, ../sass/style.sass */
+/* line 1677, ../sass/style.sass */
 .resultForSearch {
   padding-bottom: 5px;
   text-align: left;
@@ -2084,77 +2084,77 @@ body.lightAlbum-style .nav-tabs li.active {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 1681, ../sass/style.sass */
+/* line 1682, ../sass/style.sass */
 .headerBorder {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 1684, ../sass/style.sass */
+/* line 1685, ../sass/style.sass */
 .searchStyles .tab-pane {
   margin: 20px 0;
 }
-/* line 1686, ../sass/style.sass */
+/* line 1687, ../sass/style.sass */
 .searchStyles .tab-pane:first-child {
   margin: 5px 0 0 0;
 }
-/* line 1688, ../sass/style.sass */
+/* line 1689, ../sass/style.sass */
 .searchStyles .nav-tabs {
   display: none;
   border: 1px solid #1F66B1;
   border-radius: 5px;
   overflow: hidden;
 }
-/* line 1693, ../sass/style.sass */
+/* line 1694, ../sass/style.sass */
 .searchStyles .nav-tabs li {
   padding: 0 10px;
 }
-/* line 1695, ../sass/style.sass */
+/* line 1696, ../sass/style.sass */
 .searchStyles .nav-tabs li.active {
   background: #1F66B1;
 }
-/* line 1697, ../sass/style.sass */
+/* line 1698, ../sass/style.sass */
 .searchStyles .nav-tabs li.active a {
   color: #FFF;
 }
-/* line 1699, ../sass/style.sass */
+/* line 1700, ../sass/style.sass */
 .searchStyles .nav-tabs li a {
   padding: 5px;
 }
-/* line 1702, ../sass/style.sass */
+/* line 1703, ../sass/style.sass */
 .searchStyles table td {
   position: relative;
 }
 
-/* line 1704, ../sass/style.sass */
+/* line 1705, ../sass/style.sass */
 .containerOfTypes {
   text-align: left;
 }
-/* line 1706, ../sass/style.sass */
+/* line 1707, ../sass/style.sass */
 .containerOfTypes .SquareAlbums-wrapper {
   text-align: left;
 }
-/* line 1708, ../sass/style.sass */
+/* line 1709, ../sass/style.sass */
 .containerOfTypes .tab-pane {
   display: none;
 }
-/* line 1711, ../sass/style.sass */
+/* line 1712, ../sass/style.sass */
 .containerOfTypes .squareAlbumsWithPrice p {
   font-size: 12px;
 }
-/* line 1713, ../sass/style.sass */
+/* line 1714, ../sass/style.sass */
 .containerOfTypes .showItems {
   display: block;
 }
-/* line 1715, ../sass/style.sass */
+/* line 1716, ../sass/style.sass */
 .containerOfTypes .media-displayNone {
   display: block;
 }
-/* line 1717, ../sass/style.sass */
+/* line 1718, ../sass/style.sass */
 .containerOfTypes .media-displayBlock {
   display: none;
 }
 
-/* line 1720, ../sass/style.sass */
+/* line 1721, ../sass/style.sass */
 .not-active {
   pointer-events: none;
   cursor: default;
