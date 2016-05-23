@@ -12,7 +12,7 @@ body {
   min-width: 320px; }
 
 /* line 28, M:/Sites/9 itunes-istore/sass/style.sass */
-.color-style .music-container_center .breadcrumbs a, .color-style .music-container_center, .color-style .music-container_center .artist-list-tag h2, .color-style .buy-menu .buy-menu__link, .color-style .seeAll, .color-style .artistTabInfo-sidebar__ul li p, .color-style footer ul li h2, .color-style footer ul li a, .color-style .priceDropdown .btn .caret:after, .color-style .priceDropdown .btn .caret-down:after, .color-style .priceDropdown .btn .caret-left:after, .color-style .squareAlbumsWithPrice .buy-menu .buy-menu__link, .color-style .squareAlbumsWithPrice li p, .color-style .squareAlbums li h2, .color-style .squareAlbumsWithPrice li h2 {
+.color-style .music-container_center .breadcrumbs a, .color-style .music-container_center, .color-style .music-container_center .artist-list-tag h2, .color-style .buy-menu .buy-menu__link, .color-style .seeAll, .color-style .artistTabInfo-sidebar__ul li p, .color-style footer ul li h2, .color-style footer ul li a, .color-style .priceDropdown .btn .caret:after, .color-style .priceDropdown .btn .caret-left:after, .color-style .squareAlbumsWithPrice .buy-menu .buy-menu__link, .color-style .squareAlbumsWithPrice li p, .color-style .squareAlbums li h2, .color-style .squareAlbumsWithPrice li h2 {
   color: #F39154; }
 
 /* line 30, M:/Sites/9 itunes-istore/sass/style.sass */
@@ -67,75 +67,61 @@ h1, h2, h3, h4, h5 {
         text-decoration: none; }
 
 /* line 73, M:/Sites/9 itunes-istore/sass/style.sass */
-.caret, .caret-down, .caret-left {
+.arrow {
   display: inline-block;
-  top: 0;
-  left: 0;
-  color: #bbb;
+  font-size: 25px;
+  line-height: 1.1s; }
+
+/* line 77, M:/Sites/9 itunes-istore/sass/style.sass */
+.arrowDown {
   color: inherit;
-  width: 17px;
-  height: 17px; }
-  /* line 82, M:/Sites/9 itunes-istore/sass/style.sass */
-  .caret:after, .caret-down:after, .caret-left:after {
-    content: "";
-    color: #bbb;
-    color: inherit;
-    display: inline-block;
-    margin-top: 5px;
-    margin-left: -6px;
-    border: solid currentColor;
-    border-width: 0 0.2em 0.2em 0;
-    display: inline-block;
-    padding: .20em;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg); }
+  height: 100%;
+  display: inline-block;
+  font-size: 22px;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
-/* line 95, M:/Sites/9 itunes-istore/sass/style.sass */
-.caret-down {
-  left: 1px;
-  top: -1px;
-  right: auto; }
-  /* line 102, M:/Sites/9 itunes-istore/sass/style.sass */
-  .caret-down:after {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg); }
-
-/* line 105, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 88, M:/Sites/9 itunes-istore/sass/style.sass */
 .caret-left {
   left: auto;
   top: 0px;
   right: -23px; }
-  /* line 110, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 93, M:/Sites/9 itunes-istore/sass/style.sass */
   .caret-left:after {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg); }
 
-/* line 114, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 97, M:/Sites/9 itunes-istore/sass/style.sass */
 .dropdownButton, .priceDropdown .btn, aside .aside__navigation .dropdown button {
   padding: 0;
   background: #fff; }
-  /* line 117, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 100, M:/Sites/9 itunes-istore/sass/style.sass */
   .dropdownButton:hover, .priceDropdown .btn:hover, aside .aside__navigation .dropdown button:hover, .dropdownButton .active, .priceDropdown .btn .active, aside .aside__navigation .dropdown button .active, .dropdownButton :active, .priceDropdown .btn :active, aside .aside__navigation .dropdown button :active {
     background: none; }
 
-/* line 120, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 103, M:/Sites/9 itunes-istore/sass/style.sass */
 .dropdown-menu, .littleSquareAlbums .dropdown-menu, aside .aside__navigation li .dropdown-menu {
   border: 1px solid #d0d0d0;
   padding: 0;
+  right: -2px;
+  overflow: hidden;
   background-color: #f0f0f0; }
-  /* line 125, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 110, M:/Sites/9 itunes-istore/sass/style.sass */
   .dropdown-menu li a, .littleSquareAlbums .dropdown-menu li a, aside .aside__navigation li .dropdown-menu li a {
     display: block;
     text-decoration: none;
     line-height: 1.2;
     padding: 0 0 0 5px; }
-    /* line 130, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 115, M:/Sites/9 itunes-istore/sass/style.sass */
     .dropdown-menu li a:hover {
       background-color: #3896FA;
       color: #fff;
       text-decoration: none; }
 
-/* line 135, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 120, M:/Sites/9 itunes-istore/sass/style.sass */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon';
@@ -149,42 +135,49 @@ h1, h2, h3, h4, h5 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 150, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 135, M:/Sites/9 itunes-istore/sass/style.sass */
 .icon-app:before {
   content: "\e900"; }
 
-/* line 152, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 137, M:/Sites/9 itunes-istore/sass/style.sass */
 .icon-mel:before {
   content: "\e901"; }
 
-/* line 154, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 139, M:/Sites/9 itunes-istore/sass/style.sass */
 .icon-mov:before {
   content: "\e902"; }
 
-/* line 156, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 141, M:/Sites/9 itunes-istore/sass/style.sass */
 .icon-pod:before {
   content: "\e903"; }
 
-/* line 158, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 143, M:/Sites/9 itunes-istore/sass/style.sass */
 .icon-tvbv:before {
   content: "\e904"; }
 
-/* line 161, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 146, M:/Sites/9 itunes-istore/sass/style.sass */
 .textOverflow, .squareAlbums > li h2, .squareAlbumsWithPrice > li h2, .squareAlbums > li p, .squareAlbumsWithPrice > li p, .lineList .lineList__column .lineList__column__block .lineList__link, .lineList .lineList__column .lineList__column__block .lineList__link h3, .aside__topList .aside__topList__item .aside__topList__link, .aside__topList .aside__topList__item .aside__topList__link h3, .aside__topList .aside__topList__item:first-child .aside__topList__link, .artistTabInfo-sidebar__ul li, .artistTabInfo-sidebar__ul li a p, .artistTabInfo-sidebar__ul li p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
 
-/* line 172, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 151, M:/Sites/9 itunes-istore/sass/style.sass */
+.dropdown {
+  position: static;
+  display: inline-block;
+  border-left: 1px solid #e5e5e5;
+  border-radius: 0px; }
+
+/* line 162, M:/Sites/9 itunes-istore/sass/style.sass */
 .header__mainMenu {
   position: relative; }
-  /* line 176, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 166, M:/Sites/9 itunes-istore/sass/style.sass */
   .header__mainMenu .leftMenu .next-prev {
     display: inline-block;
     margin: 0 5px 0 0;
     line-height: 35px;
     height: 35px; }
-    /* line 181, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 171, M:/Sites/9 itunes-istore/sass/style.sass */
     .header__mainMenu .leftMenu .next-prev a {
       display: inline-block;
       line-height: 1.5;
@@ -194,10 +187,10 @@ h1, h2, h3, h4, h5 {
       vertical-align: middle;
       height: 20px;
       position: relative; }
-      /* line 182, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 172, M:/Sites/9 itunes-istore/sass/style.sass */
       .header__mainMenu .leftMenu .next-prev a:hover {
         text-decoration: none; }
-      /* line 192, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 182, M:/Sites/9 itunes-istore/sass/style.sass */
       .header__mainMenu .leftMenu .next-prev a span {
         position: absolute;
         width: 24px;
@@ -210,28 +203,29 @@ h1, h2, h3, h4, h5 {
         top: 0px;
         left: 0px;
         font-size: 20px; }
-  /* line 204, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 194, M:/Sites/9 itunes-istore/sass/style.sass */
   .header__mainMenu .leftMenu .iconsMenu {
     display: inline-block;
     margin-top: 1.5px; }
-    /* line 207, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 197, M:/Sites/9 itunes-istore/sass/style.sass */
     .header__mainMenu .leftMenu .iconsMenu a {
       font-size: 18px;
       vertical-align: middle;
       margin: 0 0px 0 0;
       padding: 5px; }
-      /* line 212, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 202, M:/Sites/9 itunes-istore/sass/style.sass */
       .header__mainMenu .leftMenu .iconsMenu a.active {
         text-decoration: none;
         border: 1px solid #D8D8D8;
         border-radius: 4px; }
-      /* line 216, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 206, M:/Sites/9 itunes-istore/sass/style.sass */
       .header__mainMenu .leftMenu .iconsMenu a:hover, .header__mainMenu .leftMenu .iconsMenu a :focus {
         text-decoration: none; }
-    /* line 218, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 208, M:/Sites/9 itunes-istore/sass/style.sass */
     .header__mainMenu .leftMenu .iconsMenu .dropdown {
-      display: inline-block; }
-      /* line 221, M:/Sites/9 itunes-istore/sass/style.sass */
+      position: relative;
+      border: none; }
+      /* line 211, M:/Sites/9 itunes-istore/sass/style.sass */
       .header__mainMenu .leftMenu .iconsMenu .dropdown .btn {
         display: inline-block;
         width: 30px;
@@ -241,25 +235,27 @@ h1, h2, h3, h4, h5 {
         margin: 0;
         background: none;
         margin-bottom: 4px; }
-      /* line 232, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 222, M:/Sites/9 itunes-istore/sass/style.sass */
       .header__mainMenu .leftMenu .iconsMenu .dropdown .dropdown-menu {
         min-width: 140px;
-        padding: 2px 0; }
-        /* line 235, M:/Sites/9 itunes-istore/sass/style.sass */
+        padding: 0;
+        left: 0px;
+        right: auto; }
+        /* line 227, M:/Sites/9 itunes-istore/sass/style.sass */
         .header__mainMenu .leftMenu .iconsMenu .dropdown .dropdown-menu li {
           margin: 0;
           width: 100%; }
-          /* line 238, M:/Sites/9 itunes-istore/sass/style.sass */
+          /* line 230, M:/Sites/9 itunes-istore/sass/style.sass */
           .header__mainMenu .leftMenu .iconsMenu .dropdown .dropdown-menu li a {
             line-height: 1.5;
             font-family: "icomoon", arial;
             vertical-align: bottom;
             padding: 0 10px;
             color: #4e4e4e; }
-            /* line 244, M:/Sites/9 itunes-istore/sass/style.sass */
+            /* line 236, M:/Sites/9 itunes-istore/sass/style.sass */
             .header__mainMenu .leftMenu .iconsMenu .dropdown .dropdown-menu li a:hover {
               color: #fff; }
-            /* line 246, M:/Sites/9 itunes-istore/sass/style.sass */
+            /* line 238, M:/Sites/9 itunes-istore/sass/style.sass */
             .header__mainMenu .leftMenu .iconsMenu .dropdown .dropdown-menu li a p {
               font-family: "MyriadProRegular", Roboto, sans-serif;
               display: inline-block;
@@ -269,135 +265,135 @@ h1, h2, h3, h4, h5 {
               vertical-align: top;
               font-size: 14px; }
 
-/* line 256, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 248, M:/Sites/9 itunes-istore/sass/style.sass */
 .iconsMenu a.active {
   background: #D1E3F7;
   color: #1F66B1; }
 
-/* line 260, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 252, M:/Sites/9 itunes-istore/sass/style.sass */
 .dark-style {
   background: #212121; }
-  /* line 261, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 253, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .header__mainMenu {
     background: #212121;
     color: #fff; }
-  /* line 264, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 256, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .lineToggle {
     background-color: #4e4e4e; }
-    /* line 266, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 258, M:/Sites/9 itunes-istore/sass/style.sass */
     .dark-style .lineToggle h2 {
       color: #FFF; }
-  /* line 271, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 263, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .leftMenu ul li > a {
     color: #fff; }
-  /* line 273, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 265, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .leftMenu ul li a.leftMenu__arrow {
     background: #4D4D4D; }
-  /* line 279, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 271, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .centerMenu ul li a {
     color: inherit; }
-  /* line 281, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 273, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .centerMenu ul li.active, .dark-style .centerMenu ul li :hover {
     background-color: rgba(0, 113, 255, 0.5); }
-    /* line 283, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 275, M:/Sites/9 itunes-istore/sass/style.sass */
     .dark-style .centerMenu ul li.active a, .dark-style .centerMenu ul li :hover a {
       color: #0DA0FF; }
-  /* line 289, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 281, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .leftMenu .next-prev a.active span {
     color: #ccc; }
-  /* line 291, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 283, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .leftMenu .next-prev a span {
     color: #fff; }
-  /* line 295, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 287, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .leftMenu .iconsMenu a {
     color: #FFF; }
-    /* line 297, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 289, M:/Sites/9 itunes-istore/sass/style.sass */
     .dark-style .leftMenu .iconsMenu a.active {
       text-decoration: none;
       border: none;
       border-radius: 4px;
       background-color: rgba(0, 113, 255, 0.4);
       color: #0DA0FF; }
-  /* line 303, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 295, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .leftMenu .iconsMenu .dropdown .btn {
     color: #FFF; }
-  /* line 305, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 297, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .music-container_center .nav-tabs li a {
     color: rgba(255, 255, 255, 0.6); }
-  /* line 307, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 299, M:/Sites/9 itunes-istore/sass/style.sass */
   .dark-style .music-container_center .nav-tabs li.active a {
     color: white; }
 
-/* line 316, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 308, M:/Sites/9 itunes-istore/sass/style.sass */
 .centerMenu {
   text-align: center;
   position: relative; }
-  /* line 319, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 311, M:/Sites/9 itunes-istore/sass/style.sass */
   .centerMenu ul {
     padding: 4px 0; }
-    /* line 322, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 314, M:/Sites/9 itunes-istore/sass/style.sass */
     .centerMenu ul li {
       line-height: 27px;
       text-align: center; }
-      /* line 325, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 317, M:/Sites/9 itunes-istore/sass/style.sass */
       .centerMenu ul li a {
         color: #4e4e4e;
         padding: 0 14.5px;
         display: block; }
-      /* line 329, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 321, M:/Sites/9 itunes-istore/sass/style.sass */
       .centerMenu ul li.active, .centerMenu ul li :hover {
         background-color: #D3E3F8;
         border-radius: 4px; }
-        /* line 332, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 324, M:/Sites/9 itunes-istore/sass/style.sass */
         .centerMenu ul li.active a, .centerMenu ul li :hover a {
           color: #216CCC; }
 
-/* line 336, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 328, M:/Sites/9 itunes-istore/sass/style.sass */
 .lineToggle h2 {
   display: none; }
 
-/* line 338, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 330, M:/Sites/9 itunes-istore/sass/style.sass */
 #togMenu {
   display: none; }
 
-/* line 344, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 336, M:/Sites/9 itunes-istore/sass/style.sass */
 .Carousel .owl-carousel .item img {
   display: block;
   height: 200px;
   background-size: cover; }
 
-/* line 350, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 342, M:/Sites/9 itunes-istore/sass/style.sass */
 .music-container {
   max-width: 1550px;
   text-align: left;
   margin: 0 auto;
   padding: 0 15px; }
 
-/* line 356, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 348, M:/Sites/9 itunes-istore/sass/style.sass */
 .music-content {
   vertical-align: top;
   position: relative; }
-  /* line 359, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 351, M:/Sites/9 itunes-istore/sass/style.sass */
   .music-content .nav {
     border: none;
     display: block; }
-    /* line 362, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 354, M:/Sites/9 itunes-istore/sass/style.sass */
     .music-content .nav li {
       text-align: center;
       display: inline-block;
       width: auto; }
-      /* line 367, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 359, M:/Sites/9 itunes-istore/sass/style.sass */
       .music-content .nav li.active a {
         background-color: #6D6D72;
         color: #fff; }
-      /* line 371, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 363, M:/Sites/9 itunes-istore/sass/style.sass */
       .music-content .nav li:first-child a {
         border-top-left-radius: 5px;
         margin: 0;
         border-bottom-left-radius: 5px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px; }
-      /* line 377, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 369, M:/Sites/9 itunes-istore/sass/style.sass */
       .music-content .nav li a {
         display: inline-block;
         padding: 0 10px;
@@ -406,17 +402,17 @@ h1, h2, h3, h4, h5 {
         color: #4e4e4e;
         margin: 0;
         font-size: 12px; }
-      /* line 385, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 377, M:/Sites/9 itunes-istore/sass/style.sass */
       .music-content .nav li:last-child {
         margin-left: -1px; }
-        /* line 387, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 379, M:/Sites/9 itunes-istore/sass/style.sass */
         .music-content .nav li:last-child a {
           border-top-left-radius: 0px;
           border-bottom-left-radius: 0px;
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px; }
 
-/* line 393, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 385, M:/Sites/9 itunes-istore/sass/style.sass */
 .h-title {
   position: absolute;
   top: 5px;
@@ -424,52 +420,52 @@ h1, h2, h3, h4, h5 {
   font-size: 20px;
   font-family: "MyriadProRegular", Roboto, sans-serif; }
 
-/* line 401, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 393, M:/Sites/9 itunes-istore/sass/style.sass */
 .tab-content .squareAlbums, .tab-content .squareAlbumsWithPrice {
   margin-top: 14px; }
 
-/* line 405, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 397, M:/Sites/9 itunes-istore/sass/style.sass */
 .squareAlbums, .squareAlbumsWithPrice {
   padding: 0;
   width: 100%;
   display: inline-block;
   height: 160px; }
-  /* line 412, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 404, M:/Sites/9 itunes-istore/sass/style.sass */
   .squareAlbums .buy-menu, .squareAlbumsWithPrice .buy-menu {
     position: static;
     margin-top: 5px; }
-    /* line 415, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 407, M:/Sites/9 itunes-istore/sass/style.sass */
     .squareAlbums .buy-menu .dropdown-menu, .squareAlbumsWithPrice .buy-menu .dropdown-menu {
       left: auto; }
-  /* line 417, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 409, M:/Sites/9 itunes-istore/sass/style.sass */
   .squareAlbums > li, .squareAlbumsWithPrice > li {
     width: 125px;
     position: relative;
     vertical-align: top;
     margin: 0 0 10px 15px; }
-    /* line 422, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 414, M:/Sites/9 itunes-istore/sass/style.sass */
     .squareAlbums > li:first-child, .squareAlbumsWithPrice > li:first-child {
       margin-left: 0; }
-    /* line 424, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 416, M:/Sites/9 itunes-istore/sass/style.sass */
     .squareAlbums > li img, .squareAlbumsWithPrice > li img {
       width: 125px;
       height: 125px;
       display: block; }
-    /* line 431, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 423, M:/Sites/9 itunes-istore/sass/style.sass */
     .squareAlbums > li a:hover h2, .squareAlbumsWithPrice > li a:hover h2, .squareAlbums > li a:hover p, .squareAlbumsWithPrice > li a:hover p {
       text-decoration: underline;
       text-decoration-color: #F39154;
       -moz-text-decoration-color: #F39154;
       -o-text-decoration-color: #F39154;
       -webkit-text-decoration-color: #F39154; }
-    /* line 437, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 429, M:/Sites/9 itunes-istore/sass/style.sass */
     .squareAlbums > li h2, .squareAlbumsWithPrice > li h2 {
       font-size: 12px;
       margin: 5px 0 0 0;
       font-family: "MyriadProRegular", Roboto, sans-serif;
       line-height: 1.35;
       padding: 0 12px 0 0; }
-    /* line 445, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 437, M:/Sites/9 itunes-istore/sass/style.sass */
     .squareAlbums > li p, .squareAlbumsWithPrice > li p {
       cursor: pointer;
       font-size: 11px;
@@ -477,7 +473,7 @@ h1, h2, h3, h4, h5 {
       font-family: "MyriadProRegular", Roboto, sans-serif;
       color: #9C9CA3;
       line-height: 1.2; }
-    /* line 453, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 445, M:/Sites/9 itunes-istore/sass/style.sass */
     .squareAlbums > li i, .squareAlbumsWithPrice > li i {
       position: absolute;
       right: 0;
@@ -487,28 +483,32 @@ h1, h2, h3, h4, h5 {
       height: 9px;
       background: url(../img/i.jpg) no-repeat; }
 
-/* line 463, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 455, M:/Sites/9 itunes-istore/sass/style.sass */
 .squareAlbumsWithPrice {
   height: 190px;
   overflow: hidden; }
-  /* line 467, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 459, M:/Sites/9 itunes-istore/sass/style.sass */
   .squareAlbumsWithPrice h2 {
     padding: 0 5px 0 0; }
-  /* line 469, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 461, M:/Sites/9 itunes-istore/sass/style.sass */
   .squareAlbumsWithPrice .buy-menu {
     border: 1px solid #c3c3c3;
+    position: relative;
     top: auto;
     bottom: 0px;
     left: 0px; }
-    /* line 476, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 469, M:/Sites/9 itunes-istore/sass/style.sass */
     .squareAlbumsWithPrice .buy-menu .dropdown-menu {
-      right: -57px; }
-      /* line 478, M:/Sites/9 itunes-istore/sass/style.sass */
+      top: auto;
+      bottom: 22px;
+      right: 1px;
+      right: -56px; }
+      /* line 474, M:/Sites/9 itunes-istore/sass/style.sass */
       .squareAlbumsWithPrice .buy-menu .dropdown-menu li {
         width: 100px;
         display: block; }
 
-/* line 483, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 479, M:/Sites/9 itunes-istore/sass/style.sass */
 section .flexBehavior {
   display: -webkit-flex;
   display: -moz-flex;
@@ -519,70 +519,70 @@ section .flexBehavior {
   flex-direction: row;
   justify-content: space-between;
   overflow: hidden; }
-  /* line 495, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 491, M:/Sites/9 itunes-istore/sass/style.sass */
   section .flexBehavior > li {
     margin: 0 0 15px 20px; }
 
-/* line 498, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 494, M:/Sites/9 itunes-istore/sass/style.sass */
 section .two-lines {
   height: auto;
   max-height: 335px; }
-  /* line 502, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 498, M:/Sites/9 itunes-istore/sass/style.sass */
   section .two-lines li {
     margin-left: 20px; }
-    /* line 504, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 500, M:/Sites/9 itunes-istore/sass/style.sass */
     section .two-lines li:first-child {
       margin-left: 20px; }
 
-/* line 509, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 505, M:/Sites/9 itunes-istore/sass/style.sass */
 .albums li h2 {
   white-space: normal;
   overflow: visible; }
 
-/* line 513, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 509, M:/Sites/9 itunes-istore/sass/style.sass */
 .littleSquareAlbums {
   position: relative;
   margin-top: 15px; }
-  /* line 516, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 512, M:/Sites/9 itunes-istore/sass/style.sass */
   .littleSquareAlbums h2 {
     font-size: 18px;
     margin: 0 0 10px 0; }
-  /* line 519, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 515, M:/Sites/9 itunes-istore/sass/style.sass */
   .littleSquareAlbums .lineList {
     text-align: left;
     padding: 0; }
 
-/* line 523, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 519, M:/Sites/9 itunes-istore/sass/style.sass */
 .lineList {
   padding: 0; }
-  /* line 525, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 521, M:/Sites/9 itunes-istore/sass/style.sass */
   .lineList .lineList__column {
     width: 250px;
     display: none;
     vertical-align: top; }
-    /* line 529, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 525, M:/Sites/9 itunes-istore/sass/style.sass */
     .lineList .lineList__column:last-child {
       margin: 0; }
-    /* line 531, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 527, M:/Sites/9 itunes-istore/sass/style.sass */
     .lineList .lineList__column .lineList__column__block {
       position: relative;
       padding-right: 80px;
       margin: 0 0 5px 0; }
-      /* line 535, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 531, M:/Sites/9 itunes-istore/sass/style.sass */
       .lineList .lineList__column .lineList__column__block .lineList__link {
         display: block;
         font-size: 11px;
         color: #9E9EA5;
         margin: 0;
         padding: 0; }
-        /* line 542, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 538, M:/Sites/9 itunes-istore/sass/style.sass */
         .lineList .lineList__column .lineList__column__block .lineList__link h3 {
           display: block;
           font-size: 12px;
           color: #4e4e4e;
           font-family: "MyriadProRegular", Roboto, sans-serif;
           margin: 7px 0 3px 0; }
-        /* line 549, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 545, M:/Sites/9 itunes-istore/sass/style.sass */
         .lineList .lineList__column .lineList__column__block .lineList__link img {
           width: 44px;
           height: 44px;
@@ -592,13 +592,13 @@ section .two-lines {
           float: left;
           z-index: 10;
           margin-right: 5px; }
-      /* line 558, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 554, M:/Sites/9 itunes-istore/sass/style.sass */
       .lineList .lineList__column .lineList__column__block:hover {
         text-decoration: underline; }
-        /* line 560, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 556, M:/Sites/9 itunes-istore/sass/style.sass */
         .lineList .lineList__column .lineList__column__block:hover img {
           opacity: 0; }
-        /* line 562, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 558, M:/Sites/9 itunes-istore/sass/style.sass */
         .lineList .lineList__column .lineList__column__block:hover::after {
           position: absolute;
           content: "";
@@ -609,7 +609,7 @@ section .two-lines {
           background: url(../img/ico-hover.jpg) no-repeat;
           border: 1px solid #d0d0d0; }
 
-/* line 572, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 568, M:/Sites/9 itunes-istore/sass/style.sass */
 .buy-menu {
   display: block;
   position: absolute;
@@ -621,12 +621,14 @@ section .two-lines {
   height: 21px;
   border-radius: 5px;
   border: 1px solid #e5e5e5; }
-  /* line 583, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 579, M:/Sites/9 itunes-istore/sass/style.sass */
   .buy-menu .buy-menu__link {
     display: inline-block;
-    vertical-align: baseline;
-    width: 70%;
-    margin: 0;
+    line-height: 21px;
+    vertical-align: bottom;
+    text-align: center;
+    width: 47px;
+    margin: 0 0 0 -1px;
     padding: 0;
     font-size: 12px;
     color: #4e4e4e; }
@@ -636,111 +638,103 @@ section .two-lines {
 
 /* line 594, M:/Sites/9 itunes-istore/sass/style.sass */
 .priceDropdown {
-  width: 20%;
+  width: 17px;
   box-sizing: border-box;
-  vertical-align: bottom;
+  vertical-align: top;
+  line-height: 1;
   display: inline-block;
+  margin: 0 0 0 -1px;
   margin: 0;
   padding: 0; }
-  /* line 602, M:/Sites/9 itunes-istore/sass/style.sass */
-  .priceDropdown:after {
-    position: absolute;
-    content: " ";
-    top: 0px;
-    left: -3px;
-    height: 20px;
-    width: 1px;
-    background-color: #e5e5e5; }
-  /* line 610, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 612, M:/Sites/9 itunes-istore/sass/style.sass */
   .priceDropdown .btn {
     display: block;
-    position: relative;
+    text-align: center;
     padding: 0;
     vertical-align: top;
-    min-height: 100%;
     width: 100%;
     border: none;
     background: none;
     height: 20px; }
 
-/* line 625, M:/Sites/9 itunes-istore/sass/style.sass */
-.littleSquareAlbums .lineList .lineList__column .caret, .littleSquareAlbums .lineList .lineList__column .caret-down, .littleSquareAlbums .lineList .lineList__column .caret-left {
+/* line 628, M:/Sites/9 itunes-istore/sass/style.sass */
+.littleSquareAlbums .lineList .lineList__column .caret, .littleSquareAlbums .lineList .lineList__column .caret-left {
   position: absolute; }
 
-/* line 629, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 632, M:/Sites/9 itunes-istore/sass/style.sass */
 .littleSquareAlbums .dropdown-menu, .littleSquareAlbums aside .aside__navigation li .dropdown-menu, aside .aside__navigation li .littleSquareAlbums .dropdown-menu {
   z-index: 9999;
   position: absolute;
   min-width: 100px;
   list-style-type: none; }
-  /* line 640, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 643, M:/Sites/9 itunes-istore/sass/style.sass */
   .littleSquareAlbums .dropdown-menu li, .littleSquareAlbums aside .aside__navigation li .dropdown-menu li, aside .aside__navigation li .littleSquareAlbums .dropdown-menu li {
     width: 100%; }
-    /* line 648, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 651, M:/Sites/9 itunes-istore/sass/style.sass */
     .littleSquareAlbums .dropdown-menu li a {
       color: #404040;
       font-size: 12px; }
-      /* line 652, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 655, M:/Sites/9 itunes-istore/sass/style.sass */
       .littleSquareAlbums .dropdown-menu li a:hover {
         color: #fff; }
 
-/* line 657, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 660, M:/Sites/9 itunes-istore/sass/style.sass */
 .btn:active, .btn:focus {
   outline: none !important; }
 
-/* line 660, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 663, M:/Sites/9 itunes-istore/sass/style.sass */
 .inlineCovers {
   height: 120px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   margin-top: 20px; }
-  /* line 666, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 669, M:/Sites/9 itunes-istore/sass/style.sass */
   .inlineCovers ul {
     padding: 0; }
-    /* line 669, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 672, M:/Sites/9 itunes-istore/sass/style.sass */
     .inlineCovers ul li {
       margin-right: 25px; }
-      /* line 671, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 674, M:/Sites/9 itunes-istore/sass/style.sass */
       .inlineCovers ul li a {
         width: 200px;
         height: 100px;
         border-radius: 8px; }
-        /* line 675, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 678, M:/Sites/9 itunes-istore/sass/style.sass */
         .inlineCovers ul li a img {
           display: block; }
 
-/* line 679, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 682, M:/Sites/9 itunes-istore/sass/style.sass */
 .SquareAlbums-wrapper {
   position: relative;
   margin-top: 10px; }
-  /* line 682, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 685, M:/Sites/9 itunes-istore/sass/style.sass */
   .SquareAlbums-wrapper .SquareAlbums-wrapper__title {
     text-transform: capitalize;
     display: inline-block;
     font-size: 20px;
     font-family: "MyriadProRegular", Roboto, sans-serif;
     color: #4e4e4e; }
-  /* line 688, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 691, M:/Sites/9 itunes-istore/sass/style.sass */
   .SquareAlbums-wrapper .squareAlbums, .SquareAlbums-wrapper .squareAlbumsWithPrice {
     margin-top: 15px; }
-  /* line 690, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 693, M:/Sites/9 itunes-istore/sass/style.sass */
   .SquareAlbums-wrapper .seeAll {
     top: 0px; }
 
-/* line 693, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 696, M:/Sites/9 itunes-istore/sass/style.sass */
 .seeAll {
   position: absolute;
   right: 0;
   margin: 0;
   color: #4e4e4e; }
-  /* line 700, M:/Sites/9 itunes-istore/sass/style.sass */
-  .seeAll .caret, .seeAll .caret-down, .seeAll .caret-left {
+  /* line 703, M:/Sites/9 itunes-istore/sass/style.sass */
+  .seeAll .caret, .seeAll .caret-left {
     display: inline-block;
     position: relative;
     margin: 0; }
-    /* line 704, M:/Sites/9 itunes-istore/sass/style.sass */
-    .seeAll .caret:after, .seeAll .caret-down:after, .seeAll .caret-left:after {
+    /* line 707, M:/Sites/9 itunes-istore/sass/style.sass */
+    .seeAll .caret:after, .seeAll .caret-left:after {
       position: absolute;
       right: auto;
       margin: 0;
@@ -748,203 +742,202 @@ section .two-lines {
       top: auto;
       bottom: 1px; }
 
-/* line 714, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 717, M:/Sites/9 itunes-istore/sass/style.sass */
 aside {
   vertical-align: top;
   padding-left: 30px; }
-  /* line 717, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 720, M:/Sites/9 itunes-istore/sass/style.sass */
   aside a {
     display: block;
     color: #4e4e4e; }
-  /* line 720, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 723, M:/Sites/9 itunes-istore/sass/style.sass */
   aside h2 {
     text-transform: uppercase;
     font-size: 12px; }
-  /* line 723, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 726, M:/Sites/9 itunes-istore/sass/style.sass */
   aside ul {
     padding: 0;
     border: none;
     box-shadow: none; }
-    /* line 728, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 731, M:/Sites/9 itunes-istore/sass/style.sass */
     aside ul li {
       display: block; }
-      /* line 731, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 734, M:/Sites/9 itunes-istore/sass/style.sass */
       aside ul li a {
         font-family: "MyriadProRegular", Roboto, sans-serif;
         color: #929496;
         display: inline-block;
         line-height: 2; }
-        /* line 736, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 739, M:/Sites/9 itunes-istore/sass/style.sass */
         aside ul li a:hover {
           text-decoration: underline;
           color: #929496; }
-  /* line 740, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 743, M:/Sites/9 itunes-istore/sass/style.sass */
   aside .aside__navigation .dropdown {
+    position: relative;
+    border: none; }
+    /* line 746, M:/Sites/9 itunes-istore/sass/style.sass */
+    aside .aside__navigation .dropdown .btn {
+      position: relative; }
+    /* line 748, M:/Sites/9 itunes-istore/sass/style.sass */
+    aside .aside__navigation .dropdown button {
+      font-size: 24px;
+      position: relative; }
+    /* line 752, M:/Sites/9 itunes-istore/sass/style.sass */
+    aside .aside__navigation .dropdown .arrowDown {
+      position: relative; }
+  /* line 754, M:/Sites/9 itunes-istore/sass/style.sass */
+  aside .aside__navigation .dropdown-menu, aside .aside__navigation li .dropdown-menu {
+    position: absolute;
+    top: 0px;
     font-size: 12px;
     border: none; }
-    /* line 741, M:/Sites/9 itunes-istore/sass/style.sass */
-    aside .aside__navigation .dropdown button {
-      font-size: 24px; }
-    /* line 744, M:/Sites/9 itunes-istore/sass/style.sass */
-    aside .aside__navigation .dropdown .caret-down {
-      position: absolute;
-      opacity: 1px solid red;
-      left: 70px;
-      top: 13px;
-      bottom: auto;
-      margin: -15px 0 0 5px; }
-      /* line 751, M:/Sites/9 itunes-istore/sass/style.sass */
-      aside .aside__navigation .dropdown .caret-down:after {
-        top: -10px;
-        bottom: auto; }
-  /* line 759, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 762, M:/Sites/9 itunes-istore/sass/style.sass */
   aside .aside__navigation li:nth-child(2) .dropdown button {
     font-size: 16px; }
-  /* line 761, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 764, M:/Sites/9 itunes-istore/sass/style.sass */
+  aside .aside__navigation li .dropdown {
+    position: relative; }
+  /* line 766, M:/Sites/9 itunes-istore/sass/style.sass */
   aside .aside__navigation li .dropdown-menu {
     top: -10px;
     left: 0px;
-    right: auto; }
-    /* line 767, M:/Sites/9 itunes-istore/sass/style.sass */
+    right: auto;
+    border: 1px solid #e5e5e5; }
+    /* line 773, M:/Sites/9 itunes-istore/sass/style.sass */
     aside .aside__navigation li .dropdown-menu li a {
       padding: 0 10px;
       line-height: 1.5; }
-      /* line 770, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 776, M:/Sites/9 itunes-istore/sass/style.sass */
       aside .aside__navigation li .dropdown-menu li a:hover {
         color: #fff; }
 
-/* line 773, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 779, M:/Sites/9 itunes-istore/sass/style.sass */
 aside {
   font-size: 11px; }
-  /* line 775, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 781, M:/Sites/9 itunes-istore/sass/style.sass */
   aside .Ul1 {
     margin-top: 5px;
     margin-bottom: 0px;
     display: block;
     text-align: left; }
-    /* line 780, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 786, M:/Sites/9 itunes-istore/sass/style.sass */
     aside .Ul1 li {
       display: inline-block;
       width: 49%;
       padding: 0;
       margin: 0; }
-      /* line 785, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 791, M:/Sites/9 itunes-istore/sass/style.sass */
       aside .Ul1 li a {
         display: inline-block; }
-  /* line 787, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 793, M:/Sites/9 itunes-istore/sass/style.sass */
   aside .Ul2 {
     margin-top: 10px;
     padding: 10px 0;
     border-top: 1px solid #e5e5e5;
     display: block; }
-    /* line 792, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 798, M:/Sites/9 itunes-istore/sass/style.sass */
     aside .Ul2 li {
       margin-bottom: 0px;
       font-size: 11px; }
 
-/* line 797, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 803, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList-wrapper {
   margin: 10px 0 0 0;
   padding: 0; }
 
-/* line 801, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 807, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__top__headLink {
   display: inline-block; }
-  /* line 803, M:/Sites/9 itunes-istore/sass/style.sass */
-  .aside__top__headLink:hover {
-    text-decoration: none;
-    color: #4e4e4e; }
-    /* line 806, M:/Sites/9 itunes-istore/sass/style.sass */
-    .aside__top__headLink:hover .caret, .aside__top__headLink:hover .caret-down, .aside__top__headLink:hover .caret-left {
-      display: inline-block; }
-  /* line 808, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 814, M:/Sites/9 itunes-istore/sass/style.sass */
   .aside__top__headLink h2 {
-    margin: 10px 0 0 0; }
-    /* line 810, M:/Sites/9 itunes-istore/sass/style.sass */
-    .aside__top__headLink h2 .caret, .aside__top__headLink h2 .caret-down, .aside__top__headLink h2 .caret-left {
+    margin: 10px 0 0 5px;
+    font-size: 14px; }
+    /* line 817, M:/Sites/9 itunes-istore/sass/style.sass */
+    .aside__top__headLink h2 .caret, .aside__top__headLink h2 .caret-left {
       display: none;
       margin-left: 5px; }
 
-/* line 814, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 821, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList {
   margin: 10px 0 0 0;
   padding: 0 0 0 20px; }
-  /* line 817, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 824, M:/Sites/9 itunes-istore/sass/style.sass */
   .aside__topList .aside__topList__item {
     vertical-align: top;
     position: relative;
     display: block;
     margin: 0 0 5px 0; }
-    /* line 822, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 829, M:/Sites/9 itunes-istore/sass/style.sass */
     .aside__topList .aside__topList__item .aside__topList__link {
       line-height: 1.5;
       color: #929496; }
-      /* line 826, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 833, M:/Sites/9 itunes-istore/sass/style.sass */
       .aside__topList .aside__topList__item .aside__topList__link h3 {
         display: block;
         margin: 0;
         color: #4e4e4e; }
-    /* line 831, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 838, M:/Sites/9 itunes-istore/sass/style.sass */
     .aside__topList .aside__topList__item::before {
       position: absolute;
       left: -15px;
       top: 0px;
       text-align: right; }
-    /* line 837, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 844, M:/Sites/9 itunes-istore/sass/style.sass */
     .aside__topList .aside__topList__item .buy-menu {
       top: 5px;
       text-align: left;
       background-color: #fff; }
-      /* line 841, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 848, M:/Sites/9 itunes-istore/sass/style.sass */
       .aside__topList .aside__topList__item .buy-menu .buy-menu__link {
         text-align: center;
         text-decoration: none; }
-      /* line 844, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 851, M:/Sites/9 itunes-istore/sass/style.sass */
       .aside__topList .aside__topList__item .buy-menu .dropdown-menu {
         left: auto;
         right: -5px; }
-        /* line 848, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 855, M:/Sites/9 itunes-istore/sass/style.sass */
         .aside__topList .aside__topList__item .buy-menu .dropdown-menu li a {
           text-decoration: none; }
-          /* line 850, M:/Sites/9 itunes-istore/sass/style.sass */
+          /* line 857, M:/Sites/9 itunes-istore/sass/style.sass */
           .aside__topList .aside__topList__item .buy-menu .dropdown-menu li a:hover {
             color: #fff; }
-    /* line 853, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 860, M:/Sites/9 itunes-istore/sass/style.sass */
     .aside__topList .aside__topList__item:hover {
       padding-right: 75px; }
-      /* line 855, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 862, M:/Sites/9 itunes-istore/sass/style.sass */
       .aside__topList .aside__topList__item:hover a {
         text-decoration: underline; }
-  /* line 861, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 868, M:/Sites/9 itunes-istore/sass/style.sass */
   .aside__topList .aside__topList__item:hover .buy-menu__link {
     text-decoration: none; }
-  /* line 863, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 870, M:/Sites/9 itunes-istore/sass/style.sass */
   .aside__topList .aside__topList__item:first-child {
     margin-bottom: 5px; }
-    /* line 865, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 872, M:/Sites/9 itunes-istore/sass/style.sass */
     .aside__topList .aside__topList__item:first-child .buy-menu {
       top: auto;
       left: auto;
       left: 70px;
       bottom: 10px; }
-    /* line 870, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 877, M:/Sites/9 itunes-istore/sass/style.sass */
     .aside__topList .aside__topList__item:first-child:hover {
       padding-right: 0px; }
-    /* line 874, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 881, M:/Sites/9 itunes-istore/sass/style.sass */
     .aside__topList .aside__topList__item:first-child .aside__topList__link img {
       display: inline-block;
       float: left;
       margin-right: 5px;
       width: 65px;
       height: 65px; }
-    /* line 881, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 888, M:/Sites/9 itunes-istore/sass/style.sass */
     .aside__topList .aside__topList__item:first-child .aside__topList__link:hover img {
       opacity: 0;
       display: block;
       background: url(../img/ico-hover.jpg) no-repeat;
       z-index: 9999;
       cursor: pointer; }
-    /* line 887, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 894, M:/Sites/9 itunes-istore/sass/style.sass */
     .aside__topList .aside__topList__item:first-child .aside__topList__link:hover::after {
       position: absolute;
       display: block;
@@ -956,115 +949,106 @@ aside {
       background: url(../img/ico-hover-big.jpg) no-repeat;
       border: 1px solid #d0d0d0; }
 
-/* line 901, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 908, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item .buy-menu .btn {
   position: relative; }
 
-/* line 903, M:/Sites/9 itunes-istore/sass/style.sass */
-.aside__topList .aside__topList__item .buy-menu .caret-down {
-  position: absolute;
-  top: 0px;
-  left: 2px; }
-  /* line 907, M:/Sites/9 itunes-istore/sass/style.sass */
-  .aside__topList .aside__topList__item .buy-menu .caret-down:after {
-    height: 7px; }
-
-/* line 914, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 921, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(1)::before {
   content: "1."; }
 
-/* line 917, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 924, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(2)::before {
   content: "2."; }
 
-/* line 920, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 927, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(3)::before {
   content: "3."; }
 
-/* line 923, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 930, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(4)::before {
   content: "4."; }
 
-/* line 926, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 933, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(5)::before {
   content: "5."; }
 
-/* line 929, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 936, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(6)::before {
   content: "6."; }
 
-/* line 932, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 939, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(7)::before {
   content: "7."; }
 
-/* line 935, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 942, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(8)::before {
   content: "8."; }
 
-/* line 938, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 945, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(9)::before {
   content: "9."; }
 
-/* line 941, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 948, M:/Sites/9 itunes-istore/sass/style.sass */
 .aside__topList .aside__topList__item:nth-child(10)::before {
   content: "10.";
   left: -23px; }
 
-/* line 946, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 953, M:/Sites/9 itunes-istore/sass/style.sass */
 footer {
   display: block;
   position: relative;
   max-width: 1550px;
   border-top: 1px solid #eee; }
-  /* line 951, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 958, M:/Sites/9 itunes-istore/sass/style.sass */
   footer ul {
     margin: 0;
     padding: 0;
     vertical-align: top; }
-    /* line 955, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 962, M:/Sites/9 itunes-istore/sass/style.sass */
     footer ul li {
       display: block; }
-      /* line 957, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 964, M:/Sites/9 itunes-istore/sass/style.sass */
       footer ul li h2 {
         font-size: 12px;
         font-family: "MyriadProSemiBold", Roboto, sans-serif;
         margin-bottom: 5px;
         color: #4e4e4e; }
-      /* line 962, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 969, M:/Sites/9 itunes-istore/sass/style.sass */
       footer ul li a {
         color: #4e4e4e;
         font-size: 11px; }
-        /* line 965, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 972, M:/Sites/9 itunes-istore/sass/style.sass */
         footer ul li a:hover {
           color: #4e4e4e; }
 
-/* line 969, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 976, M:/Sites/9 itunes-istore/sass/style.sass */
 a, a:hover, a:active, a:focus {
   outline: none; }
 
 /*        --- 2 page ----             */
-/* line 974, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 981, M:/Sites/9 itunes-istore/sass/style.sass */
 .artistPreview {
   display: block;
   text-align: center;
   margin: 0 auto; }
-  /* line 979, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 986, M:/Sites/9 itunes-istore/sass/style.sass */
   .artistPreview img {
     display: inline-block;
     margin: 0 auto;
     max-width: 100%;
     background-size: cover; }
 
-/* line 986, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 993, M:/Sites/9 itunes-istore/sass/style.sass */
 .body_color {
   background: #000017; }
 
-/* line 990, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 997, M:/Sites/9 itunes-istore/sass/style.sass */
 .breadcrumbs a {
   margin-right: 15px;
   position: relative;
   color: #000; }
-  /* line 994, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1001, M:/Sites/9 itunes-istore/sass/style.sass */
   .breadcrumbs a:after {
     content: "";
     position: absolute;
@@ -1078,135 +1062,140 @@ a, a:hover, a:active, a:focus {
     border-left: 4px solid #000;
     margin: 0 7px; }
 
-/* line 1007, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1014, M:/Sites/9 itunes-istore/sass/style.sass */
 .music-container_center {
   position: relative; }
-  /* line 1008, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1015, M:/Sites/9 itunes-istore/sass/style.sass */
   .music-container_center .breadcrumbs {
     position: absolute;
     left: 15px;
     top: 30px; }
-    /* line 1012, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1019, M:/Sites/9 itunes-istore/sass/style.sass */
     .music-container_center .breadcrumbs a {
       color: #4e4e4e; }
-      /* line 1014, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 1021, M:/Sites/9 itunes-istore/sass/style.sass */
       .music-container_center .breadcrumbs a:after {
         border-left: 4px solid #4e4e4e; }
-  /* line 1018, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1025, M:/Sites/9 itunes-istore/sass/style.sass */
   .music-container_center .SquareAlbums-wrapper .SquareAlbums-wrapper__title {
     font-size: 16px; }
-  /* line 1020, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1027, M:/Sites/9 itunes-istore/sass/style.sass */
   .music-container_center .nav-tabs {
     display: inline-block;
     position: absolute;
     right: 30px;
     top: 200px; }
-    /* line 1025, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1032, M:/Sites/9 itunes-istore/sass/style.sass */
     .music-container_center .nav-tabs li {
       margin-right: 20px; }
-  /* line 1029, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1036, M:/Sites/9 itunes-istore/sass/style.sass */
   .music-container_center .tab-content .tab-pane {
     margin: 0;
     min-height: 450px;
     text-align: left; }
-    /* line 1033, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1040, M:/Sites/9 itunes-istore/sass/style.sass */
     .music-container_center .tab-content .tab-pane > p {
       max-width: 1000px;
       margin: 20px auto 0 auto;
       text-align: justify;
       line-height: 1.4;
       padding: 0; }
-  /* line 1039, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1046, M:/Sites/9 itunes-istore/sass/style.sass */
   .music-container_center .tab-content article {
     margin-top: 20px; }
-  /* line 1074, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1081, M:/Sites/9 itunes-istore/sass/style.sass */
   .music-container_center .tab-content .lineList__link {
     color: #4e4e4e; }
-    /* line 1076, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1083, M:/Sites/9 itunes-istore/sass/style.sass */
     .music-container_center .tab-content .lineList__link h3, .music-container_center .tab-content .lineList__link p {
       color: #4e4e4e; }
-  /* line 1078, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1086, M:/Sites/9 itunes-istore/sass/style.sass */
   .music-container_center .tab-content .littleSquareAlbums .seeAll {
     top: -20px; }
-  /* line 1086, M:/Sites/9 itunes-istore/sass/style.sass */
-  .music-container_center .tab-content .toSort {
-    line-height: 1.5; }
-    /* line 1088, M:/Sites/9 itunes-istore/sass/style.sass */
-    .music-container_center .tab-content .toSort:after {
-      background: none; }
-    /* line 1091, M:/Sites/9 itunes-istore/sass/style.sass */
-    .music-container_center .tab-content .toSort .btn .caret-down {
-      left: auto;
-      right: -20px; }
   /* line 1094, M:/Sites/9 itunes-istore/sass/style.sass */
-  .music-container_center .priceDropdown {
+  .music-container_center .tab-content .toSort {
+    border: none;
     display: inline-block;
     width: auto;
-    height: auto;
+    line-height: 1.4; }
+    /* line 1099, M:/Sites/9 itunes-istore/sass/style.sass */
+    .music-container_center .tab-content .toSort:after {
+      background: none; }
+    /* line 1102, M:/Sites/9 itunes-istore/sass/style.sass */
+    .music-container_center .tab-content .toSort .btn .arrowDown {
+      left: auto;
+      right: -20px; }
+  /* line 1105, M:/Sites/9 itunes-istore/sass/style.sass */
+  .music-container_center .priceDropdown {
+    display: inline-block;
     padding-right: 15px; }
-    /* line 1101, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1112, M:/Sites/9 itunes-istore/sass/style.sass */
     .music-container_center .priceDropdown button {
-      line-height: 1.1;
+      line-height: 1;
       display: inline-block; }
-      /* line 1104, M:/Sites/9 itunes-istore/sass/style.sass */
-      .music-container_center .priceDropdown button .caret, .music-container_center .priceDropdown button .caret-down, .music-container_center .priceDropdown button .caret-left {
-        position: absolute; }
+      /* line 1115, M:/Sites/9 itunes-istore/sass/style.sass */
+      .music-container_center .priceDropdown button .arrowDown {
+        margin: 0; }
 
-/* line 1129, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1140, M:/Sites/9 itunes-istore/sass/style.sass */
 .artistGalleryUl {
   padding: 0; }
-  /* line 1131, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1142, M:/Sites/9 itunes-istore/sass/style.sass */
   .artistGalleryUl li {
     display: inline-block;
     margin: 0 0 10px 5px; }
-    /* line 1134, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1145, M:/Sites/9 itunes-istore/sass/style.sass */
     .artistGalleryUl li img {
       display: block; }
 
-/* line 1137, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1149, M:/Sites/9 itunes-istore/sass/style.sass */
+.seeAll b {
+  font-size: 18px; }
+
+/* line 1152, M:/Sites/9 itunes-istore/sass/style.sass */
 .artistTabInfo__artistbiography {
   display: inline-block;
   width: 75%;
   padding-right: 20px;
   vertical-align: top; }
-  /* line 1142, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1157, M:/Sites/9 itunes-istore/sass/style.sass */
   .artistTabInfo__artistbiography h3 {
     margin: 0 0 15px 0; }
-  /* line 1144, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1159, M:/Sites/9 itunes-istore/sass/style.sass */
   .artistTabInfo__artistbiography p {
     margin: 10px 0 0 0; }
 
-/* line 1146, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1161, M:/Sites/9 itunes-istore/sass/style.sass */
 .artistTabInfo-sidebar {
   width: 24%;
   display: inline-block;
   vertical-align: top; }
 
-/* line 1150, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1165, M:/Sites/9 itunes-istore/sass/style.sass */
 .artistTabInfo-sidebar__ul {
   padding: 0; }
-  /* line 1153, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1168, M:/Sites/9 itunes-istore/sass/style.sass */
   .artistTabInfo-sidebar__ul li {
     display: inline-block;
     width: 49%;
     margin: 0 -5px 5px 0; }
-    /* line 1159, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1174, M:/Sites/9 itunes-istore/sass/style.sass */
     .artistTabInfo-sidebar__ul li a {
       display: block; }
-      /* line 1168, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 1183, M:/Sites/9 itunes-istore/sass/style.sass */
       .artistTabInfo-sidebar__ul li a p {
         line-height: 1.8;
         font-size: 12px; }
-    /* line 1172, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1187, M:/Sites/9 itunes-istore/sass/style.sass */
     .artistTabInfo-sidebar__ul li p {
       margin: 0;
       padding-right: 10px;
       font-size: 13px;
       color: #4e4e4e; }
-      /* line 1181, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 1196, M:/Sites/9 itunes-istore/sass/style.sass */
       .artistTabInfo-sidebar__ul li p:first-child {
         color: #4e4e4e; }
-    /* line 1183, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1198, M:/Sites/9 itunes-istore/sass/style.sass */
     .artistTabInfo-sidebar__ul li img {
       width: 43px;
       height: 43px;
@@ -1214,149 +1203,137 @@ a, a:hover, a:active, a:focus {
       float: left;
       margin-right: 5px; }
 
-/* line 1197, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1212, M:/Sites/9 itunes-istore/sass/style.sass */
 .music-container_center .artist-list-tag .buy-menu .dropdown-menu li {
   margin: 0; }
-  /* line 1200, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1215, M:/Sites/9 itunes-istore/sass/style.sass */
   .music-container_center .artist-list-tag .buy-menu .dropdown-menu li a:hover {
     text-decoration: none;
     color: #fff; }
 
-/* line 1205, M:/Sites/9 itunes-istore/sass/style.sass */
-.buy-menu .dropdown-menu, .buy-menu aside .aside__navigation li .dropdown-menu, aside .aside__navigation li .buy-menu .dropdown-menu {
-  top: auto;
-  bottom: 23px;
-  right: -4px;
-  left: auto; }
-
 /* -------------      Artist page styles     -----------------------*/
-/* line 1211, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1220, M:/Sites/9 itunes-istore/sass/style.sass */
 body.darkAlbum-style, body.lightAlbum-style {
   background: #1E1E1E; }
-  /* line 1219, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1228, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .header__mainMenu .centerMenu ul li.active, body.lightAlbum-style .header__mainMenu .centerMenu ul li.active, body.darkAlbum-style .header__mainMenu .centerMenu ul li :hover, body.lightAlbum-style .header__mainMenu .centerMenu ul li :hover {
     background-color: rgba(11, 134, 243, 0.25); }
-    /* line 1221, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1230, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .header__mainMenu .centerMenu ul li.active a, body.lightAlbum-style .header__mainMenu .centerMenu ul li.active a, body.darkAlbum-style .header__mainMenu .centerMenu ul li :hover a, body.lightAlbum-style .header__mainMenu .centerMenu ul li :hover a {
       color: #0DA0FF; }
-  /* line 1223, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1232, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .header__mainMenu .centerMenu ul li a, body.lightAlbum-style .header__mainMenu .centerMenu ul li a {
     color: #fff; }
-  /* line 1227, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1236, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .header__mainMenu .iconsMenu a.active, body.lightAlbum-style .header__mainMenu .iconsMenu a.active, body.darkAlbum-style .header__mainMenu .iconsMenu a :hover, body.lightAlbum-style .header__mainMenu .iconsMenu a :hover {
     background-color: rgba(11, 134, 243, 0.25);
     color: #0DA0FF;
     border: none; }
-  /* line 1231, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1240, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style footer, body.lightAlbum-style footer {
     margin-top: 200px; }
-  /* line 1233, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1242, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style a, body.lightAlbum-style a {
     color: #FFF; }
-    /* line 1235, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1244, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style a h2, body.lightAlbum-style a h2 {
       margin: 0;
       text-transform: uppercase; }
-    /* line 1238, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1247, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style a h3, body.lightAlbum-style a h3 {
       margin: 10px 0 0 0; }
-  /* line 1244, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1253, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .buy-menu .priceDropdown .dropdown-menu li a, body.lightAlbum-style .buy-menu .priceDropdown .dropdown-menu li a {
     color: #000; }
-  /* line 1247, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1256, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .buy-menu .priceDropdown .dropdown-menu li:hover a, body.lightAlbum-style .buy-menu .priceDropdown .dropdown-menu li:hover a {
     color: #fff; }
-  /* line 1251, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1260, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .music-container, body.lightAlbum-style .music-container {
     position: relative; }
-  /* line 1256, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1265, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .breadcrumbs, body.lightAlbum-style .breadcrumbs {
     display: block;
     position: absolute;
     top: 5px;
     left: 15px; }
-    /* line 1261, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1270, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .breadcrumbs a:after, body.lightAlbum-style .breadcrumbs a:after {
       border-left: 4px solid #FFF; }
-  /* line 1263, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1272, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .album, body.lightAlbum-style .album, body.darkAlbum-style .art, body.lightAlbum-style .art {
     display: inline-block;
     margin: 30px -1px 0 -1px;
     vertical-align: top;
     min-height: 600px;
     color: #000; }
-    /* line 1269, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1278, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .album h4, body.lightAlbum-style .album h4, body.darkAlbum-style .album h3, body.lightAlbum-style .album h3, body.darkAlbum-style .album h2, body.lightAlbum-style .album h2, body.darkAlbum-style .album a, body.lightAlbum-style .album a, body.darkAlbum-style .album p, body.lightAlbum-style .album p, body.darkAlbum-style .album span, body.lightAlbum-style .album span, body.darkAlbum-style .album td, body.lightAlbum-style .album td, body.darkAlbum-style .album th, body.lightAlbum-style .album th, body.darkAlbum-style .album tr, body.lightAlbum-style .album tr, body.darkAlbum-style .album .buy-menu > a, body.lightAlbum-style .album .buy-menu > a, body.darkAlbum-style .art h4, body.lightAlbum-style .art h4, body.darkAlbum-style .art h3, body.lightAlbum-style .art h3, body.darkAlbum-style .art h2, body.lightAlbum-style .art h2, body.darkAlbum-style .art a, body.lightAlbum-style .art a, body.darkAlbum-style .art p, body.lightAlbum-style .art p, body.darkAlbum-style .art span, body.lightAlbum-style .art span, body.darkAlbum-style .art td, body.lightAlbum-style .art td, body.darkAlbum-style .art th, body.lightAlbum-style .art th, body.darkAlbum-style .art tr, body.lightAlbum-style .art tr, body.darkAlbum-style .art .buy-menu > a, body.lightAlbum-style .art .buy-menu > a {
       color: #c3c3c3; }
-  /* line 1271, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1280, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .album, body.lightAlbum-style .album {
     width: 220px; }
-    /* line 1273, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1282, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .album .buy-menu .dropdown-menu, body.lightAlbum-style .album .buy-menu .dropdown-menu {
       bottom: -51px;
       right: 0; }
-    /* line 1277, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1286, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .album p, body.lightAlbum-style .album p {
       margin: 30px auto 20px auto;
       padding: 10px 0 0 0;
       font-size: 14px;
       border-top: 1px solid #383838; }
-    /* line 1282, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1291, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .album .buy-menu, body.lightAlbum-style .album .buy-menu {
       position: relative;
       width: 90%;
       margin: 0 auto;
       height: auto; }
-      /* line 1287, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 1296, M:/Sites/9 itunes-istore/sass/style.sass */
       body.darkAlbum-style .album .buy-menu > a, body.lightAlbum-style .album .buy-menu > a {
         display: inline-block;
         width: 80%;
         margin: 0 -1px;
         font-size: 16px;
         padding: 2px 0 0 0; }
-        /* line 1293, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 1302, M:/Sites/9 itunes-istore/sass/style.sass */
         body.darkAlbum-style .album .buy-menu > a:hover, body.lightAlbum-style .album .buy-menu > a:hover {
           text-decoration: none; }
-      /* line 1295, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 1304, M:/Sites/9 itunes-istore/sass/style.sass */
       body.darkAlbum-style .album .buy-menu .priceDropdown, body.lightAlbum-style .album .buy-menu .priceDropdown {
         width: 20%;
         margin: 0 -1px; }
-        /* line 1298, M:/Sites/9 itunes-istore/sass/style.sass */
+        /* line 1307, M:/Sites/9 itunes-istore/sass/style.sass */
         body.darkAlbum-style .album .buy-menu .priceDropdown .btn, body.lightAlbum-style .album .buy-menu .priceDropdown .btn {
           height: 25px; }
-        /* line 1300, M:/Sites/9 itunes-istore/sass/style.sass */
-        body.darkAlbum-style .album .buy-menu .priceDropdown:after, body.lightAlbum-style .album .buy-menu .priceDropdown:after {
-          top: -1px;
-          left: -3px;
-          height: 27px; }
-    /* line 1306, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style .album .albumLinksContainer a h3, body.lightAlbum-style .album .albumLinksContainer a h3, body.darkAlbum-style .album .albumLinksContainer a h2, body.lightAlbum-style .album .albumLinksContainer a h2, body.darkAlbum-style .album .albumLinksContainer a .caret, body.lightAlbum-style .album .albumLinksContainer a .caret, body.darkAlbum-style .album .albumLinksContainer a .caret-down, body.lightAlbum-style .album .albumLinksContainer a .caret-down, body.darkAlbum-style .album .albumLinksContainer a .caret-left, body.lightAlbum-style .album .albumLinksContainer a .caret-left {
+    /* line 1315, M:/Sites/9 itunes-istore/sass/style.sass */
+    body.darkAlbum-style .album .albumLinksContainer a h3, body.lightAlbum-style .album .albumLinksContainer a h3, body.darkAlbum-style .album .albumLinksContainer a h2, body.lightAlbum-style .album .albumLinksContainer a h2, body.darkAlbum-style .album .albumLinksContainer a .caret, body.lightAlbum-style .album .albumLinksContainer a .caret, body.darkAlbum-style .album .albumLinksContainer a .caret-left, body.lightAlbum-style .album .albumLinksContainer a .caret-left {
       display: none; }
-    /* line 1309, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1318, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .album > a img, body.lightAlbum-style .album > a img {
       display: block;
       width: 220px;
       height: 220px;
       margin-bottom: 20px; }
-  /* line 1316, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1325, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .art, body.lightAlbum-style .art {
     width: calc(100% - 220px);
     padding-left: 30px; }
-    /* line 1322, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1331, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .art .art__content > a:hover, body.lightAlbum-style .art .art__content > a:hover {
       text-decoration: underline; }
-    /* line 1324, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1333, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .art .art__content > a h2, body.lightAlbum-style .art .art__content > a h2, body.darkAlbum-style .art .art__content > a h3, body.lightAlbum-style .art .art__content > a h3 {
       display: inline-block; }
-    /* line 1327, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style .art .art__content > a .caret, body.lightAlbum-style .art .art__content > a .caret, body.darkAlbum-style .art .art__content > a .caret-down, body.lightAlbum-style .art .art__content > a .caret-down, body.darkAlbum-style .art .art__content > a .caret-left, body.lightAlbum-style .art .art__content > a .caret-left {
+    /* line 1336, M:/Sites/9 itunes-istore/sass/style.sass */
+    body.darkAlbum-style .art .art__content > a .caret, body.lightAlbum-style .art .art__content > a .caret, body.darkAlbum-style .art .art__content > a .caret-left, body.lightAlbum-style .art .art__content > a .caret-left {
       line-height: 1.5;
       margin: 0 0 0 8px;
       vertical-align: baseline; }
-    /* line 1331, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1340, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .art h3, body.lightAlbum-style .art h3 {
       font-size: 18px; }
-    /* line 1333, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1342, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .art .review, body.lightAlbum-style .art .review {
       border: 1px solid #c3c3c3;
       border-radius: 4px;
@@ -1364,165 +1341,263 @@ body.darkAlbum-style, body.lightAlbum-style {
       margin-top: 15px;
       display: inline-block;
       padding: 1px 8px; }
-      /* line 1340, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 1349, M:/Sites/9 itunes-istore/sass/style.sass */
       body.darkAlbum-style .art .review:hover, body.lightAlbum-style .art .review:hover {
         text-decoration: none; }
-  /* line 1342, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1351, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .nav-tabs, body.lightAlbum-style .nav-tabs {
     margin: 130px 0 0 0;
     border-bottom: 1px solid #383838; }
-    /* line 1345, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1354, M:/Sites/9 itunes-istore/sass/style.sass */
     body.darkAlbum-style .nav-tabs li, body.lightAlbum-style .nav-tabs li {
       margin: 0 10px 5px 0;
       padding: 5px 10px; }
-      /* line 1348, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 1357, M:/Sites/9 itunes-istore/sass/style.sass */
       body.darkAlbum-style .nav-tabs li.active, body.lightAlbum-style .nav-tabs li.active {
         background: #191919;
         border-radius: 7px; }
-      /* line 1352, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 1361, M:/Sites/9 itunes-istore/sass/style.sass */
       body.darkAlbum-style .nav-tabs li:hover a, body.lightAlbum-style .nav-tabs li:hover a {
         color: #e5e5e5; }
-      /* line 1354, M:/Sites/9 itunes-istore/sass/style.sass */
+      /* line 1363, M:/Sites/9 itunes-istore/sass/style.sass */
       body.darkAlbum-style .nav-tabs li a, body.lightAlbum-style .nav-tabs li a {
         color: #BCBCBC; }
-  /* line 1357, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1366, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .tab-pane h3, body.lightAlbum-style .tab-pane h3 {
     margin: 20px 0 5px 0; }
-  /* line 1361, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1370, M:/Sites/9 itunes-istore/sass/style.sass */
   body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums h2, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums h2, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice h2, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice h2 {
     margin: 5px 0; }
-  /* line 1364, M:/Sites/9 itunes-istore/sass/style.sass */
-  body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu {
-    position: static; }
-    /* line 1366, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu {
-      max-width: 123px; }
-      /* line 1370, M:/Sites/9 itunes-istore/sass/style.sass */
-      body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li {
-        display: block;
-        margin: 0;
-        width: auto; }
-        /* line 1374, M:/Sites/9 itunes-istore/sass/style.sass */
-        body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a {
-          display: block; }
-          /* line 1376, M:/Sites/9 itunes-istore/sass/style.sass */
-          body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a:hover, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a:hover, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a:hover, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a:hover {
-            text-decoration: none; }
-  /* line 1380, M:/Sites/9 itunes-istore/sass/style.sass */
-  body.darkAlbum-style table, body.lightAlbum-style table {
-    width: 100%; }
-    /* line 1382, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table th, body.lightAlbum-style table th {
-      font-weight: normal;
-      text-transform: uppercase; }
-      /* line 1385, M:/Sites/9 itunes-istore/sass/style.sass */
-      body.darkAlbum-style table th .caret, body.lightAlbum-style table th .caret, body.darkAlbum-style table th .caret-down, body.lightAlbum-style table th .caret-down, body.darkAlbum-style table th .caret-left, body.lightAlbum-style table th .caret-left {
-        position: relative;
-        left: 10px; }
-    /* line 1388, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table tr, body.lightAlbum-style table tr {
-      border-bottom: 1px solid #383838; }
-      /* line 1391, M:/Sites/9 itunes-istore/sass/style.sass */
-      body.darkAlbum-style table tr:hover td:first-child, body.lightAlbum-style table tr:hover td:first-child {
-        background: url("../img/ico_play_white.svg") no-repeat;
-        background-position: 0 3px;
-        cursor: pointer; }
-        /* line 1392, M:/Sites/9 itunes-istore/sass/style.sass */
-        body.darkAlbum-style table tr:hover td:first-child span, body.lightAlbum-style table tr:hover td:first-child span {
-          visibility: hidden; }
-      /* line 1398, M:/Sites/9 itunes-istore/sass/style.sass */
-      body.darkAlbum-style table tr td:nth-child(3):hover a, body.lightAlbum-style table tr td:nth-child(3):hover a {
-        text-decoration: none; }
-      /* line 1401, M:/Sites/9 itunes-istore/sass/style.sass */
-      body.darkAlbum-style table tr td .popularityScale, body.lightAlbum-style table tr td .popularityScale {
-        width: 100%;
-        display: inline-block; }
-        /* line 1404, M:/Sites/9 itunes-istore/sass/style.sass */
-        body.darkAlbum-style table tr td .popularityScale span, body.lightAlbum-style table tr td .popularityScale span {
-          display: inline-block;
-          width: 1px;
-          height: 18px;
-          vertical-align: middle;
-          margin: 0 2px 0 0;
-          background: #383838; }
-          /* line 1411, M:/Sites/9 itunes-istore/sass/style.sass */
-          body.darkAlbum-style table tr td .popularityScale span:nth-child(1), body.lightAlbum-style table tr td .popularityScale span:nth-child(1), body.darkAlbum-style table tr td .popularityScale span:nth-child(2), body.lightAlbum-style table tr td .popularityScale span:nth-child(2), body.darkAlbum-style table tr td .popularityScale span:nth-child(3), body.lightAlbum-style table tr td .popularityScale span:nth-child(3), body.darkAlbum-style table tr td .popularityScale span:nth-child(4), body.lightAlbum-style table tr td .popularityScale span:nth-child(4), body.darkAlbum-style table tr td .popularityScale span:nth-child(5), body.lightAlbum-style table tr td .popularityScale span:nth-child(5) {
-            background: #FFF; }
-      /* line 1413, M:/Sites/9 itunes-istore/sass/style.sass */
-      body.darkAlbum-style table tr:last-child, body.lightAlbum-style table tr:last-child {
-        border-bottom: none; }
-    /* line 1417, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table .no-play:hover td:first-child, body.lightAlbum-style table .no-play:hover td:first-child {
-      background: none; }
-    /* line 1420, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table th:nth-child(1), body.lightAlbum-style table th:nth-child(1) {
-      width: 3%; }
-    /* line 1422, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table th:nth-child(2), body.lightAlbum-style table th:nth-child(2) {
-      width: 32%; }
-    /* line 1424, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table th:nth-child(3), body.lightAlbum-style table th:nth-child(3) {
-      width: 33%; }
-    /* line 1426, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table th:nth-child(4), body.lightAlbum-style table th:nth-child(4) {
-      width: 10%; }
-    /* line 1428, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table th:nth-child(5), body.lightAlbum-style table th:nth-child(5) {
-      width: 15%; }
-    /* line 1430, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table th:nth-child(6), body.lightAlbum-style table th:nth-child(6) {
-      width: 9%; }
-    /* line 1432, M:/Sites/9 itunes-istore/sass/style.sass */
-    body.darkAlbum-style table .buy-menu, body.lightAlbum-style table .buy-menu {
-      position: static;
-      width: auto;
-      width: 100px;
-      margin: 3px 0; }
-      /* line 1437, M:/Sites/9 itunes-istore/sass/style.sass */
-      body.darkAlbum-style table .buy-menu .caret-down, body.lightAlbum-style table .buy-menu .caret-down {
-        position: absolute;
-        left: 4px; }
-      /* line 1440, M:/Sites/9 itunes-istore/sass/style.sass */
-      body.darkAlbum-style table .buy-menu .priceDropdown, body.lightAlbum-style table .buy-menu .priceDropdown {
-        margin: 0 -1px; }
-        /* line 1444, M:/Sites/9 itunes-istore/sass/style.sass */
-        body.darkAlbum-style table .buy-menu .priceDropdown .dropdown-menu li a, body.lightAlbum-style table .buy-menu .priceDropdown .dropdown-menu li a {
-          color: #000; }
-        /* line 1447, M:/Sites/9 itunes-istore/sass/style.sass */
-        body.darkAlbum-style table .buy-menu .priceDropdown .dropdown-menu li:hover a, body.lightAlbum-style table .buy-menu .priceDropdown .dropdown-menu li:hover a {
-          color: #fff; }
+  /* line 1374, M:/Sites/9 itunes-istore/sass/style.sass */
+  body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu {
+    max-width: 123px; }
+    /* line 1378, M:/Sites/9 itunes-istore/sass/style.sass */
+    body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li {
+      display: block;
+      margin: 0;
+      width: auto; }
+      /* line 1382, M:/Sites/9 itunes-istore/sass/style.sass */
+      body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a {
+        display: block; }
+        /* line 1384, M:/Sites/9 itunes-istore/sass/style.sass */
+        body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a:hover, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbums .buy-menu .dropdown-menu li a:hover, body.darkAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a:hover, body.lightAlbum-style .tab-pane:nth-child(3) .squareAlbumsWithPrice .buy-menu .dropdown-menu li a:hover {
+          text-decoration: none; }
 
-/* line 1450, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1388, M:/Sites/9 itunes-istore/sass/style.sass */
+.albumsTable, .searchTable {
+  width: 100%; }
+  /* line 1390, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable th, .searchTable th {
+    font-weight: normal;
+    text-transform: uppercase; }
+    /* line 1393, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable th .caret, .searchTable th .caret, .albumsTable th .caret-left, .searchTable th .caret-left {
+      position: relative;
+      left: 10px; }
+  /* line 1396, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable tr, .searchTable tr {
+    border-bottom: 1px solid #383838; }
+    /* line 1399, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable tr:hover td:first-child, .searchTable tr:hover td:first-child {
+      background: url("../img/ico_play_white.svg") no-repeat;
+      background-position: 0 3px;
+      cursor: pointer; }
+      /* line 1400, M:/Sites/9 itunes-istore/sass/style.sass */
+      .albumsTable tr:hover td:first-child span, .searchTable tr:hover td:first-child span {
+        visibility: hidden; }
+    /* line 1406, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable tr td:nth-child(3):hover a, .searchTable tr td:nth-child(3):hover a {
+      text-decoration: none; }
+    /* line 1409, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable tr td .popularityScale, .searchTable tr td .popularityScale {
+      width: 100%;
+      display: inline-block; }
+      /* line 1412, M:/Sites/9 itunes-istore/sass/style.sass */
+      .albumsTable tr td .popularityScale span, .searchTable tr td .popularityScale span {
+        display: inline-block;
+        width: 1px;
+        height: 16px;
+        vertical-align: top;
+        margin: 0 2px 0 0;
+        background: #383838; }
+      /* line 1419, M:/Sites/9 itunes-istore/sass/style.sass */
+      .albumsTable tr td .popularityScale span.on, .searchTable tr td .popularityScale span.on {
+        background: #FFF; }
+    /* line 1421, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable tr:last-child, .searchTable tr:last-child {
+      border-bottom: none; }
+  /* line 1425, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable .no-play:hover td:first-child, .searchTable .no-play:hover td:first-child {
+    background: none; }
+  /* line 1428, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable th:nth-child(1), .searchTable th:nth-child(1) {
+    width: 3%; }
+  /* line 1430, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable th:nth-child(2), .searchTable th:nth-child(2) {
+    width: 32%; }
+  /* line 1432, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable th:nth-child(3), .searchTable th:nth-child(3) {
+    width: 33%; }
+  /* line 1434, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable th:nth-child(4), .searchTable th:nth-child(4) {
+    width: 10%; }
+  /* line 1436, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable th:nth-child(5), .searchTable th:nth-child(5) {
+    width: 15%; }
+  /* line 1438, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable th:nth-child(6), .searchTable th:nth-child(6) {
+    width: 9%; }
+  /* line 1440, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable .buy-menu, .searchTable .buy-menu {
+    position: static;
+    text-align: center;
+    width: auto;
+    width: 100px;
+    margin: 3px 0; }
+    /* line 1446, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable .buy-menu .buy-menu__link, .searchTable .buy-menu .buy-menu__link {
+      margin: 0 -1px;
+      display: inline-block;
+      width: 77%;
+      line-height: 20px;
+      vertical-align: baseline; }
+    /* line 1452, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable .buy-menu .arrowDown, .searchTable .buy-menu .arrowDown {
+      width: 23px; }
+    /* line 1454, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable .buy-menu .btn, .searchTable .buy-menu .btn {
+      width: 17%; }
+    /* line 1456, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable .buy-menu .priceDropdown, .searchTable .buy-menu .priceDropdown {
+      margin: 0;
+      position: relative; }
+      /* line 1461, M:/Sites/9 itunes-istore/sass/style.sass */
+      .albumsTable .buy-menu .priceDropdown .dropdown-menu li a, .searchTable .buy-menu .priceDropdown .dropdown-menu li a {
+        color: #000; }
+      /* line 1464, M:/Sites/9 itunes-istore/sass/style.sass */
+      .albumsTable .buy-menu .priceDropdown .dropdown-menu li:hover a, .searchTable .buy-menu .priceDropdown .dropdown-menu li:hover a {
+        color: #fff; }
+  /* line 1466, M:/Sites/9 itunes-istore/sass/style.sass */
+  .albumsTable .not-active, .searchTable .not-active {
+    text-align: center; }
+    /* line 1468, M:/Sites/9 itunes-istore/sass/style.sass */
+    .albumsTable .not-active .buy-menu__link, .searchTable .not-active .buy-menu__link {
+      width: 100%; }
+
+/* line 1470, M:/Sites/9 itunes-istore/sass/style.sass */
+.searchTable {
+  margin-top: 10px; }
+  /* line 1474, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable .buy-menu .buy-menu__link {
+    vertical-align: top; }
+  /* line 1476, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable .searchTable__img {
+    width: 22px;
+    height: 15px;
+    height: 56%;
+    margin-right: 5px;
+    display: inline-block; }
+  /* line 1485, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable th:nth-child(1) {
+    width: 2%; }
+  /* line 1487, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable th:nth-child(2) {
+    width: 28%; }
+  /* line 1489, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable th:nth-child(3) {
+    width: 28%; }
+  /* line 1491, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable th:nth-child(4) {
+    width: 18%; }
+  /* line 1493, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable th:nth-child(5) {
+    width: 5%; }
+  /* line 1497, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable th:nth-child(6) {
+    width: 9%; }
+  /* line 1499, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable th:nth-child(7) {
+    width: 6%; }
+  /* line 1503, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable tr:nth-child(2) td {
+    padding-top: 7px; }
+  /* line 1506, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable tr td:nth-child(7) {
+    text-align: right; }
+    /* line 1508, M:/Sites/9 itunes-istore/sass/style.sass */
+    .searchTable tr td:nth-child(7) .buy-menu {
+      display: inline-block;
+      text-align: center; }
+  /* line 1513, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable tr td:nth-child(3):hover a {
+    text-decoration: underline; }
+  /* line 1516, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchTable tr:hover td:first-child {
+    background: url("../img/ico_play.svg") no-repeat;
+    background-position: 0 3px; }
+
+/* line 1521, M:/Sites/9 itunes-istore/sass/style.sass */
+.containerOfTypes table tr {
+  border: none;
+  line-height: 1.5; }
+  /* line 1524, M:/Sites/9 itunes-istore/sass/style.sass */
+  .containerOfTypes table tr:first-child {
+    line-height: 1.4;
+    margin-bottom: 5px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; }
+  /* line 1530, M:/Sites/9 itunes-istore/sass/style.sass */
+  .containerOfTypes table tr td .popularityScale {
+    line-height: 1.3; }
+    /* line 1532, M:/Sites/9 itunes-istore/sass/style.sass */
+    .containerOfTypes table tr td .popularityScale span {
+      background: #c3c3c3; }
+    /* line 1534, M:/Sites/9 itunes-istore/sass/style.sass */
+    .containerOfTypes table tr td .popularityScale span.on {
+      background: #4e4e4e; }
+
+/* line 1536, M:/Sites/9 itunes-istore/sass/style.sass */
 .ArtistBackgroundImage {
   position: absolute;
   right: 0;
   top: 35px;
   z-index: -1; }
 
-/* line 1456, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1541, M:/Sites/9 itunes-istore/sass/style.sass */
+.searchFooter {
+  margin-top: 150px; }
+
+/* line 1544, M:/Sites/9 itunes-istore/sass/style.sass */
 .not-active {
   border: none; }
-  /* line 1458, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1546, M:/Sites/9 itunes-istore/sass/style.sass */
+  .not-active .priceDropdown {
+    border: none; }
+  /* line 1548, M:/Sites/9 itunes-istore/sass/style.sass */
+  .not-active .buy-menu__link {
+    width: 100%;
+    margin: 0; }
+  /* line 1551, M:/Sites/9 itunes-istore/sass/style.sass */
   .not-active > a {
     pointer-events: none;
     cursor: default; }
-  /* line 1462, M:/Sites/9 itunes-istore/sass/style.sass */
-  .not-active .priceDropdown:after {
+  /* line 1554, M:/Sites/9 itunes-istore/sass/style.sass */
+  .not-active .priceDropdown {
     display: none; }
 
-/* line 1467, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1559, M:/Sites/9 itunes-istore/sass/style.sass */
 .art h4 {
   display: inline-block;
   margin: 10px 10px 0 0; }
 
 /* raiting stars */
 /*sprite with stars*/
-/* line 1473, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1565, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
   background: url("http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png") no-repeat;
   background: url("../img/rsz_stars.png") no-repeat; }
 
-/* line 1477, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1569, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input {
   /*fix floating problems*/
   overflow: hidden;
@@ -1534,7 +1609,7 @@ body.darkAlbum-style, body.lightAlbum-style {
   /*end of fix floating problems*/
   position: relative; }
 
-/* line 1488, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1580, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input input {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -1545,13 +1620,13 @@ body.darkAlbum-style, body.lightAlbum-style {
   top: 0;
   z-index: 0; }
 
-/* line 1498, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1590, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input input:checked ~ label {
   background-position: 0 -21px;
   width: 22px;
   height: 20.5px; }
 
-/* line 1503, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1595, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input label {
   background-position: 0 0;
   width: 22px;
@@ -1562,100 +1637,157 @@ body.darkAlbum-style, body.lightAlbum-style {
   position: relative;
   z-index: 1; }
 
-/* line 1513, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1605, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
   background-position: 0 -21px;
   width: 22px;
   height: 20.5px; }
 
-/* line 1518, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1610, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input #star-0 {
   left: -75px; }
 
-/* line 1520, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1612, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input #star-1 {
   left: -22px; }
 
-/* line 1522, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1614, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input #star-2 {
   left: 31px; }
 
-/* line 1524, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1616, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input #star-3 {
   left: 84px; }
 
-/* line 1526, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1618, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input #star-4 {
   left: 137px; }
 
-/* line 1528, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1620, M:/Sites/9 itunes-istore/sass/style.sass */
 #reviewStars-input #star-5 {
   left: 190px; }
 
-/* line 1532, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1624, M:/Sites/9 itunes-istore/sass/style.sass */
 body.lightAlbum-style {
   background: none; }
-  /* line 1536, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1628, M:/Sites/9 itunes-istore/sass/style.sass */
   body.lightAlbum-style a {
     color: #000; }
-  /* line 1539, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1631, M:/Sites/9 itunes-istore/sass/style.sass */
   body.lightAlbum-style .album, body.lightAlbum-style .art {
     display: inline-block;
     margin: 30px -1px 0 -1px;
     vertical-align: top;
     color: #000; }
-    /* line 1544, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1636, M:/Sites/9 itunes-istore/sass/style.sass */
     body.lightAlbum-style .album h4, body.lightAlbum-style .album h3, body.lightAlbum-style .album h2, body.lightAlbum-style .album a, body.lightAlbum-style .album p, body.lightAlbum-style .album span, body.lightAlbum-style .album td, body.lightAlbum-style .album th, body.lightAlbum-style .album tr, body.lightAlbum-style .album .buy-menu > a, body.lightAlbum-style .art h4, body.lightAlbum-style .art h3, body.lightAlbum-style .art h2, body.lightAlbum-style .art a, body.lightAlbum-style .art p, body.lightAlbum-style .art span, body.lightAlbum-style .art td, body.lightAlbum-style .art th, body.lightAlbum-style .art tr, body.lightAlbum-style .art .buy-menu > a {
       color: #4e4e4e; }
-  /* line 1548, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1640, M:/Sites/9 itunes-istore/sass/style.sass */
   body.lightAlbum-style .squareAlbumsWithPrice li p {
     color: #9E9EA5; }
-  /* line 1551, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1643, M:/Sites/9 itunes-istore/sass/style.sass */
   body.lightAlbum-style .breadcrumbs a:after {
     border-left: 4px solid #4e4e4e; }
-  /* line 1553, M:/Sites/9 itunes-istore/sass/style.sass */
+  /* line 1645, M:/Sites/9 itunes-istore/sass/style.sass */
   body.lightAlbum-style .nav-tabs {
     border-bottom: 1px solid #e5e5e5; }
-    /* line 1556, M:/Sites/9 itunes-istore/sass/style.sass */
+    /* line 1648, M:/Sites/9 itunes-istore/sass/style.sass */
     body.lightAlbum-style .nav-tabs li.active {
       background: #e5e5e5; }
 
-/* line 1559, M:/Sites/9 itunes-istore/sass/style.sass */
-.arrowDown {
-  display: inline-block;
-  font-size: 22px;
-  line-height: 1;
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg); }
-
 /* simple style*/
-/* line 1570, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1653, M:/Sites/9 itunes-istore/sass/style.sass */
 .UlTitle {
   display: inline-block;
   font-size: 16px;
   margin: 0 10px 0 0;
   line-height: 1.45; }
 
-/* line 1577, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1660, M:/Sites/9 itunes-istore/sass/style.sass */
 .showText {
   display: none;
   color: cyan;
   text-decoration: underline; }
 
-/* line 1581, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1664, M:/Sites/9 itunes-istore/sass/style.sass */
 .showingText {
   display: inline; }
 
-/* line 1586, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1669, M:/Sites/9 itunes-istore/sass/style.sass */
 .onlyPrice .buy-menu__link {
   display: inline-block;
   width: 100%; }
 
-/* line 1589, M:/Sites/9 itunes-istore/sass/style.sass */
+/* line 1672, M:/Sites/9 itunes-istore/sass/style.sass */
 .onlyPrice .priceDropdown {
   display: none; }
+
+/* line 1676, M:/Sites/9 itunes-istore/sass/style.sass */
+.resultForSearch {
+  padding-bottom: 5px;
+  text-align: left;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #e5e5e5; }
+
+/* line 1681, M:/Sites/9 itunes-istore/sass/style.sass */
+.headerBorder {
+  border-bottom: 1px solid #e5e5e5; }
+
+/* line 1684, M:/Sites/9 itunes-istore/sass/style.sass */
+.searchStyles .tab-pane {
+  margin: 20px 0; }
+  /* line 1686, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchStyles .tab-pane:first-child {
+    margin: 5px 0 0 0; }
+
+/* line 1688, M:/Sites/9 itunes-istore/sass/style.sass */
+.searchStyles .nav-tabs {
+  display: none;
+  border: 1px solid #1F66B1;
+  border-radius: 5px;
+  overflow: hidden; }
+  /* line 1693, M:/Sites/9 itunes-istore/sass/style.sass */
+  .searchStyles .nav-tabs li {
+    padding: 0 10px; }
+    /* line 1695, M:/Sites/9 itunes-istore/sass/style.sass */
+    .searchStyles .nav-tabs li.active {
+      background: #1F66B1; }
+      /* line 1697, M:/Sites/9 itunes-istore/sass/style.sass */
+      .searchStyles .nav-tabs li.active a {
+        color: #FFF; }
+    /* line 1699, M:/Sites/9 itunes-istore/sass/style.sass */
+    .searchStyles .nav-tabs li a {
+      padding: 5px; }
+
+/* line 1702, M:/Sites/9 itunes-istore/sass/style.sass */
+.searchStyles table td {
+  position: relative; }
+
+/* line 1704, M:/Sites/9 itunes-istore/sass/style.sass */
+.containerOfTypes {
+  text-align: left; }
+  /* line 1706, M:/Sites/9 itunes-istore/sass/style.sass */
+  .containerOfTypes .SquareAlbums-wrapper {
+    text-align: left; }
+  /* line 1708, M:/Sites/9 itunes-istore/sass/style.sass */
+  .containerOfTypes .tab-pane {
+    display: none; }
+  /* line 1711, M:/Sites/9 itunes-istore/sass/style.sass */
+  .containerOfTypes .squareAlbumsWithPrice p {
+    font-size: 12px; }
+  /* line 1713, M:/Sites/9 itunes-istore/sass/style.sass */
+  .containerOfTypes .showItems {
+    display: block; }
+  /* line 1715, M:/Sites/9 itunes-istore/sass/style.sass */
+  .containerOfTypes .media-displayNone {
+    display: block; }
+  /* line 1717, M:/Sites/9 itunes-istore/sass/style.sass */
+  .containerOfTypes .media-displayBlock {
+    display: none; }
+
+/* line 1720, M:/Sites/9 itunes-istore/sass/style.sass */
+.not-active {
+  pointer-events: none;
+  cursor: default; }
 
 /*# sourceMappingURL=style.css.map */

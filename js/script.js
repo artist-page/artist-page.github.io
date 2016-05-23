@@ -26,6 +26,7 @@ $("#togMenu li").click(function(e) {
   $(this).addClass('active');
 })
 
+
 //$('.buy-menu').addClass('onlyPrice');
 
 
@@ -537,3 +538,49 @@ theToggle.onclick = function() {
     } else {$('body').addClass('hiddenStyles'); };
    return false;
 }
+
+$(document).ready(function() {
+    $("#filterContent li").click(function () {
+        $("#filterContent li").removeClass("active");
+        $(this).addClass("active");   
+        return false;
+    });
+});
+
+
+$("#filterContent li:nth-child(1)").click(function(){
+    $("#albums,#songs,#ringtons,#more").removeClass("showItems");
+    $("#albums,#songs,#ringtons,#more").addClass("showItems");
+});
+
+$("#filterContent li:nth-child(2)").click(function(){
+    $("#albums,#songs,#ringtons,#more").removeClass("showItems");
+    $("#albums").addClass("showItems");
+});
+
+$("#filterContent li:nth-child(3)").click(function(){
+    $("#albums,#songs,#ringtons,#more").removeClass("showItems");
+    $("#songs").addClass("showItems");
+});
+
+$("#filterContent li:nth-child(4)").click(function(){
+    $("#albums,#songs,#ringtons,#more").removeClass("showItems");
+    $("#ringtons").addClass("showItems");
+});
+
+$("#filterContent li:nth-child(5)").click(function(){
+    $("#albums,#songs,#ringtons,#more").removeClass("showItems");
+    $("#more").addClass("showItems");
+});
+/*
+$(document).ready(function() {
+    $("#filterContent li").click(function () {
+        $("#filterContent li").removeClass("active");
+        // $(".tab").addClass("active"); // instead of this do the below 
+        $(this).addClass("active");  
+        if ("#filterContent li:first-child.active") {
+            $("#albums,#songs").hidden();
+        };
+        return false;
+    });
+});*/

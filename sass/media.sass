@@ -116,10 +116,10 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         content: " "
         position: absolute
         left: 0
-        top: -5px
+        top: -7px
 
     #toggleButton span:after
-        top: 5px
+        top: 7px
 
     #toggleButton span 
         position: relative
@@ -129,7 +129,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
     #toggleButton span:after,
     #toggleButton span:before
         width: 100%
-        height: 2px
+        height: 1px
         line-height: 49px
         background-color: #888
         transition: all 0.3s
@@ -141,7 +141,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         background-color: transparent
 
     #toggleButton.on span:before 
-        transform: rotate(45deg) translate(2px, 2px)
+        transform: rotate(45deg) translate(5px, 5px)
 
     #toggleButton.on span:after 
         transform: rotate(-45deg) translate(7px, -8px)
@@ -168,7 +168,7 @@ $ffb: "MyriadProBold", Roboto, sans-serif
     .music-content
         width: 100%
         .seeAll
-            top: 0px
+            top: -1px
             right: 0px
             .caret
                 display: inline-block
@@ -197,7 +197,8 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         //margin-bottom: 20px
         width: 100%
         .seeAll
-            top: -2px
+            top: 0px
+            line-height: 1
         .lineList
             padding: 0
             display: -webkit-flex
@@ -389,30 +390,14 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                     display: block
     body.darkAlbum-style .album br, body.lightAlbum-style .album br
         display: none
-        
-    .resultForSearch
-        padding-bottom: 5px
-        //outline: 1px solid red
-        border-bottom: 1px solid $fColor
+    
     .searchStyles
         .tab-pane
             display: block
-            outline: 1px solid red
-            text-align: center
-        .nav-tabs
-            display: inline-block
-            display: none
-            margin: 0 auto
-            margin-left: 50%
-            transform: translateX(-50%)
-            border: 1px solid #1F66B1
-            border-radius: 5px
-            text-align: center
-            li
-                //outline: 1px solid red
-                a
-                    padding: 5px
-            
+    .containerOfTypes
+        .squareAlbumsWithPrice
+            height: 210px
+
 
     footer
         padding: 20px 15px 10px 15px
@@ -568,21 +553,6 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                     width: 29%
                 &:nth-child(7)
                     width: 9%
-
-@media only screen and (max-width : 1300px)
-    body.album-style
-        table
-            //th
-                &:nth-child(1)
-                    width: 3%
-                &:nth-child(2)
-                    width: 30%
-                &:nth-child(4)
-                    width: 25%
-                &:nth-child(6)
-                    width: 11%
-                &:nth-child(7)
-                    width: 11%
  
 
 @media only screen and (max-width : 1200px)
@@ -597,18 +567,6 @@ $ffb: "MyriadProBold", Roboto, sans-serif
     
 
 @media only screen and (max-width : 1000px)
-    //.SquareAlbums-wrapper 
-        .squareAlbums
-            white-space: nowrap
-            overflow-x: scroll
-            overflow-y: hidden
-            height: 190px
-    //body.album-style
-    //.squareAlbums
-        white-space: nowrap
-        overflow-x: scroll
-        overflow-y: hidden
-        min-height: 180px
     body.hiddenStyles
         background: #fff
         footer, .music-container, .Carousel
@@ -668,11 +626,6 @@ $ffb: "MyriadProBold", Roboto, sans-serif
             padding-right: 85px
     
     .littleSquareAlbums
-        //display: block
-        //height: 180px
-        //overflow-x: scroll
-        //overflow-y: hidden
-        //white-space: nowrap
         .lineList
             display: block
             width: 100%
@@ -684,7 +637,6 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                 display: inline-block
                 margin: 0 15px 0 0
                 width: 270px
-                //white-space: nowrap
                 &:last-child
                     margin-right: 10px
     .music-container_center 
@@ -706,13 +658,9 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                 margin-top: 20px
     
     section
-        //.flexBehavior
         .squareAlbums, .squareAlbumsWithPrice
             display: inline-block
             white-space: nowrap
-            //flex-wrap: wrap
-            //flex-direction: row
-            //justify-content: space-between
             height: 180px
             //height: 205px
             overflow-y: hidden
@@ -720,14 +668,13 @@ $ffb: "MyriadProBold", Roboto, sans-serif
             li
                 display: inline-block
         .two-lines
-            //white-space: normal
-            //height: auto
-            //overflow: hidden
-            //max-height: 335px
             li:first-child
                 margin-left: 0
         .squareAlbumsWithPrice
             height: 220px
+    .containerOfTypes
+        .squareAlbumsWithPrice
+            height: 230px
     
     body
         .ArtistBackgroundImage
@@ -766,11 +713,6 @@ $ffb: "MyriadProBold", Roboto, sans-serif
                     position: absolute
                     position: static
                     width: 120px
-                    //top: auto
-                    //left: auto
-                    //bottom: -30px
-                    //right: auto
-                    //vertical-align: baseline
                 p
                     display: inline-block
                     margin: 20px 0 5px 0
@@ -802,8 +744,6 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         border-radius: 0px
     body.darkAlbum-style footer, body.lightAlbum-style footer
         margin-top: 50px
-    //body .ArtistBackgroundImage
-        display: none
     body .music-container .album .albumLinksContainer
         a,h2
             font-size: 15px
@@ -819,19 +759,58 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         color: #1F66B1
         border: 1px solid #1F66B1
         .buy-menu__link
+            display: inline-block
+            width: 100%
             color: #1F66B1
+            line-height: 1
+            margin: 0
     .color-style
         .buy-menu
             .buy-menu__link
                 color: #1F66B1
-    // search page styles
     
-    //.searchStyles
+    .searchStyles
+        padding: 0
+        text-align: center
+        .resultForSearch
+            display: none
+        .nav-tabs
+            display: inline-block
+            border: 1px solid #1F66B1
+            margin: 10px auto 5px auto
+            border-radius: 5px
+            li
+                min-width: 80px
+                text-align: center
+                a
+                    padding: 5px
+                    color: #1F66B1
+    .filterContent
+        li
+            border-right: 1px solid #1F66B1
+            &:last-child
+                border-right: none
+            &:first-child.active
+                #albums
+                    display: block
+                    background: #000 !important
+    .containerOfTypes 
+        border-top: 1px solid #e5e5e5
+        padding: 0 15px
         .tab-pane
+            border-bottom: 1px solid #e5e5e5
+            &:last-child
+                border: none
+        .media-displayNone
+            display: none
+        .media-displayBlock
+            margin: 0
             display: block
-            outline: 1px solid red
-    
-
+            //border-bottom: 1px solid #e5e5e5
+    .breadcrumbs, body.darkAlbum-style .breadcrumbs, body.lightAlbum-style .breadcrumbs
+        display: none
+    .priceDropdown
+        display: none
  
 @media only screen and (max-width : 768px)
     .music-container_center
@@ -867,26 +846,22 @@ $ffb: "MyriadProBold", Roboto, sans-serif
         margin-top: 0
     body .music-container .breadcrumbs
         display: none
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px)
-    .breadcrumbs, body.darkAlbum-style .breadcrumbs, body.lightAlbum-style .breadcrumbs
-        display: none
-    .buy-menu
-        .buy-menu__link
-            display: inline-block
-            width: 100%
-        .priceDropdown
+    .filterContent
+        li:nth-child(4)
             display: none
+    .searchStyles
+        .nav-tabs
+            li
+                min-width: 60px
+                a
+                    padding: 5px 0px
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 2048px)
-    //.breadcrumbs
+
+@media only screen and (min-device-width: 1500px) and (max-device-width: 2048px)
+    aside
         display: none
-    //.buy-menu
-        .buy-menu__link
-            display: inline-block
-            width: 100%
-        .priceDropdown
-            display: none
+    .music-content
+        width: 100%
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 3/2) and (min-device-pixel-ratio: 1.5)
     .header__mainMenu

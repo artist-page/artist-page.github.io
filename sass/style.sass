@@ -70,38 +70,21 @@ h1,h2,h3,h4,h5
             &:hover
                 text-decoration: none
 
-.caret
+.arrow
     display: inline-block
-    //position: absolute
-    top: 0
-    left: 0
-    color: #bbb
+    font-size: 25px
+    line-height: 1.1s
+.arrowDown
     color: inherit
-    width: 17px
-    height: 17px
-    &:after
-        content: ""
-        color: #bbb
-        color: inherit
-        display: inline-block
-        margin-top: 5px
-        margin-left: -6px
-        border: solid currentColor
-        border-width: 0 .2em .2em 0
-        display: inline-block
-        padding: .20em
-        transform: rotate(-45deg)
-        -webkit-transform: rotate(-45deg)
-.caret-down
-    @extend .caret
-    //position: absolute
-    left: 1px
-    top: -1px
-    //right: -23px
-    right: auto
-    &:after
-        transform: rotate(45deg)
-        -webkit-transform: rotate(45deg)
+    height: 100%
+    display: inline-block
+    font-size: 22px
+    -moz-transform: rotate(90deg)
+    -ms-transform: rotate(90deg)
+    -webkit-transform: rotate(90deg)
+    -o-transform: rotate(90deg)
+    transform: rotate(90deg)
+
 .caret-left
     @extend .caret
     left: auto
@@ -120,6 +103,8 @@ h1,h2,h3,h4,h5
 .dropdown-menu
     border: 1px solid #d0d0d0
     padding: 0
+    right: -2px
+    overflow: hidden
     background-color: #f0f0f0
     li
         a
@@ -163,6 +148,11 @@ h1,h2,h3,h4,h5
     overflow: hidden /* Обрезаем все, что не помещается в область */
     text-overflow: ellipsis /* Добавляем многоточие */
 
+.dropdown
+    position: static
+    display: inline-block
+    border-left: 1px solid #e5e5e5
+    border-radius: 0px 
 
 .show-more
     //display: none
@@ -216,8 +206,8 @@ h1,h2,h3,h4,h5
                 &:hover, :focus
                     text-decoration: none
             .dropdown
-                //background: url(../img/ico-hover.png) no-repeat
-                display: inline-block
+                position: relative
+                border: none
                 .btn
                     display: inline-block
                     width: 30px
@@ -231,7 +221,9 @@ h1,h2,h3,h4,h5
                     //background-size: contain
                 .dropdown-menu
                     min-width: 140px
-                    padding: 2px 0
+                    padding: 0
+                    left: 0px
+                    right: auto
                     li
                         margin: 0
                         width: 100%
@@ -468,13 +460,17 @@ h1,h2,h3,h4,h5
         padding: 0 5px 0 0
     .buy-menu
         border: 1px solid #c3c3c3
+        position: relative
         top: auto
         bottom: 0px
         left: 0px
         //.buy-menu__link
             color: $color-style
         .dropdown-menu
-            right: -57px
+            top: auto
+            bottom: 22px
+            right: 1px
+            right: -56px
             li
                 width: 100px
                 display: block
@@ -572,7 +568,7 @@ section
 .buy-menu
     display: block
     position: absolute
-    padding: 0
+    padding:  0
     text-align: center
     top: 12px
     right: 0px
@@ -582,9 +578,13 @@ section
     border: 1px solid #e5e5e5
     .buy-menu__link
         display: inline-block
-        vertical-align: baseline
-        width: 70%
-        margin: 0
+        //vertical-align: middle
+        line-height: 21px
+        vertical-align: bottom
+        text-align: center
+        //width: 80%
+        width: 47px
+        margin: 0 0 0 -1px
         padding: 0
         font-size: 12px
         color: $fColor
@@ -592,14 +592,16 @@ section
             text-decoration: none
 
 .priceDropdown
-    width: 20%
+    width: 17px
     box-sizing: border-box
-    vertical-align: bottom
-    //vertical-align: baseline
+    vertical-align: top
+    line-height: 1
     display: inline-block
+    //outline: 1px solid red
+    margin: 0 0 0 -1px
     margin: 0
     padding: 0
-    &:after
+    //&:after
         position: absolute
         content: " "
         top: 0px
@@ -610,11 +612,12 @@ section
     .btn
         @extend .dropdownButton
         display: block
-        position: relative
+        text-align: center
         padding: 0
         vertical-align: top
-        min-height: 100%
+        //min-height: 100%
         width: 100%
+        //width: 16px
         border: none
         background: none
         height: 20px
@@ -738,19 +741,19 @@ aside
                     color: $colorD
     .aside__navigation
         .dropdown
+            position: relative
+            border: none
+            .btn
+                position: relative
             button
                 @extend .dropdownButton
                 font-size: 24px
-            .caret-down
-                position: absolute
-                opacity: 1px solid red
-                left: 70px
-                top: 13px
-                bottom: auto
-                margin: -15px 0 0 5px
-                &:after
-                    top: -10px
-                    bottom: auto
+                position: relative
+            .arrowDown
+                position: relative
+        .dropdown-menu
+            position: absolute
+            top: 0px
             font-size: 12px
             border: none
         li
@@ -758,11 +761,14 @@ aside
                 .dropdown
                     button
                         font-size: 16px
+            .dropdown
+                position: relative
             .dropdown-menu
                 @extend .dropdown-menu
                 top: -10px
                 left: 0px
                 right: auto
+                border: 1px solid #e5e5e5
                 li
                     a
                         padding: 0 10px
@@ -800,13 +806,14 @@ aside
 
 .aside__top__headLink
     display: inline-block
-    &:hover
+    //&:hover
         text-decoration: none
         color: $fColor
         .caret
             display: inline-block
     h2
-        margin: 10px 0 0 0
+        margin: 10px 0 0 5px
+        font-size: 14px
         .caret
             display: none
             margin-left: 5px
@@ -900,11 +907,11 @@ aside
         .buy-menu
             .btn
                 position: relative
-            .caret-down
+            //.arrowDown
                 position: absolute
                 top: 0px
                 left: 2px
-                &:after
+                //&:after
                     height: 7px
 
 
@@ -1075,8 +1082,9 @@ a, a:hover, a:active, a:focus
             color: $fColor
             h3,p
                 color: $fColor
-        .littleSquareAlbums .seeAll
-            top: -20px
+        .littleSquareAlbums 
+            .seeAll
+                top: -20px
         //.listHead
             display: inline-block
             font-size: 16px
@@ -1084,25 +1092,28 @@ a, a:hover, a:active, a:focus
             margin: 15px 10px 0 0
             line-height: 1.5
         .toSort
-            line-height: 1.5
+            border: none
+            display: inline-block
+            width: auto
+            line-height: 1.4
             &:after
                 background: none
             .btn
-                .caret-down
+                .arrowDown
                     left: auto
                     right: -20px
     .priceDropdown
         display: inline-block
         //vertical-align: baseline
         //line-height: 1.4
-        width: auto
-        height: auto
+        //width: auto
+        //height: auto
         padding-right: 15px
         button
-            line-height: 1.1
+            line-height: 1
             display: inline-block
-            .caret
-                position: absolute
+            .arrowDown
+                margin: 0
 
     //.artist-list-tag
         //margin: 10px auto 0 auto
@@ -1133,6 +1144,10 @@ a, a:hover, a:active, a:focus
         margin: 0 0 10px 5px
         img
             display: block
+
+.seeAll
+    b
+        font-size: 18px
 
 .artistTabInfo__artistbiography
     display: inline-block
@@ -1201,12 +1216,6 @@ a, a:hover, a:active, a:focus
                         text-decoration: none
                         color: #fff
 
-.buy-menu 
-    .dropdown-menu
-        top: auto
-        bottom: 23px
-        right: -4px
-        left: auto
 /* -------------      Artist page styles     -----------------------*/
 body.darkAlbum-style
     background: #1E1E1E    /*change background*/
@@ -1297,7 +1306,7 @@ body.darkAlbum-style
                 margin: 0 -1px
                 .btn
                     height: 25px
-                &:after
+                //&:after
                     top: -1px
                     left: -3px
                     height: 27px
@@ -1362,7 +1371,6 @@ body.darkAlbum-style
                     margin: 5px 0
                     //white-space: normal
                 .buy-menu
-                    position: static
                     .dropdown-menu
                         max-width: 123px
                         //left: -32px
@@ -1377,90 +1385,174 @@ body.darkAlbum-style
                                     text-decoration: none
         //.squareAlbums
             margin: 0 0 0 -20px
-    table
-        width: 100%
-        th
-            font-weight: normal
-            text-transform: uppercase
-            .caret
-                position: relative
-                left: 10px
-        tr
-            border-bottom: 1px solid #383838
-            &:hover
-                td:first-child
-                    span
-                        visibility: hidden
-                    background: url("../img/ico_play_white.svg") no-repeat
-                    background-position: 0 3px
-                    cursor: pointer
-            td:nth-child(3):hover
+.albumsTable
+    width: 100%
+    th
+        font-weight: normal
+        text-transform: uppercase
+        .caret
+            position: relative
+            left: 10px
+    tr
+        border-bottom: 1px solid #383838
+        &:hover
+            td:first-child
+                span
+                    visibility: hidden
+                background: url("../img/ico_play_white.svg") no-repeat
+                background-position: 0 3px
+                cursor: pointer
+        td:nth-child(3):hover
+            a
+                text-decoration: none
+        td
+            .popularityScale
+                width: 100%
+                display: inline-block
+                span
+                    display: inline-block
+                    width: 1px
+                    height: 16px 
+                    vertical-align: top
+                    margin: 0 2px 0 0
+                    background: #383838
+                span.on
+                    background: #FFF
+        &:last-child
+            border-bottom: none
+    .no-play
+        &:hover
+            td:first-child
+                background: none
+    th
+        &:nth-child(1)
+            width: 3%
+        &:nth-child(2)
+            width: 32%
+        &:nth-child(3)
+            width: 33%
+        &:nth-child(4)
+            width: 10%
+        &:nth-child(5)
+            width: 15%
+        &:nth-child(6)
+            width: 9%
+    .buy-menu
+        position: static
+        text-align: center
+        width: auto
+        width: 100px
+        margin: 3px 0
+        .buy-menu__link
+            margin: 0 -1px
+            display: inline-block
+            width: 77%
+            line-height: 20px
+            vertical-align: baseline
+        .arrowDown
+            width: 23px
+        .btn
+            width: 17%
+        .priceDropdown
+            margin: 0
+            position: relative
+            .dropdown-menu
+                li
+                    a
+                        color: #000
+                    &:hover
+                        a
+                            color: #fff
+    .not-active
+        text-align: center
+        .buy-menu__link
+            width: 100%
+.searchTable
+    @extend .albumsTable
+    margin-top: 10px
+    .buy-menu 
+        .buy-menu__link
+            vertical-align: top
+    .searchTable__img
+        width: 22px
+        height: 15px
+        height: 56%
+        margin-right: 5px
+        //outline: 1px solid red
+        display: inline-block
+    th
+        //outline: 1px solid red
+        &:nth-child(1)
+            width: 2%
+        &:nth-child(2)
+            width: 28%
+        &:nth-child(3)
+            width: 28%
+        &:nth-child(4)
+            width: 18%
+        &:nth-child(5)
+            //text-align: right
+            //padding: 0 5px 0 0
+            width: 5%
+        &:nth-child(6)
+            width: 9%
+        &:nth-child(7)
+            width: 6%
+    tr
+        &:nth-child(2)
+            td
+                padding-top: 7px
+        td
+            &:nth-child(7)
+                text-align: right
+                .buy-menu
+                    display: inline-block
+                    text-align: center
+                //padding: 0 5px 0 0
+            &:nth-child(3):hover
                 a
-                    text-decoration: none
+                    text-decoration: underline
+        &:hover
+            td:first-child
+                background: url("../img/ico_play.svg") no-repeat
+                background-position: 0 3px
+.containerOfTypes
+    table 
+        tr 
+            border: none
+            line-height: 1.5
+            &:first-child
+                line-height: 1.4
+                margin-bottom: 5px
+                border-top: 1px solid #e5e5e5
+                border-bottom: 1px solid #e5e5e5
             td
                 .popularityScale
-                    width: 100%
-                    display: inline-block
+                    line-height: 1.3
                     span
-                        display: inline-block
-                        width: 1px
-                        height: 18px 
-                        vertical-align: middle
-                        margin: 0 2px 0 0
-                        background: #383838
-                        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
-                            background: #FFF
-            &:last-child
-                border-bottom: none
-        .no-play
-            &:hover
-                td:first-child
-                    background: none
-        th
-            &:nth-child(1)
-                width: 3%
-            &:nth-child(2)
-                width: 32%
-            &:nth-child(3)
-                width: 33%
-            &:nth-child(4)
-                width: 10%
-            &:nth-child(5)
-                width: 15%
-            &:nth-child(6)
-                width: 9%
-        .buy-menu
-            position: static
-            width: auto
-            width: 100px
-            margin: 3px 0
-            .caret-down
-                position: absolute
-                left: 4px
-            .priceDropdown
-                margin: 0 -1px
-                .dropdown-menu
-                    li
-                        a
-                            color: #000
-                        &:hover
-                            a
-                                color: #fff
-
+                        background: #c3c3c3
+                    span.on
+                        background: $fColor
 .ArtistBackgroundImage
     position: absolute
     right: 0
     top: 35px
     z-index: -1
+.searchFooter
+    margin-top: 150px
 
 .not-active
     border: none
+    .priceDropdown
+        border: none
+    .buy-menu__link
+        width: 100%
+        margin: 0
     &>a
         pointer-events: none
         cursor: default
     .priceDropdown
-        &:after
-            display: none
+        display: none
 
 
 .art
@@ -1556,15 +1648,6 @@ body.lightAlbum-style
             &.active
                 background: #e5e5e5
 
-.arrowDown
-    display: inline-block
-    font-size: 22px
-    line-height: 1
-    -moz-transform: rotate(90deg)
-    -ms-transform: rotate(90deg)
-    -webkit-transform: rotate(90deg)
-    -o-transform: rotate(90deg)
-    transform: rotate(90deg)
 
 /* simple style*/
 .UlTitle
@@ -1589,3 +1672,51 @@ body.lightAlbum-style
     .priceDropdown
         display: none
         
+//awq
+.resultForSearch
+    padding-bottom: 5px
+    text-align: left
+    margin-bottom: 0px
+    border-bottom: 1px solid #e5e5e5
+.headerBorder
+    border-bottom: 1px solid #e5e5e5
+.searchStyles
+    .tab-pane
+        margin: 20px 0
+        &:first-child
+            margin: 5px 0 0 0
+    .nav-tabs
+        display: none
+        border: 1px solid #1F66B1
+        border-radius: 5px
+        overflow: hidden
+        li
+            padding: 0 10px
+            &.active
+                background: #1F66B1
+                a
+                    color: #FFF
+            a
+                padding: 5px
+    table
+        td
+            position: relative
+.containerOfTypes
+    text-align: left
+    .SquareAlbums-wrapper
+        text-align: left
+    .tab-pane
+        display: none
+    .squareAlbumsWithPrice
+        p
+            font-size: 12px
+    .showItems
+        display: block
+    .media-displayNone
+        display: block
+    .media-displayBlock
+        display: none
+
+.not-active
+    pointer-events: none
+    cursor: default
